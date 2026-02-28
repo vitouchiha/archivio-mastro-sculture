@@ -8,6 +8,7 @@ export const navLinks = [
   { label: 'Figurazioni Racconti 1998–2004 I', href: '/figurazioni-racconti-1998-2004-parte-prima' },
   { label: 'Figurazioni Racconti 1998–2004 II', href: '/figurazioni-racconti-1998-2004-parte-seconda' },
   { label: 'Disegni Collage 1989–2003', href: '/1989-2003-disegni-collage' },
+  { label: 'Altre Opere 1964–2024', href: '/gallery' },
 ]
 
 // ---- Esperienze Giovanili ----
@@ -94,4 +95,18 @@ export const dcFeatured = {
   material: 'matita su carta',
   dimensions: 'h cm 42, l cm 29',
   code: 'NOV a6, n.16',
+}
+
+// ---- Gallery – Altre Opere Altre Cose (2024) ----
+export const pgImages = Array.from({ length: 24 }, (_, i) =>
+  `/images/2024/07/PG${String(i + 1).padStart(2, '0')}.jpg`
+)
+
+export const pgFeatured = {
+  src: '/images/2024/07/PG01X.jpg',
+  title: 'Bottega ceramica Fratelli Mastro',
+  year: 'Grottaglie, anni Cinquanta',
+  material: 'foto Devincentis',
+  dimensions: '',
+  code: '',
 }

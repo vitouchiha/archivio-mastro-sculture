@@ -71,12 +71,12 @@ export default function GalleryPage({
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={featured.src} alt={featured.title} />
           <div className="info">
-            <p className="artwork-title">{featured.title}, {featured.year}</p>
+            <p className="artwork-title">{featured.title}{featured.year ? `, ${featured.year}` : ''}</p>
             <div className="artwork-meta">
-              <p>{featured.material}</p>
-              <p>{featured.dimensions}</p>
+              {featured.material && <p>{featured.material}</p>}
+              {featured.dimensions && <p>{featured.dimensions}</p>}
             </div>
-            <p className="artwork-code">codice: {featured.code}</p>
+            {featured.code && <p className="artwork-code">codice: {featured.code}</p>}
           </div>
         </div>
       )}

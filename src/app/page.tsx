@@ -41,6 +41,17 @@ const sections = [
     year: '1989 – 2003',
     title: 'Disegni Collage',
   },
+  {
+    href: '/gallery',
+    year: '1964 – 2024',
+    title: 'Altre Opere',
+  },
+]
+
+const textLinks = [
+  { href: '/presentazione', label: 'Presentazione' },
+  { href: '/biografia', label: 'Biografia' },
+  { href: '/contact', label: 'Contatti' },
 ]
 
 export default function Home() {
@@ -105,6 +116,28 @@ export default function Home() {
             <Link key={s.href} href={s.href} className="section-card">
               <p className="year">{s.year}</p>
               <p className="title">{s.title}</p>
+            </Link>
+          ))}
+        </div>
+
+        <div style={{ display: 'flex', gap: '1rem', marginTop: '2rem', flexWrap: 'wrap' }}>
+          {textLinks.map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              style={{
+                fontSize: '0.68rem',
+                fontWeight: 700,
+                letterSpacing: '0.15em',
+                textTransform: 'uppercase',
+                color: '#888',
+                textDecoration: 'none',
+                padding: '0.6rem 1.2rem',
+                border: '1px solid #ddd',
+                transition: 'all 0.2s',
+              }}
+            >
+              {l.label}
             </Link>
           ))}
         </div>

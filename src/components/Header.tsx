@@ -1,45 +1,81 @@
-'use client'
+﻿'use client'
 import Link from 'next/link'
 import { useState } from 'react'
 
-const navLinks = [
-  { label: 'Esperienze Giovanili 1964-1977', href: '/esperienze-giovanili-1964-1977' },
-  { label: 'Astrazioni Simboliche 1978-1985', href: '/astrazioni-simboliche-1978-1985' },
-  { label: 'Geometrie Elementari 1986-1997', href: '/geometrie-elementari-1986-1997' },
-  { label: 'Figurazioni Racconti 1998-2004 I', href: '/figurazioni-racconti-1998-2004-parte-prima' },
-  { label: 'Figurazioni Racconti 1998-2004 II', href: '/figurazioni-racconti-1998-2004-parte-seconda' },
-  { label: 'Disegni Collage 1989-2003', href: '/1989-2003-disegni-collage' },
+const galleryLinks = [
+  { label: 'Esperienze Giovanili 1964–1977', href: '/esperienze-giovanili-1964-1977' },
+  { label: 'Astrazioni Simboliche 1978–1985', href: '/astrazioni-simboliche-1978-1985' },
+  { label: 'Geometrie Elementari 1986–1997', href: '/geometrie-elementari-1986-1997' },
+  { label: 'Figurazioni Racconti 1998–2004 I', href: '/figurazioni-racconti-1998-2004-parte-prima' },
+  { label: 'Figurazioni Racconti 1998–2004 II', href: '/figurazioni-racconti-1998-2004-parte-seconda' },
+  { label: 'Disegni Collage 1989–2003', href: '/1989-2003-disegni-collage' },
+  { label: 'Altre Opere 1964–2024', href: '/gallery' },
 ]
 
 export default function Header() {
-  const [open, setOpen] = useState(false)
+  const [mobileOpen, setMobileOpen] = useState(false)
+  const [dropOpen, setDropOpen] = useState(false)
 
   return (
-    <header className="site-header">
-      <Link href="/" className="logo">
-        Archivio Mastro Sculture
-      </Link>
+    <>
+      <header className="site-header">
+        <Link href="/" className="logo" onClick={() => setMobileOpen(false)}>
+          Archivio Mastro Sculture
+        </Link>
 
-      {/* desktop nav */}
-      <nav className="desktop-nav" style={{ display: 'flex' }}>
-        {navLinks.map((l) => (
-          <Link key={l.href} href={l.href}>
-            {l.label}
-          </Link>
-        ))}
-      </nav>
+        {/* ---- DESKTOP NAV ---- */}
+        <nav className="desktop-nav" style={{ display: 'flex' }}>
+          <Link href="/presentazione">Presentazione</Link>
+          <Link href="/biografia">Biografia</Link>
 
-      {/* hamburger */}
-      <button className="hamburger" onClick={() => setOpen(!open)} aria-label="Menu">
-        <span style={open ? { transform: 'rotate(45deg) translate(5px, 5px)' } : {}} />
-        <span style={open ? { opacity: 0 } : {}} />
-        <span style={open ? { transform: 'rotate(-45deg) translate(5px, -5px)' } : {}} />
-      </button>
+          {/* Sculture dropdown */}
+          <div
+            className="nav-dropdown"
+            onMouseEnter={() => setDropOpen(true)}
+            onMouseLeave={() => setDropOpen(false)}
+          >
+            <span className="nav-dropdown-trigger">
+              Sculture &amp; Disegni ▾
+            </span>
+            {dropOpen && (
+              <div className="nav-dropdown-menu">
+                {galleryLinks.map((l) => (
+                  <Link key={l.href} href={l.href} onClick={() => setDropOpen(false)}>
+                    {l.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
 
-      {/* mobile nav */}
-      {open && (
-        <nav className="mobile-nav">
-          {navLinks.map((l) => (
+          <Link href="/dispense">Dispense</Link>
+          <Link href="/news">News</Link>
+          <Link href="/contact">Contatti</Link>
+        </nav>
+
+        {/* ---- HAMBURGER ---- */}
+        <button
+          className="hamburger"
+          onClick={() => setMobileOpen(!mobileOpen)}
+          aria-label="Menu"
+        >
+          <span style={mobileOpen ? { transform: 'rotate(45deg) translate(5px,5px)' } : {}} />
+          <span style={mobileOpen ? { opacity: 0 } : {}} />
+          <span style={mobileOpen ? { transform: 'rotate(-45deg) translate(5px,-5px)' } : {}} />
+        </button>
+      </header>
+
+      {/* ---- MOBILE NAV ---- */}
+      {mobileOpen && (
+        <nav className="mobile-nav" style={{ paddingBottom: '1.5rem' }}>
+          {[
+            { label: 'Presentazione', href: '/presentazione' },
+            { label: 'Biografia', href: '/biografia' },
+            ...galleryLinks,
+            { label: 'Dispense', href: '/dispense' },
+            { label: 'News', href: '/news' },
+            { label: 'Contatti', href: '/contact' },
+          ].map((l) => (
             <Link
               key={l.href}
               href={l.href}
@@ -51,13 +87,13 @@ export default function Header() {
                 color: '#333',
                 textDecoration: 'none',
               }}
-              onClick={() => setOpen(false)}
+              onClick={() => setMobileOpen(false)}
             >
               {l.label}
             </Link>
           ))}
         </nav>
       )}
-    </header>
+    </>
   )
 }
