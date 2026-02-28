@@ -8,7 +8,7 @@ export const navLinks = [
   { label: 'Figurazioni Racconti 1998–2004 I', href: '/figurazioni-racconti-1998-2004-parte-prima' },
   { label: 'Figurazioni Racconti 1998–2004 II', href: '/figurazioni-racconti-1998-2004-parte-seconda' },
   { label: 'Disegni Collage 1989–2003', href: '/1989-2003-disegni-collage' },
-  { label: 'Altre Opere 1964–2024', href: '/gallery' },
+  { label: 'Presenze Galleristiche 2024', href: '/presenze-galleristiche-mostre-2024' },
 ]
 
 // ---- Esperienze Giovanili ----

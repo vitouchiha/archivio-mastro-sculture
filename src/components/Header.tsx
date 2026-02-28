@@ -9,7 +9,7 @@ const galleryLinks = [
   { label: 'Figurazioni Racconti 1998–2004 I', href: '/figurazioni-racconti-1998-2004-parte-prima' },
   { label: 'Figurazioni Racconti 1998–2004 II', href: '/figurazioni-racconti-1998-2004-parte-seconda' },
   { label: 'Disegni Collage 1989–2003', href: '/1989-2003-disegni-collage' },
-  { label: 'Altre Opere 1964–2024', href: '/gallery' },
+  { label: 'Presenze Galleristiche 2024', href: '/presenze-galleristiche-mostre-2024' },
 ]
 
 export default function Header() {
@@ -19,24 +19,26 @@ export default function Header() {
   return (
     <>
       <header className="site-header">
+        {/* ---- LOGO: stacked 3-line ---- */}
         <Link href="/" className="logo" onClick={() => setMobileOpen(false)}>
-          Archivio Mastro Sculture
+          <span className="logo-archivio">Archivio</span>
+          <span className="logo-mastro">Mastro</span>
+          <span className="logo-sculture">Sculture</span>
         </Link>
 
         {/* ---- DESKTOP NAV ---- */}
         <nav className="desktop-nav" style={{ display: 'flex' }}>
+          <Link href="/" className="nav-home">Home</Link>
           <Link href="/presentazione">Presentazione</Link>
           <Link href="/biografia">Biografia</Link>
 
-          {/* Sculture dropdown */}
+          {/* Opere dropdown */}
           <div
             className="nav-dropdown"
             onMouseEnter={() => setDropOpen(true)}
             onMouseLeave={() => setDropOpen(false)}
           >
-            <span className="nav-dropdown-trigger">
-              Sculture &amp; Disegni ▾
-            </span>
+            <span className="nav-dropdown-trigger">Opere ▾</span>
             {dropOpen && (
               <div className="nav-dropdown-menu">
                 {galleryLinks.map((l) => (
@@ -48,9 +50,13 @@ export default function Header() {
             )}
           </div>
 
+          <Link href="/gallery">Photo Gallery</Link>
           <Link href="/dispense">Dispense</Link>
-          <Link href="/news">News</Link>
           <Link href="/contact">Contatti</Link>
+
+          {/* Language flags */}
+          <span className="nav-flag" title="Italiano">🇮🇹</span>
+          <span className="nav-flag" title="English">🇬🇧</span>
         </nav>
 
         {/* ---- HAMBURGER ---- */}
@@ -67,22 +73,23 @@ export default function Header() {
 
       {/* ---- MOBILE NAV ---- */}
       {mobileOpen && (
-        <nav className="mobile-nav" style={{ paddingBottom: '1.5rem' }}>
+        <nav className="mobile-nav">
           {[
+            { label: 'Home', href: '/' },
             { label: 'Presentazione', href: '/presentazione' },
             { label: 'Biografia', href: '/biografia' },
             ...galleryLinks,
+            { label: 'Photo Gallery', href: '/gallery' },
             { label: 'Dispense', href: '/dispense' },
-            { label: 'News', href: '/news' },
             { label: 'Contatti', href: '/contact' },
           ].map((l) => (
             <Link
               key={l.href}
               href={l.href}
               style={{
-                fontSize: '0.75rem',
-                fontWeight: 600,
-                letterSpacing: '0.1em',
+                fontSize: '0.72rem',
+                fontWeight: 500,
+                letterSpacing: '0.12em',
                 textTransform: 'uppercase',
                 color: '#333',
                 textDecoration: 'none',

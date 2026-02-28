@@ -42,9 +42,9 @@ const sections = [
     title: 'Disegni Collage',
   },
   {
-    href: '/gallery',
-    year: '1964 – 2024',
-    title: 'Altre Opere',
+    href: '/presenze-galleristiche-mostre-2024',
+    year: '2024',
+    title: 'Presenze Galleristiche',
   },
 ]
 
@@ -66,11 +66,43 @@ export default function Home() {
 
   return (
     <>
-      {/* Hero */}
+      {/* ── HERO: full-width slider ── */}
       <section className="hero-section">
-        <div className="hero-text">
+        <div className="hero-slider">
+          {heroImages.map((src, i) => (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              key={src}
+              src={src}
+              alt={`Archivio Mastro Sculture – immagine ${i + 1}`}
+              className={i === current ? 'active' : ''}
+            />
+          ))}
+        </div>
+
+        {/* caption at bottom of hero */}
+        <div className="hero-caption">
+          <p>Tutto subito e ogni cosa a suo tempo.</p>
+        </div>
+
+        {/* dots */}
+        <div className="slider-dots">
+          {heroImages.map((_, i) => (
+            <button
+              key={i}
+              className={`slider-dot${i === current ? ' active' : ''}`}
+              onClick={() => setCurrent(i)}
+              aria-label={`Slide ${i + 1}`}
+            />
+          ))}
+        </div>
+      </section>
+
+      {/* ── QUOTE SECTION ── */}
+      <section className="quote-section">
+        <div className="quote-text">
           <blockquote>
-            TUTTO SUBITO E OGNI COSA A SUO TEMPO.
+            Tutto subito e ogni cosa a suo tempo.
             <br /><br />
             Ai greci bisogna dire grazie per averci insegnato a guardare in alto,
             guardando in basso e intorno.
@@ -81,34 +113,17 @@ export default function Home() {
             <br /><br />
             Bisogna dire grazie per averci dato un&apos;estetica delle arti figurative
             per &ldquo;rifarci gli occhi&rdquo; di tanto in tanto.
-            <span className="author">— Oronzo Mastro</span>
           </blockquote>
+          <span className="author">— Oronzo Mastro</span>
         </div>
 
-        <div className="hero-slider" style={{ minHeight: 500 }}>
-          {heroImages.map((src, i) => (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-              key={src}
-              src={src}
-              alt={`Archivio Mastro Sculture – immagine ${i + 1}`}
-              className={i === current ? 'active' : ''}
-            />
-          ))}
-          <div className="slider-dots">
-            {heroImages.map((_, i) => (
-              <button
-                key={i}
-                className={`slider-dot${i === current ? ' active' : ''}`}
-                onClick={() => setCurrent(i)}
-                aria-label={`Slide ${i + 1}`}
-              />
-            ))}
-          </div>
+        <div className="quote-image">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/disegnai_collage.jpg" alt="Disegno di Oronzo Mastro" />
         </div>
       </section>
 
-      {/* Section links */}
+      {/* ── Section links ── */}
       <section className="section-links">
         <h2>Le Collezioni</h2>
         <div className="section-grid">
@@ -126,8 +141,8 @@ export default function Home() {
               key={l.href}
               href={l.href}
               style={{
-                fontSize: '0.68rem',
-                fontWeight: 700,
+                fontSize: '0.65rem',
+                fontWeight: 600,
                 letterSpacing: '0.15em',
                 textTransform: 'uppercase',
                 color: '#888',
@@ -143,7 +158,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Book promo */}
+      {/* ── Book promo ── */}
       <section className="book-promo">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/images/libro_300px.jpg" alt="Libro Mastro Sculture" />

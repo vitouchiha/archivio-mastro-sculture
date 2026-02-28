@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,6 +7,9 @@
 :root {
   --foreground: #1a1a1a;
   --background: #ffffff;
+  --accent: #c8973b;
+  --header-bg: #edebe7;
+  --header-height: 110px;
 }
 
 * {
@@ -20,7 +23,7 @@ html {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Raleway', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 400;
   line-height: 1.6;
 }
@@ -32,37 +35,65 @@ body {
   left: 0;
   width: 100%;
   z-index: 100;
-  background: rgba(255, 255, 255, 0.97);
-  border-bottom: 1px solid #e0e0e0;
-  padding: 0 2rem;
+  background: var(--header-bg);
+  padding: 0 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
+  height: var(--header-height);
 }
 
+/* Logo: stacked 3-line design */
 .site-header .logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-  letter-spacing: 0.18em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+  text-decoration: none;
+  gap: 0;
+}
+
+.logo-archivio {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 0.7rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: #3a3a3a;
+}
+
+.logo-mastro {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 1.65rem;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #1a1a1a;
-  text-decoration: none;
+  line-height: 1.1;
+}
+
+.logo-sculture {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.65rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  line-height: 1.1;
 }
 
 .site-header nav {
   display: flex;
-  gap: 2rem;
+  gap: 1.6rem;
   align-items: center;
 }
 
 .site-header nav a {
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #555;
+  color: #3a3a3a;
   text-decoration: none;
   transition: color 0.2s;
 }
@@ -71,17 +102,37 @@ body {
   color: #1a1a1a;
 }
 
+.site-header nav a.nav-home {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.site-header nav a.nav-home:hover {
+  color: #a87830;
+}
+
+/* flag icons */
+.nav-flag {
+  font-size: 1.1rem;
+  cursor: pointer;
+  opacity: 0.75;
+  transition: opacity 0.2s;
+  line-height: 1;
+  text-decoration: none !important;
+}
+.nav-flag:hover { opacity: 1; }
+
 /* nav dropdown */
 .nav-dropdown {
   position: relative;
 }
 
 .nav-dropdown-trigger {
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #555;
+  color: #3a3a3a;
   cursor: pointer;
   transition: color 0.2s;
   white-space: nowrap;
@@ -98,9 +149,9 @@ body {
   left: 50%;
   transform: translateX(-50%);
   background: #fff;
-  border: 1px solid #e0e0e0;
-  box-shadow: 0 6px 24px rgba(0,0,0,0.08);
-  min-width: 260px;
+  border: 1px solid #ddd;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+  min-width: 280px;
   z-index: 200;
   display: flex;
   flex-direction: column;
@@ -110,12 +161,12 @@ body {
 
 .nav-dropdown-menu a {
   display: block;
-  padding: 0.6rem 1.2rem;
-  font-size: 0.68rem !important;
-  font-weight: 600 !important;
-  letter-spacing: 0.1em !important;
+  padding: 0.55rem 1.2rem;
+  font-size: 0.63rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.12em !important;
   text-transform: uppercase !important;
-  color: #555 !important;
+  color: #444 !important;
   text-decoration: none !important;
   white-space: nowrap;
   transition: background 0.15s;
@@ -125,7 +176,6 @@ body {
   background: #f5f5f5;
   color: #1a1a1a !important;
 }
-
 
 /* hamburger for mobile */
 .hamburger {
@@ -145,7 +195,7 @@ body {
   transition: all 0.3s;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .desktop-nav {
     display: none !important;
   }
@@ -156,11 +206,11 @@ body {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 70px;
+    top: var(--header-height);
     left: 0;
     width: 100%;
-    background: #fff;
-    border-bottom: 1px solid #e0e0e0;
+    background: var(--header-bg);
+    border-bottom: 1px solid #ccc;
     padding: 1.5rem 2rem;
     gap: 1.2rem;
     z-index: 99;
@@ -175,48 +225,23 @@ body {
 
 /* ----- MAIN CONTENT ----- */
 .main-content {
-  padding-top: 70px;
+  padding-top: var(--header-height);
   min-height: 100vh;
 }
 
 /* ----- HERO / HOME ----- */
 .hero-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: calc(100vh - 70px);
-}
-
-.hero-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 4rem 3rem 4rem 4rem;
-}
-
-.hero-text blockquote {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  font-size: 1.15rem;
-  line-height: 1.8;
-  color: #333;
-  margin-bottom: 3rem;
-  border-left: 3px solid #1a1a1a;
-  padding-left: 1.5rem;
-}
-
-.hero-text .author {
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #888;
-  margin-top: 1rem;
+  position: relative;
+  width: 100%;
+  height: calc(100vh - var(--header-height));
+  min-height: 500px;
+  overflow: hidden;
+  background: #111;
 }
 
 .hero-slider {
-  position: relative;
-  overflow: hidden;
-  background: #f5f5f5;
+  position: absolute;
+  inset: 0;
 }
 
 .hero-slider img {
@@ -226,28 +251,48 @@ body {
   position: absolute;
   inset: 0;
   opacity: 0;
-  transition: opacity 0.8s ease;
+  transition: opacity 1s ease;
 }
 
 .hero-slider img.active {
   opacity: 1;
 }
 
+/* gradient + caption at the bottom of the hero */
+.hero-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 3rem 4rem 2.5rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 100%);
+  z-index: 5;
+}
+
+.hero-caption p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+}
+
 .slider-dots {
   position: absolute;
   bottom: 1.5rem;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 2rem;
   display: flex;
   gap: 8px;
-  z-index: 5;
+  z-index: 6;
 }
 
 .slider-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.5);
+  background: rgba(255,255,255,0.4);
   border: none;
   cursor: pointer;
   transition: background 0.3s;
@@ -258,6 +303,56 @@ body {
   background: #fff;
 }
 
+/* ----- QUOTE SECTION (below hero) ----- */
+.quote-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 560px;
+  background: #f9f8f6;
+}
+
+.quote-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem 4rem;
+}
+
+.quote-text blockquote {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #333;
+  border-left: 3px solid #1a1a1a;
+  padding-left: 1.5rem;
+  margin: 0 0 1.5rem;
+}
+
+.quote-text .author {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #888;
+  padding-left: 1.5rem;
+}
+
+.quote-image {
+  overflow: hidden;
+  background: #f0eeea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* ----- SECTION LINKS ON HOME ----- */
 .section-links {
   padding: 5rem 4rem;
@@ -265,9 +360,9 @@ body {
 }
 
 .section-links h2 {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 700;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
   color: #999;
   margin-bottom: 2.5rem;
@@ -293,8 +388,8 @@ body {
 }
 
 .section-card .year {
-  font-size: 0.65rem;
-  letter-spacing: 0.15em;
+  font-size: 0.6rem;
+  letter-spacing: 0.18em;
   color: #999;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
@@ -847,12 +942,18 @@ body {
 }
 
 @media (max-width: 768px) {
-  .hero-section { grid-template-columns: 1fr; }
-  .hero-slider { min-height: 50vw; position: relative; }
+  .hero-section { height: 60vw; min-height: 300px; }
+  .hero-caption { padding: 2rem 1.5rem 1.5rem; }
+  .hero-caption p { font-size: 0.75rem; }
+  .quote-section { grid-template-columns: 1fr; }
+  .quote-image { height: 60vw; }
+  .quote-text { padding: 3rem 1.5rem; }
   .book-promo { flex-direction: column; padding: 3rem 1.5rem; }
   .section-links { padding: 3rem 1.5rem; }
   .bottom-nav { padding: 2rem 1rem; }
   .featured-artwork { flex-direction: column; padding: 2rem 1.5rem; }
   .featured-artwork img { width: 200px; }
   .site-footer { padding: 2rem 1.5rem; }
+  .site-header { padding: 0 1.5rem; height: 80px; }
+  :root { --header-height: 80px; }
 }
