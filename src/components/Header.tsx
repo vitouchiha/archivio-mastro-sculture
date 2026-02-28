@@ -19,16 +19,15 @@ export default function Header() {
   return (
     <>
       <header className="site-header">
-        {/* ---- LOGO: stacked 3-line ---- */}
+        {/* ---- LOGO IMAGE ---- */}
         <Link href="/" className="logo" onClick={() => setMobileOpen(false)}>
-          <span className="logo-archivio">Archivio</span>
-          <span className="logo-mastro">Mastro</span>
-          <span className="logo-sculture">Sculture</span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/logo.png" alt="Archivio Mastro Sculture" />
         </Link>
 
         {/* ---- DESKTOP NAV ---- */}
         <nav className="desktop-nav" style={{ display: 'flex' }}>
-          <Link href="/" className="nav-home">Home</Link>
+          <Link href="/">Home</Link>
           <Link href="/presentazione">Presentazione</Link>
           <Link href="/biografia">Biografia</Link>
 
@@ -87,11 +86,12 @@ export default function Header() {
               key={l.href}
               href={l.href}
               style={{
-                fontSize: '0.72rem',
-                fontWeight: 500,
-                letterSpacing: '0.12em',
+                fontFamily: "'Montserrat', sans-serif",
+                fontSize: '0.8em',
+                fontWeight: 700,
+                letterSpacing: 0,
                 textTransform: 'uppercase',
-                color: '#333',
+                color: '#14171c',
                 textDecoration: 'none',
               }}
               onClick={() => setMobileOpen(false)}
