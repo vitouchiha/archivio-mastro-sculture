@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-03-01T12:02:47.232Z",
+  "summary": {
+    "brokenLinks": 0,
+    "missingAssets": 0,
+    "totalPagesChecked": 5,
+    "totalRoutesAvailable": 17
+  },
+  "details": {
+    "brokenlLinks": [],
+    "missingAssets": [],
+    "cssIssues": [],
+    "iconIssues": [],
+    "alignmentIssues": []
+  }
+}

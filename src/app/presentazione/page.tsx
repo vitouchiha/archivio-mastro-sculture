@@ -604,7 +604,7 @@ and
 
 </div><div class="builder-item desktop-left tablet-left mobile-left"><div class="item--inner builder-item--button_base" data-section="header_button" data-item-id="button_base">
 	<div class="component-wrap">
-	<a href="/?pagename=contact" class="button button-primary">Contact Now</a>
+	<a href="/contact/" class="button button-primary">Contact Now</a>
 </div>
 	</div>
 
