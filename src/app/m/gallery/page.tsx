@@ -1,9 +1,10 @@
-'use client'
+﻿'use client'
 import { useState } from 'react'
+import { pgFeatured } from '@/data/galleries'
 
-// Gallery images
+// HQ X-series images (root /images/)
 const images = Array.from({ length: 24 }, (_, i) =>
-  `/images/gallery/PG${String(i + 1).padStart(2, '0')}.jpg`
+  `/images/PG${String(i + 1).padStart(2, '0')}X.jpg`
 )
 
 export default function MobileGallery() {
@@ -16,6 +17,9 @@ export default function MobileGallery() {
     <>
       <div className="m-gallery-header">
         <h1>Photo Gallery</h1>
+        <p style={{ fontSize: '0.8rem', color: '#888', marginTop: 4 }}>
+          {pgFeatured.title} &mdash; {pgFeatured.year}
+        </p>
       </div>
 
       <div className="m-photo-grid">
@@ -36,7 +40,11 @@ export default function MobileGallery() {
             <button onClick={prev}>‹</button>
             <button onClick={next}>›</button>
           </div>
-          <div className="m-lightbox-caption">{lightbox + 1} / {images.length}</div>
+          <div className="m-lightbox-caption">
+            <strong>{pgFeatured.title}</strong><br />
+            {pgFeatured.year}{pgFeatured.material ? ` — ${pgFeatured.material}` : ''}
+            <span style={{ display: 'block', marginTop: 4, opacity: 0.6 }}>{lightbox + 1} / {images.length}</span>
+          </div>
         </div>
       )}
     </>

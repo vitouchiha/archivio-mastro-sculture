@@ -759,6 +759,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: rgba(20,23,28,0.65);
 }
 
 .m-quote-heading {
