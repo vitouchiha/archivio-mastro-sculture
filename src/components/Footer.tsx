@@ -1,22 +1,10 @@
-export default function Footer() {
+﻿export default function Footer() {
   return (
-    <footer className="site-footer">
+    <footer className="w-full bg-[#111] text-white py-6 px-4 md:px-16 flex flex-col md:flex-row justify-between items-center text-[13px]">
       <div>
-        <p>Archivio Mastro Sculture</p>
-        <p>Viale A. Oriani 36, 40137 Bologna</p>
-        <p>
-          email:{' '}
-          <a href="mailto:mastroronzo@gmail.com">mastroronzo@gmail.com</a>
-        </p>
-        <p>C.F. MSTRNZ49T30E205O</p>
-      </div>
-      <div className="social">
-        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-          Facebook
-        </a>
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-          Instagram
-        </a>
+        Archivio Mastro Sculture - Viale A. Oriani 36, 40137 Bologna - email:{' '}
+        <a href="mailto:mastroronzo@gmail.com" className="underline hover:text-gray-300">mastroronzo@gmail.com</a>{' '}
+        C.F. MSTRNZ49T30E205O
       </div>
     </footer>
   )
