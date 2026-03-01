@@ -7,3 +7,13 @@ out/
 .DS_Store
 *.log
 .vercel
+
+wordpress-mirror/
+scrape-site.mjs
+mirror-summary.txt
+gallery-links.txt
+gcheck.txt
+gallery-section.txt
+gallery-body.txt
+pg-images.txt
+urls.txt
