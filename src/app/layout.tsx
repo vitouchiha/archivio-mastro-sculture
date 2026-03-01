@@ -1,7 +1,5 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import './globals.css'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: 'Archivio Mastro Sculture',
@@ -18,12 +16,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="it">
+      <head>
+        {/* The WordPress page injects its own CSS correctly via our script */}
+      </head>
       <body>
-        <Header />
-        <main className="main-content" id="content">
+        <main id="content">
           {children}
         </main>
-        <Footer />
       </body>
     </html>
   )
