@@ -1,5 +1,5 @@
-import MobileOpereGallery from '../MobileOpereGallery'
-import { dcImages } from '@/data/galleries'
+﻿import MobileOpereGallery from '../MobileOpereGallery'
+import { dcImages, dcFeatured } from '@/data/galleries'
 
 const sections = [
   { label: 'Esperienze Giovanili 1964–1977', href: '/m/esperienze-giovanili-1964-1977' },
@@ -14,7 +14,8 @@ export default function Page() {
     <MobileOpereGallery
       title="Disegni Collage 1989–2003"
       subtitle="Disegni e collage su carta"
-      images={dcImages}
+      images={[dcFeatured.src, ...dcImages]}
+      captions={[{ title: dcFeatured.title, year: dcFeatured.year, material: dcFeatured.material, dimensions: dcFeatured.dimensions, code: dcFeatured.code }]}
       sectionLinks={sections}
     />
   )

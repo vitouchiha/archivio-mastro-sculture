@@ -2,14 +2,23 @@
 import { useState } from 'react'
 import Link from 'next/link'
 
+export interface OpereCaption {
+  title: string
+  year?: string
+  material?: string
+  dimensions?: string
+  code?: string
+}
+
 interface MobileOpereGalleryProps {
   title: string
   subtitle?: string
   images: string[]
+  captions?: (OpereCaption | null)[]
   sectionLinks?: { label: string; href: string }[]
 }
 
-export default function MobileOpereGallery({ title, subtitle, images, sectionLinks }: MobileOpereGalleryProps) {
+export default function MobileOpereGallery({ title, subtitle, images, captions, sectionLinks }: MobileOpereGalleryProps) {
   const [current, setCurrent] = useState(0)
   const [lightbox, setLightbox] = useState<number | null>(null)
 
@@ -17,6 +26,9 @@ export default function MobileOpereGallery({ title, subtitle, images, sectionLin
   const next = () => setCurrent(c => (c + 1) % images.length)
   const lbPrev = () => setLightbox(c => c !== null ? (c - 1 + images.length) % images.length : 0)
   const lbNext = () => setLightbox(c => c !== null ? (c + 1) % images.length : 0)
+
+  const caption = captions?.[current]
+  const lbCaption = lightbox !== null ? captions?.[lightbox] : null
 
   return (
     <>
@@ -30,16 +42,24 @@ export default function MobileOpereGallery({ title, subtitle, images, sectionLin
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={images[current]}
-          alt={`Opera ${current + 1}`}
+          alt={caption?.title ?? `Opera ${current + 1}`}
           className="m-viewer-img"
           onClick={() => setLightbox(current)}
         />
         <div className="m-viewer-nav">
-          <button className="m-viewer-btn" onClick={prev}>‹</button>
+          <button className="m-viewer-btn" onClick={prev}>&#8249;</button>
           <div className="m-viewer-info">
-            <small>{current + 1} / {images.length}</small>
+            {caption ? (
+              <>
+                <strong>{caption.title}</strong>
+                <small>{[caption.year, caption.material, caption.dimensions].filter(Boolean).join(' — ')}</small>
+                {caption.code && <small style={{ color: '#999' }}>{caption.code}</small>}
+              </>
+            ) : (
+              <small>{current + 1} / {images.length}</small>
+            )}
           </div>
-          <button className="m-viewer-btn" onClick={next}>›</button>
+          <button className="m-viewer-btn" onClick={next}>&#8250;</button>
         </div>
       </div>
 
@@ -52,7 +72,7 @@ export default function MobileOpereGallery({ title, subtitle, images, sectionLin
             onClick={() => setCurrent(i)}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={src} alt={`Opera ${i + 1}`} loading="lazy" />
+            <img src={src} alt={captions?.[i]?.title ?? `Opera ${i + 1}`} loading="lazy" />
           </div>
         ))}
       </div>
@@ -89,13 +109,23 @@ export default function MobileOpereGallery({ title, subtitle, images, sectionLin
       {lightbox !== null && (
         <div className="m-lightbox" onClick={() => setLightbox(null)}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={images[lightbox]} alt={`Opera ${lightbox + 1}`} onClick={e => e.stopPropagation()} />
+          <img src={images[lightbox]} alt={lbCaption?.title ?? `Opera ${lightbox + 1}`} onClick={e => e.stopPropagation()} />
           <button className="m-lightbox-close" onClick={() => setLightbox(null)}>✕</button>
           <div className="m-lightbox-nav" onClick={e => e.stopPropagation()}>
-            <button onClick={lbPrev}>‹</button>
-            <button onClick={lbNext}>›</button>
+            <button onClick={lbPrev}>&#8249;</button>
+            <button onClick={lbNext}>&#8250;</button>
           </div>
-          <div className="m-lightbox-caption">{lightbox + 1} / {images.length}</div>
+          <div className="m-lightbox-caption">
+            {lbCaption ? (
+              <>
+                <strong style={{ display: 'block', fontSize: '0.85rem', marginBottom: 4 }}>{lbCaption.title}</strong>
+                {[lbCaption.year, lbCaption.material, lbCaption.dimensions].filter(Boolean).join(' — ')}
+                {lbCaption.code && <span style={{ display: 'block', fontSize: '0.7rem', opacity: 0.6, marginTop: 2 }}>{lbCaption.code}</span>}
+              </>
+            ) : (
+              `${lightbox + 1} / ${images.length}`
+            )}
+          </div>
         </div>
       )}
     </>

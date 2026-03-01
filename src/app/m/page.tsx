@@ -15,10 +15,10 @@ export default function MobileHome() {
       {/* Hero */}
       <div className="m-hero">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/images/2023/05/FX01a.jpg" alt="Archivio Mastro Sculture" loading="eager" />
+        <img src="/images/Home10.png" alt="Archivio Mastro Sculture" loading="eager" />
         <div className="m-hero-text">
           <h1 className="m-hero-title">Archivio Mastro Sculture</h1>
-          <p className="m-hero-subtitle">Sculture, Plastiche &amp; Disegni — Bologna</p>
+          <p className="m-hero-subtitle">Sculture, Plastiche &amp; Disegni &mdash; Bologna</p>
         </div>
       </div>
 

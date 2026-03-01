@@ -31,9 +31,20 @@ Ricostruzione in **Next.js** del sito WordPress *Archivio Mastro Sculture*, con 
 
 ## 📋 Versione Corrente
 
-### v1.3.0 — Sito Mobile Dedicato
+### v1.3.1 — Gallery captions, footer completo, fix encoding
 
-**Funzionalità introdotte:**
+**Novità:**
+
+- ✅ **Didascalie gallerie opere** — prima immagine con titolo, anno, materiale, dimensioni e codice catalogo nel viewer e nel lightbox
+- ✅ **Image in evidenza preposta** — ogni galleria opera inizia con la foto "X" (alta qualità) con metadata completi
+- ✅ **Thumbnails 3 colonne** — immagini più grandi e leggibili (era 4 colonne)
+- ✅ **Footer mobile completo** — logo, indirizzo Bologna, email, C.F., icone Facebook/Instagram, link versione desktop
+- ✅ **Hero home → `Home10.png`** — foto identitaria del gruppo sculture
+- ✅ **Rimossa barra "versione mobile"** — sostituita da link nel footer
+- ✅ **Rimossa bandiera UK dalla nav** — non esiste versione mobile EN sul sito `.eu`
+- ✅ **Fix encoding** — corretti tutti i `â€"` → `–` nei titoli gallerie e nav links
+
+**v1.3.0 (precedente):**
 
 - ✅ **Mobile site `/m/*`** — interfaccia completamente separata e ottimizzata per smartphone
 - ✅ **Middleware redirect** — gli utenti mobile vengono reindirizzati automaticamente a `/m/`
@@ -241,5 +252,5 @@ Il progetto richiede **Edge Middleware** (Vercel o Next.js standalone server). N
 ---
 
 **Ultimo aggiornamento:** Marzo 2026
-**Versione:** v1.3.0
+**Versione:** v1.3.1
 **Stato:** ✅ Production Ready — Serverless (Vercel) | Mobile Site | Desktop 1:1 Clone

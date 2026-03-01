@@ -64,8 +64,6 @@ export default function MobileHeader() {
             <div className="m-lang-bar">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <a href="https://www.archiviomastrosculture.it"><img src="/images/bandiera_italia.jpg" alt="ITA" /></a>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <a href="https://www.archiviomastrosculture.eu"><img src="/images/bandiera_uk.jpg" alt="EN" /></a>
             </div>
           </nav>
         </div>

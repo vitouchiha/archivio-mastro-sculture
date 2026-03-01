@@ -11,6 +11,28 @@ e il progetto adotta il [Semantic Versioning](https://semver.org/lang/it/).
 
 ---
 
+## [1.3.1] – 2026-03-01
+
+### Aggiunto
+- **Descrizioni gallerie opere mobile** — primo scatto con titolo, anno, materiale, dimensioni e codice catalogo sotto il viewer
+- **Immagine in evidenza** preposta come prima foto in tutte le 6 gallerie opere (da `egFeatured`, `asFeatured`, ecc.)
+- Lightbox con didascalia completa: titolo opera, anno, materiale, dimensioni, codice
+- Footer mobile completo: logo, indirizzo (Viale A. Oriani 36, Bologna), email `mastroronzo@gmail.com`, C.F., icone social Facebook e Instagram, link versione desktop
+
+### Modificato
+- Hero home mobile → `Home10.png` (foto gruppo sculture, immagine identitaria principale)
+- Thumbnails gallerie: da 4 a 3 colonne (immagini più grandi e leggibili)
+- Viewer info area: mostra titolo/anno/materiale quando disponibile, altrimenti numero opera
+- Rimossa la barra "Stai vedendo la versione mobile" (invadente, rimpiazzata da link nel footer)
+- Footer completamente riscritto con layout colonnare, social SVG, link desktop
+
+### Corretto
+- Encoding errato in tutti i titoli gallerie mobile (`â€"` → `–`, en-dash U+2013)
+- Rimossa bandiera UK dalla nav drawer (la versione mobile EN non esiste sul sito `.eu`)
+- Encoding errato in sezione label dei menù "Altre sezioni"
+
+---
+
 ## [1.3.0] – 2026-03-01
 
 ### Aggiunto

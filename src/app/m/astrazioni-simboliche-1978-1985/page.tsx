@@ -1,5 +1,5 @@
-import MobileOpereGallery from '../MobileOpereGallery'
-import { asImages } from '@/data/galleries'
+﻿import MobileOpereGallery from '../MobileOpereGallery'
+import { asImages, asFeatured } from '@/data/galleries'
 
 const sections = [
   { label: 'Esperienze Giovanili 1964–1977', href: '/m/esperienze-giovanili-1964-1977' },
@@ -14,7 +14,8 @@ export default function Page() {
     <MobileOpereGallery
       title="Astrazioni Simboliche 1978–1985"
       subtitle="Sculture astratte e simboliche"
-      images={asImages}
+      images={[asFeatured.src, ...asImages]}
+      captions={[{ title: asFeatured.title, year: asFeatured.year, material: asFeatured.material, dimensions: asFeatured.dimensions, code: asFeatured.code }]}
       sectionLinks={sections}
     />
   )

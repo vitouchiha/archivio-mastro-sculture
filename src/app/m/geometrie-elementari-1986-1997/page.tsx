@@ -1,5 +1,5 @@
-import MobileOpereGallery from '../MobileOpereGallery'
-import { geImages } from '@/data/galleries'
+﻿import MobileOpereGallery from '../MobileOpereGallery'
+import { geImages, geFeatured } from '@/data/galleries'
 
 const sections = [
   { label: 'Esperienze Giovanili 1964–1977', href: '/m/esperienze-giovanili-1964-1977' },
@@ -14,7 +14,8 @@ export default function Page() {
     <MobileOpereGallery
       title="Geometrie Elementari 1986–1997"
       subtitle="Sculture geometriche e forme elementari"
-      images={geImages}
+      images={[geFeatured.src, ...geImages]}
+      captions={[{ title: geFeatured.title, year: geFeatured.year, material: geFeatured.material, dimensions: geFeatured.dimensions, code: geFeatured.code }]}
       sectionLinks={sections}
     />
   )

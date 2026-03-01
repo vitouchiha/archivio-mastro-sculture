@@ -1,5 +1,5 @@
-import MobileOpereGallery from '../MobileOpereGallery'
-import { fImages } from '@/data/galleries'
+﻿import MobileOpereGallery from '../MobileOpereGallery'
+import { fImages, fFeatured } from '@/data/galleries'
 
 const sections = [
   { label: 'Esperienze Giovanili 1964–1977', href: '/m/esperienze-giovanili-1964-1977' },
@@ -12,9 +12,10 @@ const sections = [
 export default function Page() {
   return (
     <MobileOpereGallery
-      title="Figurazioni Racconti 1998–2004 — Parte Seconda"
+      title="Figurazioni Racconti 1998–2004 – Parte Seconda"
       subtitle="Sculture e plastiche figurative"
-      images={fImages}
+      images={[fFeatured.src, ...fImages]}
+      captions={[{ title: fFeatured.title, year: fFeatured.year, material: fFeatured.material, dimensions: fFeatured.dimensions, code: fFeatured.code }]}
       sectionLinks={sections}
     />
   )
