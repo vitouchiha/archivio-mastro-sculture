@@ -1,0 +1,7 @@
+{
+  "workflow": {
+    "useSubagents": true,
+    "useBackgroundAgents": false,
+    "planStyle": "wave-based"
+  }
+}
