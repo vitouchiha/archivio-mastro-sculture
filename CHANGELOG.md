@@ -11,6 +11,10 @@ e il progetto adotta il [Semantic Versioning](https://semver.org/lang/it/).
 
 ---
 
+## [1.2.3] – 2026-03-01
+
+---
+
 ## [1.1.0] – 2026-02-28
 
 ---
