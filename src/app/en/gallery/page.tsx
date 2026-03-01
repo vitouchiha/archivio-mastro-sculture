@@ -1,3 +1,4 @@
+import Script from 'next/script';
 import React from 'react';
 
 export default function Pagegallery() {
@@ -449,6 +450,7 @@ and
 /*# sourceURL=/wp-includes/blocks/social-links/style.min.css */
 </style>
  ` }} />
+      <Script strategy='afterInteractive' src='/js/gallery-logic.js' />
       <div dangerouslySetInnerHTML={{ __html: `
 <div class="wrapper">
 	
@@ -1322,6 +1324,7 @@ Collage<br>
 
 
 ` }} />
+      <Script strategy='afterInteractive' src='/js/gallery-logic.js' />
     </div>
   );
 }
