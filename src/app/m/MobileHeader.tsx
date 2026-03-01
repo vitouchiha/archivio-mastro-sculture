@@ -30,7 +30,7 @@ export default function MobileHeader() {
       <header className="m-header">
         <Link href="/m" className="m-logo" onClick={() => setOpen(false)}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/logo.png" alt="Archivio Mastro Sculture" />
+          <img src="/images/cropped-logo3.png" alt="Archivio Mastro Sculture" />
         </Link>
         <button
           className={`m-hamburger${open ? ' open' : ''}`}

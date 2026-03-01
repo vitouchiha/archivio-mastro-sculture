@@ -2,17 +2,22 @@
    ARCHIVIO MASTRO SCULTURE — MOBILE SITE CSS
    ============================================= */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600&display=swap');
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 :root {
   --primary: #14171c;
+  --secondary: #6c0001;
   --accent: #a07427;
+  --header-bg: #ebebe9;
   --bg: #f5f4f0;
   --white: #ffffff;
   --light: #ededed;
-  --font: 'Montserrat', Arial, sans-serif;
+  --font: 'Poppins', Arial, sans-serif;
+  --font-heading: 'Montserrat', Arial, sans-serif;
   --radius: 4px;
 }
 
@@ -44,17 +49,20 @@ a {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: var(--primary);
+  background: var(--header-bg);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 16px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  border-bottom: 1px solid #d0cec9;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .m-logo img {
-  height: 40px;
+  max-height: 44px;
+  max-width: 100px;
   width: auto;
+  height: auto;
 }
 
 .m-hamburger {
@@ -72,7 +80,7 @@ a {
   display: block;
   width: 26px;
   height: 2px;
-  background: var(--white);
+  background: var(--primary);
   border-radius: 2px;
   transition: all 0.25s ease;
 }
@@ -124,6 +132,7 @@ a {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--accent);
+  font-family: var(--font-heading);
   font-weight: 700;
   margin-top: 8px;
 }
@@ -132,6 +141,7 @@ a {
   display: block;
   padding: 13px 20px;
   font-size: 0.82rem;
+  font-family: var(--font-heading);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -199,6 +209,7 @@ a {
 
 .m-hero-title {
   font-size: 1.4rem;
+  font-family: var(--font-heading);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -218,6 +229,7 @@ a {
 /* ---- SECTION GRID (home) ---- */
 .m-section-title {
   font-size: 0.7rem;
+  font-family: var(--font-heading);
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -255,6 +267,7 @@ a {
   color: var(--white);
   padding: 20px 8px 8px;
   font-size: 0.62rem;
+  font-family: var(--font-heading);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -268,6 +281,7 @@ a {
 
 .m-gallery-header h1 {
   font-size: 1.1rem;
+  font-family: var(--font-heading);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -371,6 +385,7 @@ a {
 
 .m-text-page h1, .m-text-page h2 {
   font-size: 1.2rem;
+  font-family: var(--font-heading);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -481,6 +496,7 @@ a {
 
 .m-contact-section h1 {
   font-size: 1.2rem;
+  font-family: var(--font-heading);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;

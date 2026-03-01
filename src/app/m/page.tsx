@@ -15,10 +15,10 @@ export default function MobileHome() {
       {/* Hero */}
       <div className="m-hero">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/images/cropped-logo3.png" alt="Archivio Mastro Sculture" style={{ objectFit: 'cover', objectPosition: 'center' }} />
+        <img src="/images/2023/05/FX01a.jpg" alt="Archivio Mastro Sculture" loading="eager" />
         <div className="m-hero-text">
           <h1 className="m-hero-title">Archivio Mastro Sculture</h1>
-          <p className="m-hero-subtitle">Sculture, Plastiche & Disegni — Bologna</p>
+          <p className="m-hero-subtitle">Sculture, Plastiche &amp; Disegni — Bologna</p>
         </div>
       </div>
 
@@ -67,10 +67,10 @@ export default function MobileHome() {
       <div className="m-section-title">Altro</div>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 2, padding: '0 2px 24px' }}>
         {[
-          { label: 'Photo Gallery', href: '/m/gallery', bg: '#3a4a6b' },
-          { label: 'Presenze 2024', href: '/m/presenze-galleristiche-mostre-2024', bg: '#5a3a1a' },
-          { label: 'Dispense', href: '/m/dispense', bg: '#2a5a3a' },
-          { label: 'News', href: '/m/news', bg: '#5a2a2a' },
+          { label: 'Photo Gallery', href: '/m/gallery', bg: '#14171c' },
+          { label: 'Presenze 2024', href: '/m/presenze-galleristiche-mostre-2024', bg: '#6c0001' },
+          { label: 'Dispense', href: '/m/dispense', bg: '#a07427' },
+          { label: 'News', href: '/m/news', bg: '#6c0001' },
         ].map(l => (
           <Link
             key={l.href}
