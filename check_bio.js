@@ -1,0 +1,1 @@
+const fs=require('fs');const cheerio=require('cheerio');const p=fs.readFileSync('src/app/biografia/page.tsx','utf8');const m=p.match(/__html:\s*\([\s\S]*?)\/g);if(m && m[1]){const \$=cheerio.load(m[1].substring(10, m[1].length-1)); \.elementor-widget-text-editor.each((i,el)=>console.log(\.text().substring(0,60)))}

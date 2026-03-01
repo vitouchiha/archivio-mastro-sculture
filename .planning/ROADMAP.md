@@ -31,6 +31,6 @@ Plans:
 
 | Phase | Plans | Status | Completed |
 |-------|-------|--------|-----------|
-| 1. Mobile Responsive| 0/1 | Not started | - |
-| 2. App Router I18N | 0/1 | Not started | - |
+| 1. Mobile Responsive| 1/1 | Completed | March 1 |
+| 2. App Router I18N | 1/1 | Completed | March 1 |
 | 3. New pages | 0/1 | Not started | - |

@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "cheerio": "^1.2.0",
+    "google-translate-api-x": "^10.7.2",
     "next": "^16.1.6",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "translate": "^3.0.1"
   },
   "devDependencies": {
     "@types/node": "^20",
