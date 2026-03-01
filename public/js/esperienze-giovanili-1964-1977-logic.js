@@ -5,7 +5,7 @@
                 var testo2 = "";
                 segno = "0";
                 riquadro = false;
-                window.addEventListener("DOMContentLoaded", function() { if (document.getElementById("expandedImg")) riquadrigrigi(); });
+                if (document.getElementById("expandedImg")) riquadrigrigi(); else setTimeout(() => { if (document.getElementById("expandedImg")) riquadrigrigi(); }, 300);
                 
                 function riquadrigrigi() {
                     //Metto la prima immagine e relativi testi
