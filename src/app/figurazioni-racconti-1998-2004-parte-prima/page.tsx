@@ -479,9 +479,9 @@ and
 <li id="menu-item-189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-189"><div class="wrap"><a href="/biografia/">Biografia</a></div></li>
 <li id="menu-item-884" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children menu-item-884 nv-active"><div class="wrap"><a><span class="menu-item-title-wrap dd-title">Opere</span></a><div role="button" aria-pressed="false" aria-label="Apri sottomenu" tabindex="0" class="caret-wrap caret 4" style="margin-left:5px;"><span class="caret"><svg fill="currentColor" aria-label="Menu a discesa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></div></div>
 <ul class="sub-menu">
-	<li id="menu-item-4509" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4509"><div class="wrap"><a href="/esperienze-giovanili-1964-1977-2/">1964-1977 Esperienze Giovanili</a></div></li>
+	<li id="menu-item-4509" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4509"><div class="wrap"><a href="/esperienze-giovanili-1964-1977/">1964-1977 Esperienze Giovanili</a></div></li>
 	<li id="menu-item-3892" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><div class="wrap"><a href="/astrazioni-simboliche-1978-1985/">1978-1985 Astrazioni Simboliche</a></div></li>
-	<li id="menu-item-4131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4131"><div class="wrap"><a href="/geometrie-elementari-1986-1997-2/">1986-1997 Geometrie Elementari</a></div></li>
+	<li id="menu-item-4131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4131"><div class="wrap"><a href="/geometrie-elementari-1986-1997/">1986-1997 Geometrie Elementari</a></div></li>
 	<li id="menu-item-4226" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-4226 nv-active"><div class="wrap"><a><span class="menu-item-title-wrap dd-title">1998-2004 FIGURAZIONI RACCONTI</span></a><div role="button" aria-pressed="false" aria-label="Apri sottomenu" tabindex="0" class="caret-wrap caret 8" style="margin-left:5px;"><span class="caret"><svg fill="currentColor" aria-label="Menu a discesa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></div></div>
 	<ul class="sub-menu">
 		<li id="menu-item-4228" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4216 current_page_item menu-item-4228 nv-active"><div class="wrap"><a href="/figurazioni-racconti-1998-2004-parte-prima/" aria-current="page">PARTE PRIMA</a></div></li>
@@ -584,9 +584,9 @@ and
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-189"><div class="wrap"><a href="/biografia/">Biografia</a></div></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children menu-item-884 nv-active"><div class="wrap"><a><span class="menu-item-title-wrap dd-title">Opere</span></a><button tabindex="0" type="button" class="caret-wrap navbar-toggle 4 " style="margin-left:5px;" aria-label="Attiva/disattiva Opere"><span class="caret"><svg fill="currentColor" aria-label="Menu a discesa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></button></div>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4509"><div class="wrap"><a href="/esperienze-giovanili-1964-1977-2/">1964-1977 Esperienze Giovanili</a></div></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4509"><div class="wrap"><a href="/esperienze-giovanili-1964-1977/">1964-1977 Esperienze Giovanili</a></div></li>
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><div class="wrap"><a href="/astrazioni-simboliche-1978-1985/">1978-1985 Astrazioni Simboliche</a></div></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4131"><div class="wrap"><a href="/geometrie-elementari-1986-1997-2/">1986-1997 Geometrie Elementari</a></div></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4131"><div class="wrap"><a href="/geometrie-elementari-1986-1997/">1986-1997 Geometrie Elementari</a></div></li>
 	<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-4226 nv-active"><div class="wrap"><a><span class="menu-item-title-wrap dd-title">1998-2004 FIGURAZIONI RACCONTI</span></a><button tabindex="0" type="button" class="caret-wrap navbar-toggle 8 " style="margin-left:5px;" aria-label="Attiva/disattiva 1998-2004 FIGURAZIONI RACCONTI"><span class="caret"><svg fill="currentColor" aria-label="Menu a discesa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></button></div>
 	<ul class="sub-menu">
 		<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4216 current_page_item menu-item-4228 nv-active"><div class="wrap"><a href="/figurazioni-racconti-1998-2004-parte-prima/" aria-current="page">PARTE PRIMA</a></div></li>
@@ -1100,7 +1100,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-70594fa titoli_opere elementor-widget elementor-widget-text-editor" data-id="70594fa" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<a href="/esperienze-giovanili-1964-1977-2/">Esperienze Giovanili<br>
+							<a href="/esperienze-giovanili-1964-1977/">Esperienze Giovanili<br>
 1964-1977</a>						</div>
 				</div>
 					</div>
@@ -1126,7 +1126,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-42885a0 titoli_opere elementor-widget elementor-widget-text-editor" data-id="42885a0" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<a href="/geometrie-elementari-1986-1997-2/">Geometrie Elementari<br>
+							<a href="/geometrie-elementari-1986-1997/">Geometrie Elementari<br>
 1986-1997</a>						</div>
 				</div>
 					</div>
