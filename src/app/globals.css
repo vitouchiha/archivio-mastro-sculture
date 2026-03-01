@@ -1,1 +1,20 @@
-﻿/* Global styles for 1:1 WordPress mirroring */
+/* Global styles for 1:1 WordPress mirroring */
+
+/* Fix layout gaps and margins per matching original WordPress Elementor structure */
+.nv-single-page-wrap,
+.neve-main,
+.single-page-container {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+
+.home .nv-single-page-wrap {
+  padding-top: 0 !important;
+}
+
+.elementor-element-3781566 {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
