@@ -88,14 +88,54 @@ body {
     line-height: 1.2 !important;
   }
 
-  /* Center header logo \/ menus */
-  header, .SiteHeader {
-    text-align: center;
-    display: block !important;
+  /* Ensure nav icon / hamburger button is always clickable */
+  .navbar-toggle-wrapper,
+  .builder-item--nav-icon,
+  .menu-mobile-toggle,
+  button.navbar-toggle {
+    position: relative !important;
+    z-index: 99999 !important;
+    pointer-events: auto !important;
   }
 
-  /* OVERRIDE LEGACY TABLES */
-  table, thead, tbody, th, td, tr, tfoot, caption {
+  /* OVERRIDE LEGACY TABLES — scoped to content area only, NOT nav/header */
+  .elementor-widget-wrap table,
+  .elementor-widget-container table,
+  .site-main table,
+  #content table,
+  .entry-content table,
+  .wp-singular table {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .elementor-widget-wrap thead,
+  .elementor-widget-wrap tbody,
+  .elementor-widget-wrap tfoot,
+  .elementor-widget-wrap tr,
+  .elementor-widget-wrap th,
+  .elementor-widget-wrap td,
+  .elementor-widget-container thead,
+  .elementor-widget-container tbody,
+  .elementor-widget-container tfoot,
+  .elementor-widget-container tr,
+  .elementor-widget-container th,
+  .elementor-widget-container td,
+  .site-main thead,
+  .site-main tbody,
+  .site-main tfoot,
+  .site-main tr,
+  .site-main th,
+  .site-main td,
+  #content thead,
+  #content tbody,
+  #content tfoot,
+  #content tr,
+  #content th,
+  #content td {
     display: block !important;
     width: 100% !important;
     max-width: 100vw !important;
@@ -104,27 +144,24 @@ body {
     float: none !important;
   }
 
-  td[width], table[width] {
+  /* Direct table width overrides (inline attributes) */
+  table[width], td[width] {
     width: 100% !important;
     min-width: 0 !important;
     max-width: 100vw !important;
   }
-  
-  table[style*="width:1000px"], table[style*="width: 1000px"], table[style*="1000px"], table[style*="width:770px"] {
-    width: 100% !important;
-    max-width: 100vw !important;
-  }
 
+  /* Specific named column cells */
   td.colonna_sinistra, td.tabella_immagine_centrale {
     width: 100% !important;
     display: block !important;
-    margin-bottom: 2rem !important; /* give breathing room between the stacked columns */
+    margin-bottom: 2rem !important;
     padding: 0 !important;
-    text-align: center !important;
   }
-  
+
   td.tabella_immagine_centrale img {
     margin: 0 auto !important;
+    display: block !important;
   }
 
   img {
@@ -133,7 +170,7 @@ body {
   }
 
   /* Specific mobile wrappers for thumbnail galleries */
-  .gallery-item, .thumbnail, .mySlides, .column {
+  .gallery-item, .thumbnail, .mySlides {
     width: 100% !important;
     max-width: 100% !important;
     display: block !important;
@@ -141,9 +178,9 @@ body {
     float: none !important;
   }
 
-  /* Prevent horizontal scrolling globally */
-  html, body {
-    max-width: 100vw;
-    overflow-x: hidden;
+  /* Prevent horizontal scrolling — only on body, NOT html (iOS Safari compat) */
+  body {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
   }
 }
