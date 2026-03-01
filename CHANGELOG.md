@@ -11,6 +11,32 @@ e il progetto adotta il [Semantic Versioning](https://semver.org/lang/it/).
 
 ---
 
+## [1.3.0] – 2026-03-01
+
+### Aggiunto
+- **Sito mobile dedicato** a `/m/*` — 15 pagine ottimizzate per smartphone
+- `middleware.ts` — Edge middleware con User-Agent detection, redirect automatico mobile → `/m/`
+- `MobileHeader.tsx` — sticky header beige con hamburger + drawer fullscreen (tutte le sezioni/pagine)
+- `MobileOpereGallery.tsx` — viewer riutilizzabile con prev/next, grid miniature, lightbox touch
+- 6 gallerie opere mobile con viewer + lightbox
+- Photo gallery mobile (24 immagini, grid 2 colonne)
+- Pagine mobile: presentazione, biografia, news, contatti, dispense, privacy-policy
+- Google Fonts: Poppins (body) + Montserrat 700 (headings/nav) nel sito mobile
+- Pagine `/en/*` i18n per Presentazione e Biografia in inglese
+
+### Modificato
+- `next.config.js` — rimosso `output: 'export'` (incompatibile con middleware); il sito ora richiede runtime serverless (Vercel / Next.js standalone)
+- `mobile.css` — design system allineato al sito originale: `--header-bg: #ebebe9`, `--accent: #a07427`, `--secondary: #6c0001`, font Poppins/Montserrat
+- Logo mobile aggiornato a `cropped-logo3.png` (identico all'originale)
+- Home mobile hero: immagine opera reale in sostituzione del logo come cover
+
+### Corretto
+- Script JS della gallery principale iniettati correttamente; immagine iniziale caricata senza attendere DOMContentLoaded
+- Percorsi immagini relative per barra rossa verticale gallery
+- Navigation link i18n reindirizzati correttamente alle pagine italiane
+
+---
+
 ## [1.2.3] – 2026-03-01
 
 ---
