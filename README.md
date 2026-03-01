@@ -13,9 +13,9 @@ L'intera architettura si basa su:
 
 ## 📋 Versione Attuale
 
-### v1.2.1 - Allineamento Banner & CSS Refinement
+### v1.2.2 - Layout Pixel-Perfect Definitivo
 
-**Ultimi fix:**
+**Ultimi fix:**\n- ✅ **Definitivo CSS Reset**: Chiuso enorme gap grigio superiore azzerando i padding di default ereditati da Neve Theme.\n- ✅ **Ripristino Strutturale**: Rimossa la band-aid CSS margin-top.
 - ✅ **Allineamento banner rosso**: Ridotto margin-top tra sezione immagini e testi (#-20px)
 - ✅ **Zero Link Broken**: Tutti i link interni verificati e corretti
 - ✅ **Asset Verification**: 448 immagini sincronizzate, 24 CSS integrati
