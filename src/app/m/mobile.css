@@ -737,28 +737,25 @@ a {
 
 /* ---- QUOTE SECTION ---- */
 .m-quote-section {
-  position: relative;
+  display: grid;
   overflow: hidden;
 }
 
 .m-quote-bg {
+  grid-area: 1 / 1;
   width: 100%;
-  height: 220px;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
   filter: brightness(0.45);
 }
 
 .m-quote-overlay {
+  grid-area: 1 / 1;
   position: relative;
   z-index: 1;
   padding: 28px 20px 36px;
-  min-height: 220px;
   display: flex;
   flex-direction: column;
   justify-content: center;
