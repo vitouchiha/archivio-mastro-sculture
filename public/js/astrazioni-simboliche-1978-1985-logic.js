@@ -25,9 +25,9 @@
                     var riquadroB = document.getElementById("riquadroBimg");
                     var riquadroC = document.getElementById("riquadroCimg");
 
-                    riquadroA.src = "/images/quagri.jpg";
-                    riquadroB.src = "/images/quagri.jpg";
-                    riquadroC.src = "/images/quagri.jpg";
+                    riquadroA.src = "/images/2023/02/quagri.jpg";
+                    riquadroB.src = "/images/2023/02/quagri.jpg";
+                    riquadroC.src = "/images/2023/02/quagri.jpg";
                     
                     myBorder(1);
 
@@ -190,9 +190,9 @@
                                 var riquadroB = document.getElementById("riquadroBimg");
                                 var riquadroC = document.getElementById("riquadroCimg");
 
-                                riquadroA.src = "/images/01ASXa.jpg";
-                                riquadroB.src = "/images/quagri.jpg";
-                                riquadroC.src = "/images/quagri.jpg";
+                                riquadroA.src = "/images/2023/04/01ASXa.jpg";
+                                riquadroB.src = "/images/2023/02/quagri.jpg";
+                                riquadroC.src = "/images/2023/02/quagri.jpg";
 
                                 var riquadroON = true;
                             break;
@@ -212,9 +212,9 @@
                                 var riquadroB = document.getElementById("riquadroBimg");
                                 var riquadroC = document.getElementById("riquadroCimg");
 
-                                riquadroA.src = "/images/02ASXa.jpg";
-                                riquadroB.src = "/images/quagri.jpg";
-                                riquadroC.src = "/images/quagri.jpg";
+                                riquadroA.src = "/images/2023/04/02ASXa.jpg";
+                                riquadroB.src = "/images/2023/02/quagri.jpg";
+                                riquadroC.src = "/images/2023/02/quagri.jpg";
 
                                 var riquadroON = true;
                             break;
@@ -402,9 +402,9 @@
                                 var riquadroB = document.getElementById("riquadroBimg");
                                 var riquadroC = document.getElementById("riquadroCimg");
 
-                                riquadroA.src = "/images/15ASXa.jpg";
-                                riquadroB.src = "/images/quagri.jpg";
-                                riquadroC.src = "/images/quagri.jpg";
+                                riquadroA.src = "/images/2023/04/15ASXa.jpg";
+                                riquadroB.src = "/images/2023/02/quagri.jpg";
+                                riquadroC.src = "/images/2023/02/quagri.jpg";
 
                                 var riquadroON = true;
                             break;
@@ -551,9 +551,9 @@
                                 var riquadroB = document.getElementById("riquadroBimg");
                                 var riquadroC = document.getElementById("riquadroCimg");
 
-                                riquadroA.src = "/images/25ASXa.jpg";
-                                riquadroB.src = "/images/25ASXb.jpg";
-                                riquadroC.src = "/images/quagri.jpg";
+                                riquadroA.src = "/images/2023/04/25ASXa.jpg";
+                                riquadroB.src = "/images/2023/04/25ASXb.jpg";
+                                riquadroC.src = "/images/2023/02/quagri.jpg";
 
                                 var riquadroON = true;
                             break;
@@ -620,9 +620,9 @@
                         var riquadroB = document.getElementById("riquadroBimg");
                         var riquadroC = document.getElementById("riquadroCimg");
 
-                        riquadroA.src = "/images/quagri.jpg";
-                        riquadroB.src = "/images/quagri.jpg";
-                        riquadroC.src = "/images/quagri.jpg";
+                        riquadroA.src = "/images/2023/02/quagri.jpg";
+                        riquadroB.src = "/images/2023/02/quagri.jpg";
+                        riquadroC.src = "/images/2023/02/quagri.jpg";
                     }
 
                     //Controllo di essere in un range accettabile e cambio i bordi a tutte le immagini

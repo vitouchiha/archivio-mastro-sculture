@@ -10,7 +10,7 @@
                 function riquadrigrigi() {
                     //Metto la prima immagine e relativi testi
                     var expandImg = document.getElementById("expandedImg");
-                    expandImg.src = "https://www.archiviomastrosculture.it/wp-content/uploads/2024/07/PG01X.jpg";
+                    expandImg.src = "/images/2024/07/PG01X.jpg";
                     testo1="<p><i>Fratelli Mastro ceramic workshop,<br> Grottaglie, 1950s.<br>photo Devincentis</i><br><br> The photo tells of the work in the ceramic workshop that belonged to my grandfather and my father. It tells of a time when the clay was kneaded barefoot, the glazes were produced in the workshop and the ovens were wood-fired. Then, in the second half of the last century, everything changed: glass, plastic and the industrial production of everyday ceramics put an end to a way of living and making ceramics described in this photo.</p>";
                     testo2="</i><p7></p7>";
 
@@ -25,9 +25,9 @@
                     var riquadroB = document.getElementById("riquadroBimg");
                     var riquadroC = document.getElementById("riquadroCimg");
 
-                    riquadroA.src = "https://www.archiviomastrosculture.it/wp-content/uploads/2023/02/quagri.jpg";
-                    riquadroB.src = "https://www.archiviomastrosculture.it/wp-content/uploads/2023/02/quagri.jpg";
-                    riquadroC.src = "https://www.archiviomastrosculture.it/wp-content/uploads/2023/02/quagri.jpg";
+                    riquadroA.src = "/images/2023/02/quagri.jpg";
+                    riquadroB.src = "/images/2023/02/quagri.jpg";
+                    riquadroC.src = "/images/2023/02/quagri.jpg";
                     
                     myBorder(1);
 
@@ -314,7 +314,7 @@
 
                                 var riquadroA = document.getElementById("riquadroAimg");
                                 
-                                riquadroA.src = "https://www.archiviomastrosculture.it/wp-content/uploads/2024/07/PG02_bX.jpg";
+                                riquadroA.src = "/images/2024/07/PG02_bX.jpg";
                                 
                                 var riquadroON = true;
                             break;
@@ -481,7 +481,7 @@
 
                                 var riquadroA = document.getElementById("riquadroAimg");
                                 
-                                riquadroA.src = "https://www.archiviomastrosculture.it/wp-content/uploads/2024/07/PG13_bX.jpg";
+                                riquadroA.src = "/images/2024/07/PG13_bX.jpg";
                                 
                                 riquadroA.style.opacity = 1;
                                 
@@ -502,7 +502,7 @@
                                 var riquadroA = document.getElementById("riquadroAimg");
                                 var imgText4 = document.getElementById("imgtext4")
                                 
-                                riquadroA.src = "https://www.archiviomastrosculture.it/wp-content/uploads/2024/07/PX14_bX.jpg";
+                                riquadroA.src = "/images/2024/07/PX14_bX.jpg";
                                 
                                 imgText4.innerHTML = testo2;
                                 imgText4.style.opacity = 1;
@@ -524,7 +524,7 @@
 
                                 var riquadroA = document.getElementById("riquadroAimg");
                                 
-                                riquadroA.src = "https://www.archiviomastrosculture.it/wp-content/uploads/2024/07/PG15_bX.jpg";
+                                riquadroA.src = "/images/2024/07/PG15_bX.jpg";
                                 
                                 riquadroA.style.opacity = 1;
                                 
@@ -658,8 +658,8 @@
                                 var riquadroA = document.getElementById("riquadroAimg");
                                 var riquadroB = document.getElementById("riquadroBimg");
                                 
-                                riquadroA.src = "https://www.archiviomastrosculture.it/wp-content/uploads/2024/07/PG24_bX.jpg";
-                                riquadroB.src = "https://www.archiviomastrosculture.it/wp-content/uploads/2024/07/PG24_cX.jpg";
+                                riquadroA.src = "/images/2024/07/PG24_bX.jpg";
+                                riquadroB.src = "/images/2024/07/PG24_cX.jpg";
                                 
                                 riquadroA.style.opacity = 1;
                                 riquadroB.style.opacity = 1;
@@ -687,9 +687,9 @@
                         var riquadroB = document.getElementById("riquadroBimg");
                         var riquadroC = document.getElementById("riquadroCimg");
 
-                        riquadroA.src = "https://www.archiviomastrosculture.it/wp-content/uploads/2023/02/quagri.jpg";
-                        riquadroB.src = "https://www.archiviomastrosculture.it/wp-content/uploads/2023/02/quagri.jpg";
-                        riquadroC.src = "https://www.archiviomastrosculture.it/wp-content/uploads/2023/02/quagri.jpg";
+                        riquadroA.src = "/images/2023/02/quagri.jpg";
+                        riquadroB.src = "/images/2023/02/quagri.jpg";
+                        riquadroC.src = "/images/2023/02/quagri.jpg";
                     }
 
                     //Controllo di essere in un range accettabile e cambio i bordi a tutte le immagini

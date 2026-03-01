@@ -10,7 +10,7 @@
                 function riquadrigrigi() {
                     //Metto la prima immagine e relativi testi
                     var expandImg = document.getElementById("expandedImg");
-                    expandImg.src = "/images/EGX01.jpg";
+                    expandImg.src = "/images/2023/01/EGX01.jpg";
                     testo1="<p><i>Mal d'Africa</i>, 1964<br>patinated terracotta<br>h 30 cm, ∅ 36 cm</p>";
                     testo2="<p><i>First prize for sculpture exhibition<br>People and Civilization, Grottaglie 1965</p></i><p7>code: SES a5, n.1</p7>";
 
@@ -25,9 +25,9 @@
                     var riquadroB = document.getElementById("riquadroBimg");
                     var riquadroC = document.getElementById("riquadroCimg");
 
-                    riquadroA.src = "/images/quagri.jpg";
-                    riquadroB.src = "/images/quagri.jpg";
-                    riquadroC.src = "/images/quagri.jpg";
+                    riquadroA.src = "/images/2023/02/quagri.jpg";
+                    riquadroB.src = "/images/2023/02/quagri.jpg";
+                    riquadroC.src = "/images/2023/02/quagri.jpg";
                     
                     myBorder(1);
 
@@ -446,9 +446,9 @@
                                 imgText2.innerHTML = testo1;
                                 imgText3.innerHTML = testo2;
 
-                                riquadroA.src = "/images/EGX20-a.jpg";
-                                riquadroB.src = "/images/EGX20-b.jpg";
-                                riquadroC.src = "/images/EGX20-c.jpg";
+                                riquadroA.src = "/images/2023/01/EGX20-a.jpg";
+                                riquadroB.src = "/images/2023/01/EGX20-b.jpg";
+                                riquadroC.src = "/images/2023/01/EGX20-c.jpg";
                                 riquadroON = true;
                             break;
                             /////////////////////////////////////////////////////////////
@@ -482,9 +482,9 @@
                                 var riquadroB = document.getElementById("riquadroBimg");
                                 var riquadroC = document.getElementById("riquadroCimg");
 
-                                riquadroA.src = "/images/EGX22-a.jpg";
-                                riquadroB.src = "/images/EGX22-b.jpg";
-                                riquadroC.src = "/images/quagri.jpg";
+                                riquadroA.src = "/images/2023/01/EGX22-a.jpg";
+                                riquadroB.src = "/images/2023/01/EGX22-b.jpg";
+                                riquadroC.src = "/images/2023/02/quagri.jpg";
 
                                 var riquadroON = true;
                             break;
@@ -519,9 +519,9 @@
                                 var riquadroC = document.getElementById("riquadroCimg");
 
 
-                                riquadroA.src = "/images/EGX24-a.jpg";
-                                riquadroB.src = "/images/EGX24-b.jpg";
-                                riquadroC.src = "/images/quagri.jpg";
+                                riquadroA.src = "/images/2023/01/EGX24-a.jpg";
+                                riquadroB.src = "/images/2023/01/EGX24-b.jpg";
+                                riquadroC.src = "/images/2023/02/quagri.jpg";
 
                                 var riquadroON = true;
                             break;
@@ -560,9 +560,9 @@
                         var riquadroB = document.getElementById("riquadroBimg");
                         var riquadroC = document.getElementById("riquadroCimg");
 
-                        riquadroA.src = "/images/quagri.jpg";
-                        riquadroB.src = "/images/quagri.jpg";
-                        riquadroC.src = "/images/quagri.jpg";
+                        riquadroA.src = "/images/2023/02/quagri.jpg";
+                        riquadroB.src = "/images/2023/02/quagri.jpg";
+                        riquadroC.src = "/images/2023/02/quagri.jpg";
                     }
 
                     //Controllo di essere in un range accettabile e cambio i bordi a tutte le immagini

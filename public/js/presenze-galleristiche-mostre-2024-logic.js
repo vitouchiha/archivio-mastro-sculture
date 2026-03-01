@@ -10,7 +10,7 @@
                 function riquadrigrigi() {
                     //Metto la prima immagine e relativi testi
                     var expandImg = document.getElementById("expandedImg");
-                    expandImg.src = "/images/PG01X.jpg";
+                    expandImg.src = "/images/2024/07/PG01X.jpg";
                     testo1="<p><i>Bottega ceramica Fratelli Mastro,<br> Grottaglie, anni Cinquanta.<br>foto Devincentis</i><br><br> La foto racconta il lavoro nella bottega ceramica che fu di mio nonno e di mio padre. Racconta un tempo in cui l’argilla veniva impastata a piedi nudi, gli smalti erano prodotti in bottega e i forni erano a legna. Poi, nella seconda metà del secolo scorso, tutto cambia: il vetro, la plastica e la produzione industriale di ceramica d’uso, mette fine ad un modo di vivere e fare ceramica raccontato in questa foto.</p>";
                     testo2="</i><p7></p7>";
 
@@ -25,9 +25,9 @@
                     var riquadroB = document.getElementById("riquadroBimg");
                     var riquadroC = document.getElementById("riquadroCimg");
 
-                    riquadroA.src = "/images/quagri.jpg";
-                    riquadroB.src = "/images/quagri.jpg";
-                    riquadroC.src = "/images/quagri.jpg";
+                    riquadroA.src = "/images/2023/02/quagri.jpg";
+                    riquadroB.src = "/images/2023/02/quagri.jpg";
+                    riquadroC.src = "/images/2023/02/quagri.jpg";
                     
                     myBorder(1);
 
@@ -314,7 +314,7 @@
 
                                 var riquadroA = document.getElementById("riquadroAimg");
                                 
-                                riquadroA.src = "/images/PG02_bX.jpg";
+                                riquadroA.src = "/images/2024/07/PG02_bX.jpg";
                                 
                                 var riquadroON = true;
                             break;
@@ -481,7 +481,7 @@
 
                                 var riquadroA = document.getElementById("riquadroAimg");
                                 
-                                riquadroA.src = "/images/PG13_bX.jpg";
+                                riquadroA.src = "/images/2024/07/PG13_bX.jpg";
                                 
                                 riquadroA.style.opacity = 1;
                                 
@@ -502,7 +502,7 @@
                                 var riquadroA = document.getElementById("riquadroAimg");
                                 var imgText4 = document.getElementById("imgtext4")
                                 
-                                riquadroA.src = "/images/PX14_bX.jpg";
+                                riquadroA.src = "/images/2024/07/PX14_bX.jpg";
                                 
                                 imgText4.innerHTML = testo2;
                                 imgText4.style.opacity = 1;
@@ -524,7 +524,7 @@
 
                                 var riquadroA = document.getElementById("riquadroAimg");
                                 
-                                riquadroA.src = "/images/PG15_bX.jpg";
+                                riquadroA.src = "/images/2024/07/PG15_bX.jpg";
                                 
                                 riquadroA.style.opacity = 1;
                                 
@@ -658,8 +658,8 @@
                                 var riquadroA = document.getElementById("riquadroAimg");
                                 var riquadroB = document.getElementById("riquadroBimg");
                                 
-                                riquadroA.src = "/images/PG24_bX.jpg";
-                                riquadroB.src = "/images/PG24_cX.jpg";
+                                riquadroA.src = "/images/2024/07/PG24_bX.jpg";
+                                riquadroB.src = "/images/2024/07/PG24_cX.jpg";
                                 
                                 riquadroA.style.opacity = 1;
                                 riquadroB.style.opacity = 1;
@@ -687,9 +687,9 @@
                         var riquadroB = document.getElementById("riquadroBimg");
                         var riquadroC = document.getElementById("riquadroCimg");
 
-                        riquadroA.src = "/images/quagri.jpg";
-                        riquadroB.src = "/images/quagri.jpg";
-                        riquadroC.src = "/images/quagri.jpg";
+                        riquadroA.src = "/images/2023/02/quagri.jpg";
+                        riquadroB.src = "/images/2023/02/quagri.jpg";
+                        riquadroC.src = "/images/2023/02/quagri.jpg";
                     }
 
                     //Controllo di essere in un range accettabile e cambio i bordi a tutte le immagini

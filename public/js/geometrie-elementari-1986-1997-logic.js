@@ -10,7 +10,7 @@
                 function riquadrigrigi() {
                     //Metto la prima immagine e relativi testi
                     var expandImg = document.getElementById("expandedImg");
-                    expandImg.src = "/images/GEX01.jpg";
+                    expandImg.src = "/images/2023/04/GEX01.jpg";
                     testo1="<p><i>Astratto simbolico - due</i>, 1986-96<br>poliestere<br>h cm 51, l cm 42, p cm 15</p>";
                     testo2="</i><p7>codice: OTT a7, n.3</p7>";
 
@@ -25,9 +25,9 @@
                     var riquadroB = document.getElementById("riquadroBimg");
                     var riquadroC = document.getElementById("riquadroCimg");
 
-                    riquadroA.src = "/images/quagri.jpg";
-                    riquadroB.src = "/images/quagri.jpg";
-                    riquadroC.src = "/images/quagri.jpg";
+                    riquadroA.src = "/images/2023/02/quagri.jpg";
+                    riquadroB.src = "/images/2023/02/quagri.jpg";
+                    riquadroC.src = "/images/2023/02/quagri.jpg";
                     
                     myBorder(1);
 
@@ -561,9 +561,9 @@
                         var riquadroB = document.getElementById("riquadroBimg");
                         var riquadroC = document.getElementById("riquadroCimg");
 
-                        riquadroA.src = "/images/quagri.jpg";
-                        riquadroB.src = "/images/quagri.jpg";
-                        riquadroC.src = "/images/quagri.jpg";
+                        riquadroA.src = "/images/2023/02/quagri.jpg";
+                        riquadroB.src = "/images/2023/02/quagri.jpg";
+                        riquadroC.src = "/images/2023/02/quagri.jpg";
                     }
 
                     //Controllo di essere in un range accettabile e cambio i bordi a tutte le immagini
