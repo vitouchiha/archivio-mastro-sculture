@@ -450,13 +450,13 @@ and
 /*# sourceURL=/wp-includes/blocks/social-links/style.min.css */
 </style>
  ` }} />
-      <Script strategy="afterInteractive" src="/js/figurazioni-racconti-1998-2004-parte-seconda-logic.js" />
+      <Script strategy="afterInteractive" src="/js/en/figurazioni-racconti-1998-2004-parte-seconda-logic.js" />
       <div dangerouslySetInnerHTML={{ __html: `
 <div class="wrapper">
 	
 	<header class="header">
 		<a class="neve-skip-link show-on-focus" href="#content">
-			Vai al contenuto		</a>
+			Skip to content		</a>
 		<div id="header-grid" class="hfg_header site-header">
 	
 <nav class="header--row header-main hide-on-mobile hide-on-tablet layout-full-contained nv-navbar has-center header--row" data-row-id="main" data-show-on="desktop">
@@ -477,23 +477,23 @@ and
 		<ul id="nv-primary-navigation-main" class="primary-menu-ul nav-ul menu-desktop"><li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-51"><div class="wrap"><a href="/en/">Home</a></div></li>
 <li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><div class="wrap"><a href="/en/presentazione/">Presentation</a></div></li>
 <li id="menu-item-189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-189"><div class="wrap"><a href="/en/biografia/">Biography</a></div></li>
-<li id="menu-item-884" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children menu-item-884 nv-active"><div class="wrap"><a><span class="menu-item-title-wrap dd-title">Opere</span></a><div role="button" aria-pressed="false" aria-label="Apri sottomenu" tabindex="0" class="caret-wrap caret 4" style="margin-left:5px;"><span class="caret"><svg fill="currentColor" aria-label="Menu a discesa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></div></div>
+<li id="menu-item-884" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children menu-item-884 nv-active"><div class="wrap"><a><span class="menu-item-title-wrap dd-title">Works</span></a><div role="button" aria-pressed="false" aria-label="Apri sottomenu" tabindex="0" class="caret-wrap caret 4" style="margin-left:5px;"><span class="caret"><svg fill="currentColor" aria-label="Menu a discesa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></div></div>
 <ul class="sub-menu">
-	<li id="menu-item-4509" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4509"><div class="wrap"><a href="/en/esperienze-giovanili-1964-1977-2/">1964-1977 Esperienze Giovanili</a></div></li>
-	<li id="menu-item-3892" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><div class="wrap"><a href="/en/astrazioni-simboliche-1978-1985/">1978-1985 Astrazioni Simboliche</a></div></li>
-	<li id="menu-item-4131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4131"><div class="wrap"><a href="/en/geometrie-elementari-1986-1997-2/">1986-1997 Geometrie Elementari</a></div></li>
-	<li id="menu-item-4226" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-4226 nv-active"><div class="wrap"><a><span class="menu-item-title-wrap dd-title">1998-2004 FIGURAZIONI RACCONTI</span></a><div role="button" aria-pressed="false" aria-label="Apri sottomenu" tabindex="0" class="caret-wrap caret 8" style="margin-left:5px;"><span class="caret"><svg fill="currentColor" aria-label="Menu a discesa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></div></div>
+	<li id="menu-item-4509" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4509"><div class="wrap"><a href="/en/esperienze-giovanili-1964-1977-2/">1964-1977 Youth Experiences</a></div></li>
+	<li id="menu-item-3892" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><div class="wrap"><a href="/en/astrazioni-simboliche-1978-1985/">1978-1985 Symbolic Abstractions</a></div></li>
+	<li id="menu-item-4131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4131"><div class="wrap"><a href="/en/geometrie-elementari-1986-1997-2/">1986-1997 Elementary Geometries</a></div></li>
+	<li id="menu-item-4226" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-4226 nv-active"><div class="wrap"><a><span class="menu-item-title-wrap dd-title">1998-2004 FIGURATIONS STORIES</span></a><div role="button" aria-pressed="false" aria-label="Apri sottomenu" tabindex="0" class="caret-wrap caret 8" style="margin-left:5px;"><span class="caret"><svg fill="currentColor" aria-label="Menu a discesa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></div></div>
 	<ul class="sub-menu">
-		<li id="menu-item-4228" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4228"><div class="wrap"><a href="/en/figurazioni-racconti-1998-2004-parte-prima/">PARTE PRIMA</a></div></li>
-		<li id="menu-item-4227" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4218 current_page_item menu-item-4227 nv-active"><div class="wrap"><a href="/en/figurazioni-racconti-1998-2004-parte-seconda/" aria-current="page">PARTE SECONDA</a></div></li>
+		<li id="menu-item-4228" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4228"><div class="wrap"><a href="/en/figurazioni-racconti-1998-2004-parte-prima/">PART ONE</a></div></li>
+		<li id="menu-item-4227" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4218 current_page_item menu-item-4227 nv-active"><div class="wrap"><a href="/en/figurazioni-racconti-1998-2004-parte-seconda/" aria-current="page">PART TWO</a></div></li>
 	</ul>
 </li>
-	<li id="menu-item-5001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5001"><div class="wrap"><a href="/en/1989-2003-disegni-collage/">1989-2003 Disegni Collage</a></div></li>
+	<li id="menu-item-5001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5001"><div class="wrap"><a href="/en/1989-2003-disegni-collage/">1989-2003 Collage Drawings</a></div></li>
 </ul>
 </li>
 <li id="menu-item-6874" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6874"><div class="wrap"><a href="/en/gallery/">Photo Gallery</a></div></li>
 <li id="menu-item-5958" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5958"><div class="wrap"><a>Lectures</a></div></li>
-<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><div class="wrap"><a href="/en/contact/">Contatti</a></div></li>
+<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><div class="wrap"><a href="/en/contact/">Contacts</a></div></li>
 </ul>	</div>
 </div>
 
@@ -529,7 +529,7 @@ and
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</span>
-					<span class="screen-reader-text">Menu di navigazione</span>
+					<span class="screen-reader-text">Navigation menu</span>
 	</button>
 </div> <!--.navbar-toggle-wrapper-->
 
@@ -551,7 +551,7 @@ and
 						<span class="icon-bar"></span>
 					</span>
 								<span class="screen-reader-text">
-			Menu di navigazione					</span>
+			Navigation menu					</span>
 			</button>
 		</div>
 					<div id="header-menu-sidebar-inner" class="header-menu-sidebar-inner tcb ">
@@ -561,7 +561,7 @@ and
 		
 <form role="search" method="get" class="search-form" action="/">
 	<label>
-		<span class="screen-reader-text">Ricerca per ...</span>
+		<span class="screen-reader-text">Search for ...</span>
 	</label>
 	<input type="search" class="search-field" aria-label="Cerca" placeholder="Ricerca per ..." value="" name="s">
 	<button type="submit" class="search-submit nv-submit" aria-label="Cerca">
@@ -582,23 +582,23 @@ and
 		<ul id="nv-primary-navigation-sidebar" class="primary-menu-ul nav-ul menu-mobile"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-51"><div class="wrap"><a href="/en/">Home</a></div></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><div class="wrap"><a href="/en/presentazione/">Presentation</a></div></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-189"><div class="wrap"><a href="/en/biografia/">Biography</a></div></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children menu-item-884 nv-active"><div class="wrap"><a><span class="menu-item-title-wrap dd-title">Opere</span></a><button tabindex="0" type="button" class="caret-wrap navbar-toggle 4 " style="margin-left:5px;" aria-label="Attiva/disattiva Opere"><span class="caret"><svg fill="currentColor" aria-label="Menu a discesa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></button></div>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children menu-item-884 nv-active"><div class="wrap"><a><span class="menu-item-title-wrap dd-title">Works</span></a><button tabindex="0" type="button" class="caret-wrap navbar-toggle 4 " style="margin-left:5px;" aria-label="Attiva/disattiva Opere"><span class="caret"><svg fill="currentColor" aria-label="Menu a discesa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></button></div>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4509"><div class="wrap"><a href="/en/esperienze-giovanili-1964-1977-2/">1964-1977 Esperienze Giovanili</a></div></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><div class="wrap"><a href="/en/astrazioni-simboliche-1978-1985/">1978-1985 Astrazioni Simboliche</a></div></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4131"><div class="wrap"><a href="/en/geometrie-elementari-1986-1997-2/">1986-1997 Geometrie Elementari</a></div></li>
-	<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-4226 nv-active"><div class="wrap"><a><span class="menu-item-title-wrap dd-title">1998-2004 FIGURAZIONI RACCONTI</span></a><button tabindex="0" type="button" class="caret-wrap navbar-toggle 8 " style="margin-left:5px;" aria-label="Attiva/disattiva 1998-2004 FIGURAZIONI RACCONTI"><span class="caret"><svg fill="currentColor" aria-label="Menu a discesa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></button></div>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4509"><div class="wrap"><a href="/en/esperienze-giovanili-1964-1977-2/">1964-1977 Youth Experiences</a></div></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><div class="wrap"><a href="/en/astrazioni-simboliche-1978-1985/">1978-1985 Symbolic Abstractions</a></div></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4131"><div class="wrap"><a href="/en/geometrie-elementari-1986-1997-2/">1986-1997 Elementary Geometries</a></div></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-4226 nv-active"><div class="wrap"><a><span class="menu-item-title-wrap dd-title">1998-2004 FIGURATIONS STORIES</span></a><button tabindex="0" type="button" class="caret-wrap navbar-toggle 8 " style="margin-left:5px;" aria-label="Attiva/disattiva 1998-2004 FIGURAZIONI RACCONTI"><span class="caret"><svg fill="currentColor" aria-label="Menu a discesa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></button></div>
 	<ul class="sub-menu">
-		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4228"><div class="wrap"><a href="/en/figurazioni-racconti-1998-2004-parte-prima/">PARTE PRIMA</a></div></li>
-		<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4218 current_page_item menu-item-4227 nv-active"><div class="wrap"><a href="/en/figurazioni-racconti-1998-2004-parte-seconda/" aria-current="page">PARTE SECONDA</a></div></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4228"><div class="wrap"><a href="/en/figurazioni-racconti-1998-2004-parte-prima/">PART ONE</a></div></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4218 current_page_item menu-item-4227 nv-active"><div class="wrap"><a href="/en/figurazioni-racconti-1998-2004-parte-seconda/" aria-current="page">PART TWO</a></div></li>
 	</ul>
 </li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5001"><div class="wrap"><a href="/en/1989-2003-disegni-collage/">1989-2003 Disegni Collage</a></div></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5001"><div class="wrap"><a href="/en/1989-2003-disegni-collage/">1989-2003 Collage Drawings</a></div></li>
 </ul>
 </li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6874"><div class="wrap"><a href="/en/gallery/">Photo Gallery</a></div></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5958"><div class="wrap"><a>Lectures</a></div></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><div class="wrap"><a href="/en/contact/">Contatti</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><div class="wrap"><a href="/en/contact/">Contacts</a></div></li>
 </ul>	</div>
 </div>
 
@@ -681,7 +681,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 <div id="linearossa" class="linearossa" align="right"></div></td>
 <td>
 <p style="text-align: left; margin-left: 0px;">1998 – 2004<br>
-<strong>FIGURAZIONI RACCONTI – parte seconda</strong></p>
+<strong>FIGURATIONS STORIES – part two</strong></p>
 </td>
 </tr>
 </tbody>
@@ -689,7 +689,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 				</div>
 				<div class="elementor-element elementor-element-edfbbfa elementor-widget elementor-widget-text-editor" data-id="edfbbfa" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<p>Piccole, leggere, quasi senza corpo, sono racconti per immagini, nel linguaggio senza tempo, universale della scultura. Realizzate in profilati e lamine di ottone lavorato a sbalzo, alcune sono figurazioni “astratto-geometriche”, altre, le più descrittive, le più figurative, sono “pensieri, suggestioni, emozioni” diventate scultura.</p>						</div>
+							<p>Small, light, almost bodyless, they are stories in images, in the timeless, universal language of sculpture. Made of embossed brass profiles and sheets, some are "abstract-geometric" figurations, others, the most descriptive, the most figurative, are "thoughts, suggestions, emotions" that have become sculptures.</p>						</div>
 				</div>
 					</div>
 		</div>
@@ -703,7 +703,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 				<div class="elementor-widget-container">
 			
       
-    <title>Schema</title>
+    <title>Scheme</title>
        <style>   
        
             .column_img {
@@ -1101,7 +1101,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-ea14977 titoli_opere elementor-widget elementor-widget-text-editor" data-id="ea14977" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<a href="/en/esperienze-giovanili-1964-1977-2/">Esperienze Giovanili<br>
+							<a href="/en/esperienze-giovanili-1964-1977-2/">Youth Experiences<br>
 1964-1977</a>						</div>
 				</div>
 					</div>
@@ -1114,7 +1114,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-4e315c6 titoli_opere elementor-widget elementor-widget-text-editor" data-id="4e315c6" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<a href="/en/astrazioni-simboliche-1978-1985/">Astrazioni Simboliche<br>
+							<a href="/en/astrazioni-simboliche-1978-1985/">Symbolic Abstractions<br>
 1978-1985</a>						</div>
 				</div>
 					</div>
@@ -1127,7 +1127,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-b19ed7d titoli_opere elementor-widget elementor-widget-text-editor" data-id="b19ed7d" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<a href="/en/geometrie-elementari-1986-1997-2/">Geometrie Elementari<br>
+							<a href="/en/geometrie-elementari-1986-1997-2/">Elementary Geometries<br>
 1986-1997</a>						</div>
 				</div>
 					</div>
@@ -1140,8 +1140,8 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-438fab2 titoli_opere elementor-widget elementor-widget-text-editor" data-id="438fab2" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<a href="/en/figurazioni-racconti-1998-2004-parte-prima/">Figurazioni
-Racconti<br>
+							<a href="/en/figurazioni-racconti-1998-2004-parte-prima/">Figurations 
+Stories<br>
 1998-2004 I</a>						</div>
 				</div>
 					</div>
@@ -1154,7 +1154,7 @@ Racconti<br>
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-0d02254 titoli_opere elementor-widget elementor-widget-text-editor" data-id="0d02254" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<a href="/en/1989-2003-disegni-collage/">Disegni<br>
+							<a href="/en/1989-2003-disegni-collage/">Drawings<br>
 Collage<br>
 1989-2003</a>						</div>
 				</div>
@@ -1185,7 +1185,7 @@ Collage<br>
 						<div class="elementor-element elementor-element-ecd66fd elementor-widget elementor-widget-image" data-id="ecd66fd" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 			<style>/*! elementor - v3.23.0 - 15-07-2024 */
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src\$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>											<a href="#cima">
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src\\\\\\\\$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>											<a href="#cima">
 							<img loading="lazy" decoding="async" width="98" height="38" src="/images/icona_in_alto.png" class="attachment-full size-full wp-image-5042" alt="alto">								</a>
 													</div>
 				</div>
@@ -1214,11 +1214,11 @@ Collage<br>
 				<div class="hfg-slot left"><div class="builder-item desktop-left tablet-left mobile-left"><div class="item--inner builder-item--footer-two-widgets" data-section="neve_sidebar-widgets-footer-two-widgets" data-item-id="footer-two-widgets">
 		<div class="widget-area">
 		<div id="block-22" class="widget widget_block widget_text">
-<p>Archivio Mastro Sculture&nbsp; -&nbsp;Viale A. Oriani 36,&nbsp;40137 Bologna -&nbsp;email: <a href="mailto:mastroronzo@gmail.com">mastroronzo@gmail.com</a> C.F. MSTRNZ49T30E205O</p>
+<p>Master Sculpture Archive - Viale A. Oriani 36, 40137 Bologna - email: <a href="mailto:mastroronzo@gmail.com">mastroronzo@gmail.com</a> Tax code MSTRNZ49T30E205O</p>
 </div>	</div>
 	</div>
 
-</div><div class="builder-item cr"><div class="item--inner"><div class="component-wrap"><div><p><a href="https://themeisle.com/themes/neve/" rel="nofollow">Neve</a> | Powered by <a href="https://wordpress.org" rel="nofollow">WordPress</a></p></div></div></div></div></div><div class="hfg-slot c-left"><div class="builder-item desktop-center tablet-left mobile-left"><div class="item--inner builder-item--footer-three-widgets" data-section="neve_sidebar-widgets-footer-three-widgets" data-item-id="footer-three-widgets">
+</div><div class="builder-item cr"><div class="item--inner"><div class="component-wrap"><div><p><a href="https://themeisle.com/themes/neve/" rel="nofollow">Snow</a> | Powered by <a href="https://wordpress.org" rel="nofollow">WordPress</a></p></div></div></div></div></div><div class="hfg-slot c-left"><div class="builder-item desktop-center tablet-left mobile-left"><div class="item--inner builder-item--footer-three-widgets" data-section="neve_sidebar-widgets-footer-three-widgets" data-item-id="footer-three-widgets">
 		<div class="widget-area">
 		<div id="block-11" class="widget widget_block">
 <ul class="wp-block-social-links alignright is-layout-flex wp-block-social-links-is-layout-flex"><li class="wp-social-link wp-social-link-facebook  wp-block-social-link"><a href="https://www.facebook.com" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 2C6.5 2 2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12c0-5.5-4.5-10-10-10z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Facebook</span></a></li>
@@ -1239,11 +1239,11 @@ Collage<br>
 				<div class="hfg-slot left"><div class="builder-item desktop-left tablet-left mobile-left"><div class="item--inner builder-item--footer-two-widgets" data-section="neve_sidebar-widgets-footer-two-widgets" data-item-id="footer-two-widgets">
 		<div class="widget-area">
 		<div id="block-22" class="widget widget_block widget_text">
-<p>Archivio Mastro Sculture&nbsp; -&nbsp;Viale A. Oriani 36,&nbsp;40137 Bologna -&nbsp;email: <a href="mailto:mastroronzo@gmail.com">mastroronzo@gmail.com</a> C.F. MSTRNZ49T30E205O</p>
+<p>Master Sculpture Archive - Viale A. Oriani 36, 40137 Bologna - email: <a href="mailto:mastroronzo@gmail.com">mastroronzo@gmail.com</a> Tax code MSTRNZ49T30E205O</p>
 </div>	</div>
 	</div>
 
-</div><div class="builder-item cr"><div class="item--inner"><div class="component-wrap"><div><p><a href="https://themeisle.com/themes/neve/" rel="nofollow">Neve</a> | Powered by <a href="https://wordpress.org" rel="nofollow">WordPress</a></p></div></div></div></div></div><div class="hfg-slot c-left"><div class="builder-item desktop-center tablet-left mobile-left"><div class="item--inner builder-item--footer-three-widgets" data-section="neve_sidebar-widgets-footer-three-widgets" data-item-id="footer-three-widgets">
+</div><div class="builder-item cr"><div class="item--inner"><div class="component-wrap"><div><p><a href="https://themeisle.com/themes/neve/" rel="nofollow">Snow</a> | Powered by <a href="https://wordpress.org" rel="nofollow">WordPress</a></p></div></div></div></div></div><div class="hfg-slot c-left"><div class="builder-item desktop-center tablet-left mobile-left"><div class="item--inner builder-item--footer-three-widgets" data-section="neve_sidebar-widgets-footer-three-widgets" data-item-id="footer-three-widgets">
 		<div class="widget-area">
 		<div id="block-11" class="widget widget_block">
 <ul class="wp-block-social-links alignright is-layout-flex wp-block-social-links-is-layout-flex"><li class="wp-social-link wp-social-link-facebook  wp-block-social-link"><a href="https://www.facebook.com" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 2C6.5 2 2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12c0-5.5-4.5-10-10-10z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Facebook</span></a></li>
@@ -1287,7 +1287,7 @@ Collage<br>
 
 
 ` }} />
-      <Script strategy="afterInteractive" src="/js/figurazioni-racconti-1998-2004-parte-seconda-logic.js" />
+      <Script strategy="afterInteractive" src="/js/en/figurazioni-racconti-1998-2004-parte-seconda-logic.js" />
     </div>
   );
 }
