@@ -14,7 +14,7 @@ export default function Page() {
     <MobileOpereGallery
       title="Disegni Collage 1989–2003"
       subtitle="Disegni e collage su carta"
-      images={[dcFeatured.src, ...dcImages]}
+      images={dcImages}
       captions={[{ title: dcFeatured.title, year: dcFeatured.year, material: dcFeatured.material, dimensions: dcFeatured.dimensions, code: dcFeatured.code }]}
       sectionLinks={sections}
     />

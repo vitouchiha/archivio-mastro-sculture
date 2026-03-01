@@ -11,6 +11,30 @@ e il progetto adotta il [Semantic Versioning](https://semver.org/lang/it/).
 
 ---
 
+## [1.3.2] – 2026-03-01
+
+### Aggiunto
+- **Striscia opere dark red** nella home mobile — 5 immagini in cornice bianca su sfondo `#6c0001` con titoli sezione, scorrimento orizzontale, link alle gallerie
+- **Sezione NOVITÀ** nella home mobile — copertina libro `libro_300px.jpg` + testo con badge, titolo "MASTRO SCULTURE", sottotitolo e descrizione del volume
+- **Sezione citazione** nella home mobile — immagine panoramica `riquadroHP_4.jpg` con overlay scuro, heading "TUTTO SUBITO E OGNI COSA A SUO TEMPO.", tre paragrafi in corsivo, firma "Oronzo Mastro"
+
+### Modificato
+- **Immagini gallerie in alta qualità** — tutte e 6 le gallerie opere ora usano le immagini HQ X-series dalla root `/images/` invece delle versioni ridotte nelle sottocartelle:
+  - Esperienze Giovanili: `EGX01.jpg`–`EGX25.jpg` (nomi irregolari preservati)
+  - Astrazioni Simboliche: `01ASX.jpg`–`28ASX.jpg`
+  - Geometrie Elementari: `GEX01.jpg`–`GEX28.jpg` (inclusi `GEX18B`, `GEX27B`)
+  - Figurazioni Racconti I: `FRX01.jpg`–`FRX28.jpg`
+  - Figurazioni Racconti II: `FX01.jpg`–`FX28.jpg`
+  - Disegni Collage: `DCX01.jpg`–`DCX28.jpg`
+- Card grid home mobile aggiornate con le stesse immagini HQ
+- Gallery pages: rimossa duplicazione dell'immagine in evidenza (era preposta a un array che già includeva la stessa immagine)
+- `galleries.ts` riscritto con array HQ uniformi; featured srcs aggiornati alla root
+
+### Corretto
+- Prima immagine duplicata nelle gallerie (featured + images[0] coincidevano dopo aggiornamento HQ)
+
+---
+
 ## [1.3.1] – 2026-03-01
 
 ### Aggiunto

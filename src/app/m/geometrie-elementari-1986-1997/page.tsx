@@ -14,7 +14,7 @@ export default function Page() {
     <MobileOpereGallery
       title="Geometrie Elementari 1986–1997"
       subtitle="Sculture geometriche e forme elementari"
-      images={[geFeatured.src, ...geImages]}
+      images={geImages}
       captions={[{ title: geFeatured.title, year: geFeatured.year, material: geFeatured.material, dimensions: geFeatured.dimensions, code: geFeatured.code }]}
       sectionLinks={sections}
     />

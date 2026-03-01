@@ -14,7 +14,7 @@ export default function Page() {
     <MobileOpereGallery
       title="Figurazioni Racconti 1998–2004 – Parte Prima"
       subtitle="Sculture e plastiche figurative"
-      images={[frFeatured.src, ...frImages]}
+      images={frImages}
       captions={[{ title: frFeatured.title, year: frFeatured.year, material: frFeatured.material, dimensions: frFeatured.dimensions, code: frFeatured.code }]}
       sectionLinks={sections}
     />

@@ -14,7 +14,7 @@ export default function Page() {
     <MobileOpereGallery
       title="Astrazioni Simboliche 1978–1985"
       subtitle="Sculture astratte e simboliche"
-      images={[asFeatured.src, ...asImages]}
+      images={asImages}
       captions={[{ title: asFeatured.title, year: asFeatured.year, material: asFeatured.material, dimensions: asFeatured.dimensions, code: asFeatured.code }]}
       sectionLinks={sections}
     />

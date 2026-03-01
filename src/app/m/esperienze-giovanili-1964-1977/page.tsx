@@ -14,7 +14,7 @@ export default function Page() {
     <MobileOpereGallery
       title="Esperienze Giovanili 1964–1977"
       subtitle="Sculture e plastiche del periodo giovanile"
-      images={[egFeatured.src, ...egImages]}
+      images={egImages}
       captions={[{ title: egFeatured.title, year: egFeatured.year, material: egFeatured.material, dimensions: egFeatured.dimensions, code: egFeatured.code }]}
       sectionLinks={sections}
     />

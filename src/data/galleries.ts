@@ -12,12 +12,37 @@ export const navLinks = [
 ]
 
 // ---- Esperienze Giovanili ----
-export const egImages = Array.from({ length: 25 }, (_, i) =>
-  `/images/2023/01/EG${String(i + 1).padStart(2, '0')}.jpg`
-)
+// HQ X-series (root /images/): irregular filenames: EGX02-1, EGX03-1, EGX04-1, EGX092
+export const egImages = [
+  '/images/EGX01.jpg',
+  '/images/EGX02-1.jpg',
+  '/images/EGX03-1.jpg',
+  '/images/EGX04-1.jpg',
+  '/images/EGX05.jpg',
+  '/images/EGX06.jpg',
+  '/images/EGX07.jpg',
+  '/images/EGX08.jpg',
+  '/images/EGX092.jpg',
+  '/images/EGX10.jpg',
+  '/images/EGX11.jpg',
+  '/images/EGX12.jpg',
+  '/images/EGX13.jpg',
+  '/images/EGX14.jpg',
+  '/images/EGX15.jpg',
+  '/images/EGX16.jpg',
+  '/images/EGX17.jpg',
+  '/images/EGX18.jpg',
+  '/images/EGX19.jpg',
+  '/images/EGX20.jpg',
+  '/images/EGX21.jpg',
+  '/images/EGX22.jpg',
+  '/images/EGX23.jpg',
+  '/images/EGX24.jpg',
+  '/images/EGX25.jpg',
+]
 
 export const egFeatured = {
-  src: '/images/2023/01/EGX01.jpg',
+  src: '/images/EGX01.jpg',
   title: 'Mal d\'Africa',
   year: '1964',
   material: 'terracotta patinata',
@@ -26,12 +51,13 @@ export const egFeatured = {
 }
 
 // ---- Astrazioni Simboliche ----
+// HQ X-series (root /images/): 01ASX.jpg … 28ASX.jpg
 export const asImages = Array.from({ length: 28 }, (_, i) =>
-  `/images/2023/04/${String(i + 1).padStart(2, '0')}AS.jpg`
+  `/images/${String(i + 1).padStart(2, '0')}ASX.jpg`
 )
 
 export const asFeatured = {
-  src: '/images/2023/04/01ASXa.jpg',
+  src: '/images/01ASX.jpg',
   title: 'Arco',
   year: '1980',
   material: 'bronzo',
@@ -40,14 +66,17 @@ export const asFeatured = {
 }
 
 // ---- Geometrie Elementari ----
+// HQ X-series (root /images/): GEX01-GEX28 (GEX18B and GEX27B for 18 and 27)
 export const geImages = [
-  ...Array.from({ length: 13 }, (_, i) => `/images/2023/04/GE${String(i + 1).padStart(2, '0')}.jpg`),
-  `/images/2023/05/GE14.jpg`,
-  ...Array.from({ length: 14 }, (_, i) => `/images/2023/04/GE${String(i + 15).padStart(2, '0')}.jpg`),
+  ...Array.from({ length: 17 }, (_, i) => `/images/GEX${String(i + 1).padStart(2, '0')}.jpg`),
+  '/images/GEX18B.jpg',
+  ...Array.from({ length: 8 }, (_, i) => `/images/GEX${String(i + 19).padStart(2, '0')}.jpg`),
+  '/images/GEX27B.jpg',
+  '/images/GEX28.jpg',
 ]
 
 export const geFeatured = {
-  src: '/images/2023/04/GEX01.jpg',
+  src: '/images/GEX01.jpg',
   title: 'Astratto simbolico – due',
   year: '1986–96',
   material: 'poliestere',
@@ -56,12 +85,13 @@ export const geFeatured = {
 }
 
 // ---- Figurazioni Racconti I ----
+// HQ X-series (root /images/): FRX01.jpg … FRX28.jpg
 export const frImages = Array.from({ length: 28 }, (_, i) =>
-  `/images/2023/04/FR${String(i + 1).padStart(2, '0')}.jpg`
+  `/images/FRX${String(i + 1).padStart(2, '0')}.jpg`
 )
 
 export const frFeatured = {
-  src: '/images/2023/04/FRX01a.jpg',
+  src: '/images/FRX01.jpg',
   title: 'Chiaro di luna',
   year: '1988',
   material: 'ottone',
@@ -70,12 +100,13 @@ export const frFeatured = {
 }
 
 // ---- Figurazioni Racconti II ----
+// HQ X-series (root /images/): FX01.jpg … FX28.jpg
 export const fImages = Array.from({ length: 28 }, (_, i) =>
-  `/images/2023/05/F${String(i + 1).padStart(2, '0')}.jpg`
+  `/images/FX${String(i + 1).padStart(2, '0')}.jpg`
 )
 
 export const fFeatured = {
-  src: '/images/2023/05/FX01a.jpg',
+  src: '/images/FX01.jpg',
   title: 'Astratto simbolico – quattro',
   year: '1999',
   material: 'ottone',
@@ -84,12 +115,13 @@ export const fFeatured = {
 }
 
 // ---- Disegni Collage ----
+// HQ X-series (root /images/): DCX01.jpg … DCX28.jpg
 export const dcImages = Array.from({ length: 28 }, (_, i) =>
-  `/images/2023/05/DC${String(i + 1).padStart(2, '0')}.jpg`
+  `/images/DCX${String(i + 1).padStart(2, '0')}.jpg`
 )
 
 export const dcFeatured = {
-  src: '/images/2023/05/DCX01.jpg',
+  src: '/images/DCX01.jpg',
   title: 'Scala',
   year: '1995',
   material: 'matita su carta',
