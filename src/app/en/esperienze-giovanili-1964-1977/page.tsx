@@ -1,8 +1,9 @@
 import React from 'react';
+import Script from 'next/script';
 
-export default function Pagegallery() {
+export default function Pageesperienzegiovanili19641977() {
   return (
-    <div className="wp-singular page-template page-template-page-templates page-template-template-pagebuilder-full-width page-template-page-templatestemplate-pagebuilder-full-width-php page page-id-5821 wp-theme-neve  nv-blog-default nv-sidebar-full-width menu_sidebar_slide_left elementor-default elementor-kit-14 elementor-page elementor-page-5821 nv-template">
+    <div className="wp-singular page-template page-template-page-templates page-template-template-pagebuilder-full-width page-template-page-templatestemplate-pagebuilder-full-width-php page page-id-2169 wp-theme-neve  nv-blog-default nv-sidebar-full-width menu_sidebar_slide_left elementor-default elementor-kit-14 elementor-page elementor-page-2169 nv-template">
       <div dangerouslySetInnerHTML={{ __html: `<style id="wp-img-auto-sizes-contain-inline-css">
 img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 /*# sourceURL=wp-img-auto-sizes-contain-inline-css */
@@ -56,7 +57,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <link rel="stylesheet" id="swiper-css" href="/css/swiper.min.css" media="all">
 <link rel="stylesheet" id="elementor-post-14-css" href="/css/post-14.css" media="all">
 <link rel="stylesheet" id="elementor-global-css" href="/css/global.css" media="all">
-<link rel="stylesheet" id="elementor-post-5821-css" href="/css/post-5821.css" media="all">
+<link rel="stylesheet" id="elementor-post-2169-css" href="/css/post-2169.css" media="all">
 <link rel="stylesheet" id="neve-google-font-montserrat-css" href="/css/css_1.css" media="all">
 <link rel="stylesheet" id="neve-google-font-poppins-css" href="/css/css_2.css" media="all">
 <link rel="stylesheet" id="google-fonts-1-css" href="/css/css.css" media="all">
@@ -465,33 +466,33 @@ and
 				<div class="hfg-slot left"><div class="builder-item desktop-left"><div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
 	
 <div class="site-logo">
-	<a class="brand" href="/" aria-label="ARCHIVIO MASTRO SCULTURE" rel="home"><div class="title-with-logo"><img width="200" height="126" src="/images/cropped-logo3.png" class="neve-site-logo skip-lazy" alt="logo3" data-variant="logo" decoding="async"><div class="nv-title-tagline-wrap"></div></div></a></div>
+	<a class="brand" href="/en/" aria-label="ARCHIVIO MASTRO SCULTURE" rel="home"><div class="title-with-logo"><img width="200" height="126" src="/images/cropped-logo3.png" class="neve-site-logo skip-lazy" alt="logo3" data-variant="logo" decoding="async"><div class="nv-title-tagline-wrap"></div></div></a></div>
 	</div>
 
 </div></div><div class="hfg-slot center"><div class="builder-item has-nav"><div class="item--inner builder-item--primary-menu has_menu" data-section="header_menu_primary" data-item-id="primary-menu">
 	<div class="nv-nav-wrap">
 	<div role="navigation" class="nav-menu-primary" aria-label="Menu principale">
 
-		<ul id="nv-primary-navigation-main" class="primary-menu-ul nav-ul menu-desktop"><li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-51"><div class="wrap"><a href="/">Home</a></div></li>
-<li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><div class="wrap"><a href="/presentazione/">Presentazione</a></div></li>
-<li id="menu-item-189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-189"><div class="wrap"><a href="/biografia/">Biografia</a></div></li>
-<li id="menu-item-884" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-884"><div class="wrap"><a><span class="menu-item-title-wrap dd-title">Opere</span></a><div role="button" aria-pressed="false" aria-label="Apri sottomenu" tabindex="0" class="caret-wrap caret 4" style="margin-left:5px;"><span class="caret"><svg fill="currentColor" aria-label="Menu a discesa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></div></div>
+		<ul id="nv-primary-navigation-main" class="primary-menu-ul nav-ul menu-desktop"><li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-51"><div class="wrap"><a href="/en/">Home</a></div></li>
+<li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><div class="wrap"><a href="/en/presentazione/">Presentation</a></div></li>
+<li id="menu-item-189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-189"><div class="wrap"><a href="/en/biografia/">Biography</a></div></li>
+<li id="menu-item-884" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-884 nv-active"><div class="wrap"><a><span class="menu-item-title-wrap dd-title">Opere</span></a><div role="button" aria-pressed="false" aria-label="Apri sottomenu" tabindex="0" class="caret-wrap caret 4" style="margin-left:5px;"><span class="caret"><svg fill="currentColor" aria-label="Menu a discesa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></div></div>
 <ul class="sub-menu">
-	<li id="menu-item-4509" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4509"><div class="wrap"><a href="/esperienze-giovanili-1964-1977-2/">1964-1977 Esperienze Giovanili</a></div></li>
-	<li id="menu-item-3892" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><div class="wrap"><a href="/astrazioni-simboliche-1978-1985/">1978-1985 Astrazioni Simboliche</a></div></li>
-	<li id="menu-item-4131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4131"><div class="wrap"><a href="/geometrie-elementari-1986-1997-2/">1986-1997 Geometrie Elementari</a></div></li>
+	<li id="menu-item-4509" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2169 current_page_item menu-item-4509 nv-active"><div class="wrap"><a href="/en/esperienze-giovanili-1964-1977-2/" aria-current="page">1964-1977 Esperienze Giovanili</a></div></li>
+	<li id="menu-item-3892" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><div class="wrap"><a href="/en/astrazioni-simboliche-1978-1985/">1978-1985 Astrazioni Simboliche</a></div></li>
+	<li id="menu-item-4131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4131"><div class="wrap"><a href="/en/geometrie-elementari-1986-1997-2/">1986-1997 Geometrie Elementari</a></div></li>
 	<li id="menu-item-4226" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4226"><div class="wrap"><a><span class="menu-item-title-wrap dd-title">1998-2004 FIGURAZIONI RACCONTI</span></a><div role="button" aria-pressed="false" aria-label="Apri sottomenu" tabindex="0" class="caret-wrap caret 8" style="margin-left:5px;"><span class="caret"><svg fill="currentColor" aria-label="Menu a discesa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></div></div>
 	<ul class="sub-menu">
-		<li id="menu-item-4228" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4228"><div class="wrap"><a href="/figurazioni-racconti-1998-2004-parte-prima/">PARTE PRIMA</a></div></li>
-		<li id="menu-item-4227" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4227"><div class="wrap"><a href="/figurazioni-racconti-1998-2004-parte-seconda/">PARTE SECONDA</a></div></li>
+		<li id="menu-item-4228" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4228"><div class="wrap"><a href="/en/figurazioni-racconti-1998-2004-parte-prima/">PARTE PRIMA</a></div></li>
+		<li id="menu-item-4227" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4227"><div class="wrap"><a href="/en/figurazioni-racconti-1998-2004-parte-seconda/">PARTE SECONDA</a></div></li>
 	</ul>
 </li>
-	<li id="menu-item-5001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5001"><div class="wrap"><a href="/1989-2003-disegni-collage/">1989-2003 Disegni Collage</a></div></li>
+	<li id="menu-item-5001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5001"><div class="wrap"><a href="/en/1989-2003-disegni-collage/">1989-2003 Disegni Collage</a></div></li>
 </ul>
 </li>
-<li id="menu-item-6874" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-5821 current_page_item menu-item-6874 nv-active"><div class="wrap"><a href="/gallery/" aria-current="page">Photo Gallery</a></div></li>
-<li id="menu-item-5958" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5958"><div class="wrap"><a>Dispense</a></div></li>
-<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><div class="wrap"><a href="/contact/">Contatti</a></div></li>
+<li id="menu-item-6874" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6874"><div class="wrap"><a href="/en/gallery/">Photo Gallery</a></div></li>
+<li id="menu-item-5958" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5958"><div class="wrap"><a>Lectures</a></div></li>
+<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><div class="wrap"><a href="/en/contact/">Contatti</a></div></li>
 </ul>	</div>
 </div>
 
@@ -516,7 +517,7 @@ and
 				<div class="hfg-slot left"><div class="builder-item tablet-left mobile-left"><div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
 	
 <div class="site-logo">
-	<a class="brand" href="/" aria-label="ARCHIVIO MASTRO SCULTURE" rel="home"><div class="title-with-logo"><img width="200" height="126" src="/images/cropped-logo3.png" class="neve-site-logo skip-lazy" alt="logo3" data-variant="logo" decoding="async"><div class="nv-title-tagline-wrap"></div></div></a></div>
+	<a class="brand" href="/en/" aria-label="ARCHIVIO MASTRO SCULTURE" rel="home"><div class="title-with-logo"><img width="200" height="126" src="/images/cropped-logo3.png" class="neve-site-logo skip-lazy" alt="logo3" data-variant="logo" decoding="async"><div class="nv-title-tagline-wrap"></div></div></a></div>
 	</div>
 
 </div></div><div class="hfg-slot right"><div class="builder-item tablet-left mobile-left"><div class="item--inner builder-item--nav-icon" data-section="header_menu_icon" data-item-id="nav-icon">
@@ -577,26 +578,26 @@ and
 	<div class="nv-nav-wrap">
 	<div role="navigation" class="nav-menu-primary" aria-label="Menu principale">
 
-		<ul id="nv-primary-navigation-sidebar" class="primary-menu-ul nav-ul menu-mobile"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-51"><div class="wrap"><a href="/">Home</a></div></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><div class="wrap"><a href="/presentazione/">Presentazione</a></div></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-189"><div class="wrap"><a href="/biografia/">Biografia</a></div></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-884"><div class="wrap"><a><span class="menu-item-title-wrap dd-title">Opere</span></a><button tabindex="0" type="button" class="caret-wrap navbar-toggle 4 " style="margin-left:5px;" aria-label="Attiva/disattiva Opere"><span class="caret"><svg fill="currentColor" aria-label="Menu a discesa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></button></div>
+		<ul id="nv-primary-navigation-sidebar" class="primary-menu-ul nav-ul menu-mobile"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-51"><div class="wrap"><a href="/en/">Home</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><div class="wrap"><a href="/en/presentazione/">Presentation</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-189"><div class="wrap"><a href="/en/biografia/">Biography</a></div></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-884 nv-active"><div class="wrap"><a><span class="menu-item-title-wrap dd-title">Opere</span></a><button tabindex="0" type="button" class="caret-wrap navbar-toggle 4 " style="margin-left:5px;" aria-label="Attiva/disattiva Opere"><span class="caret"><svg fill="currentColor" aria-label="Menu a discesa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></button></div>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4509"><div class="wrap"><a href="/esperienze-giovanili-1964-1977-2/">1964-1977 Esperienze Giovanili</a></div></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><div class="wrap"><a href="/astrazioni-simboliche-1978-1985/">1978-1985 Astrazioni Simboliche</a></div></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4131"><div class="wrap"><a href="/geometrie-elementari-1986-1997-2/">1986-1997 Geometrie Elementari</a></div></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2169 current_page_item menu-item-4509 nv-active"><div class="wrap"><a href="/en/esperienze-giovanili-1964-1977-2/" aria-current="page">1964-1977 Esperienze Giovanili</a></div></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><div class="wrap"><a href="/en/astrazioni-simboliche-1978-1985/">1978-1985 Astrazioni Simboliche</a></div></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4131"><div class="wrap"><a href="/en/geometrie-elementari-1986-1997-2/">1986-1997 Geometrie Elementari</a></div></li>
 	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4226"><div class="wrap"><a><span class="menu-item-title-wrap dd-title">1998-2004 FIGURAZIONI RACCONTI</span></a><button tabindex="0" type="button" class="caret-wrap navbar-toggle 8 " style="margin-left:5px;" aria-label="Attiva/disattiva 1998-2004 FIGURAZIONI RACCONTI"><span class="caret"><svg fill="currentColor" aria-label="Menu a discesa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></button></div>
 	<ul class="sub-menu">
-		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4228"><div class="wrap"><a href="/figurazioni-racconti-1998-2004-parte-prima/">PARTE PRIMA</a></div></li>
-		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4227"><div class="wrap"><a href="/figurazioni-racconti-1998-2004-parte-seconda/">PARTE SECONDA</a></div></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4228"><div class="wrap"><a href="/en/figurazioni-racconti-1998-2004-parte-prima/">PARTE PRIMA</a></div></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4227"><div class="wrap"><a href="/en/figurazioni-racconti-1998-2004-parte-seconda/">PARTE SECONDA</a></div></li>
 	</ul>
 </li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5001"><div class="wrap"><a href="/1989-2003-disegni-collage/">1989-2003 Disegni Collage</a></div></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5001"><div class="wrap"><a href="/en/1989-2003-disegni-collage/">1989-2003 Disegni Collage</a></div></li>
 </ul>
 </li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-5821 current_page_item menu-item-6874 nv-active"><div class="wrap"><a href="/gallery/" aria-current="page">Photo Gallery</a></div></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5958"><div class="wrap"><a>Dispense</a></div></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><div class="wrap"><a href="/contact/">Contatti</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6874"><div class="wrap"><a href="/en/gallery/">Photo Gallery</a></div></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5958"><div class="wrap"><a>Lectures</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><div class="wrap"><a href="/en/contact/">Contatti</a></div></li>
 </ul>	</div>
 </div>
 
@@ -604,7 +605,7 @@ and
 
 </div><div class="builder-item desktop-left tablet-left mobile-left"><div class="item--inner builder-item--button_base" data-section="header_button" data-item-id="button_base">
 	<div class="component-wrap">
-	<a href="/contact/" class="button button-primary">Contact Now</a>
+	<a href="/en/?pagename=contact" class="button button-primary">Contact Now</a>
 </div>
 	</div>
 
@@ -620,7 +621,7 @@ and
 	
 	<main id="content" class="neve-main">
 
-		<div data-elementor-type="wp-page" data-elementor-id="5821" class="elementor elementor-5821">
+		<div data-elementor-type="wp-page" data-elementor-id="2169" class="elementor elementor-2169">
 						<section class="elementor-section elementor-top-section elementor-element elementor-element-02ed1ac elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="02ed1ac" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7049e41" data-id="7049e41" data-element_type="column">
@@ -647,7 +648,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d1a7fd5" data-id="d1a7fd5" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-6bdd32f elementor-widget elementor-widget-spacer" data-id="6bdd32f" data-element_type="widget" data-widget_type="spacer.default">
+						<div class="elementor-element elementor-element-18d38e2 elementor-widget elementor-widget-spacer" data-id="18d38e2" data-element_type="widget" data-widget_type="spacer.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-spacer">
 			<div class="elementor-spacer-inner"></div>
@@ -662,7 +663,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-80b3b2a" data-id="80b3b2a" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-0e9e846 elementor-widget elementor-widget-spacer" data-id="0e9e846" data-element_type="widget" data-widget_type="spacer.default">
+						<div class="elementor-element elementor-element-8c29c84 elementor-widget elementor-widget-spacer" data-id="8c29c84" data-element_type="widget" data-widget_type="spacer.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-spacer">
 			<div class="elementor-spacer-inner"></div>
@@ -678,8 +679,8 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 <td>
 <div id="linearossa" class="linearossa" align="right"></div></td>
 <td>
-<p style="text-align: left; margin-left: -15px;">1964-2014-2024<br><strong> 
-ALTRE OPERE ALTRE COSE</strong></p>
+<p style="text-align: left; margin-left: -15px;">1964 – 1977<br>
+<strong>ESPERIENZE GIOVANILI</strong></p>
 </td>
 </tr>
 </tbody>
@@ -687,13 +688,14 @@ ALTRE OPERE ALTRE COSE</strong></p>
 				</div>
 				<div class="elementor-element elementor-element-edfbbfa elementor-widget elementor-widget-text-editor" data-id="edfbbfa" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<table class=" alignleft">
+							<table>
 <tbody>
 <tr>
 <td>
-<div id="linearossa2" class="linearossa2" align="right"></div></td>
+<div id="linearossa" class="linearossa2" align="right"></div></td>
 <td>
-<p style="margin-left: -15px;">In questa foto-raccolta, oltre a nuove opere in archivio, troveranno spazio altre esperienze professionali e di laboratorio, quali la fotografia, la ceramica, il designer ed altre attività progettuali. </p>
+<p style="text-align: left; margin-left: -15px;">Sono opere in legno, in ceramica e in bronzo, realizzate negli anni delle prime esperienze professionali e artistiche.
+Raccontano un vissuto creativo aperto all’arte della ceramica, della lavorazione del legno e del metallo.</p>
 </td>
 </tr>
 </tbody>
@@ -729,42 +731,30 @@ ALTRE OPERE ALTRE COSE</strong></p>
                 align-items: center;
                 border: 4px solid #777777;
             }
-            
-            .testoquadro {
-                width: 625px;
-                height: 140px;
-                text-align: left;
-                line-height: 14px;
-                color: white;
-                font-size: 13px;
-                font-family: Arial, Helvetica, sans-serif;
-                
-                margin-top: -130px;
-                margin-left: 205px;
-                margin-bottom: 20px;
-            }
 
             .testosx {
-                margin-top: -110px;
-                margin-left: -37px;
+                margin-top: -100px;
                 text-align: left;
-                line-height: 14px;
+                line-height: 12px;
                 color: white;
-                font-size: 13px;
+                font-size: 12px;
                 font-family: Arial, Helvetica, sans-serif;
-                width: 610px;
-                height: 140px;
+                width: 290px;
+                height: 150px;
+                margin-left: 130px;
             }
 
             .testodx {
-                margin-top: -110px; 
-                margin-left: -125px; 
-                line-height: 14px;
+                margin-top: -100px;
+                margin-right: -5px;
+                line-height: 12px;
                 color: white;
                 text-align: right;
+                font-size: 12px;
                 font-family: Arial, Helvetica, sans-serif;
-                width: 130px;
-                height: 140px;
+                width: 340px;
+                height: 150px;
+                margin-right: 125px;
             }
 
             .linearossa {
@@ -777,16 +767,6 @@ ALTRE OPERE ALTRE COSE</strong></p>
                 
             }
             
-             .linearossa_didascalia {
-                margin-left: 203px;
-                width:10px; /*width of your image*/
-                height:48px; /*height of your image*/
-                align-content: right;
-                background-image:url('images/linea-rossa.jpg');
-                
-            }
-            
-            
             .linearossa2 {
                 margin-top: -25px;
                 width:10px; /*width of your image*/
@@ -796,7 +776,7 @@ ALTRE OPERE ALTRE COSE</strong></p>
             }
 
             p7 {
-                font-size: 10px;
+                font-size: 8px;
                 line-height: 8px;
             }
 
@@ -828,8 +808,7 @@ ALTRE OPERE ALTRE COSE</strong></p>
                 align-items: left;
                 height: 80px;
                 width: 80px;
-                margin-left: -5px;
-                opacity: 1;
+                
 
             }
             
@@ -846,7 +825,7 @@ ALTRE OPERE ALTRE COSE</strong></p>
             
             .freccie {
                 margin-right: 7px;
-     		    margin-left: 7px;
+                margin-left: 7px;
                 margin-top: 10px;
                 width:20px;
                 
@@ -864,99 +843,99 @@ ALTRE OPERE ALTRE COSE</strong></p>
                             <tbody><tr height="80px" padding="0px" margin="0px" border="0px">
                                 <td>
                                     <div class="column_img" id="1" onclick="myBorder('1')">
-                                        <img decoding="async" src="/images/PG01X.jpg" style="display:none;" id="img1" alt="01">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG01.jpg" onclick="myFunction('img1');">
+                                        <img decoding="async" src="/images/EGX01.jpg" style="display:none;" id="img1" alt="01">
+                                        <img decoding="async" style="width: 80px;" src="/images/EG01.jpg" onclick="myFunction('img1');">
                                     </div>
                                        
                                 </td>
                                 <td>
                                     <div class="column_img" id="2" onclick="myBorder('2')">   
-										<img decoding="async" src="/images/PG02X.jpg" style="display:none;" id="img2" alt="02">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG02.jpg" onclick="myFunction('img2');">
+										<img decoding="async" src="/images/EGX02-1.jpg" style="display:none;" id="img2" alt="02">
+                                        <img decoding="async" style="width: 80px;" src="/images/EG02.jpg" onclick="myFunction('img2');">
                                     </div>
                                 </td>
                             </tr>
                             <tr height="80px" padding="0px" margin="0px" border="0px">
                                 <td>
                                     <div class="column_img" id="3" onclick="myBorder('3')">   
-										<img decoding="async" src="/images/PG03X.jpg" style="display:none;" id="img3" alt="03" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG03.jpg" onclick="myFunction('img3');">
+										<img decoding="async" src="/images/EGX03-1.jpg" style="display:none;" id="img3" alt="03" onclick="myFunction(this);">
+                                        <img decoding="async" style="width: 80px;" src="/images/EG03.jpg" onclick="myFunction('img3');">
                                     </div>
                                 </td>
                                 <td>
                                     <div class="column_img" id="4" onclick="myBorder('4')">   
-										<img decoding="async" src="/images/PG04X.jpg" style="display:none;" id="img4" alt="04" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG04.jpg" onclick="myFunction('img4');">
+										<img decoding="async" src="/images/EGX04-1.jpg" style="display:none;" id="img4" alt="04" onclick="myFunction(this);">
+                                        <img decoding="async" style="width: 80px;" src="/images/EG04.jpg" onclick="myFunction('img4');">
                                     </div>
                                 </td>
                             </tr>
                             <tr height="80px" padding="0px" margin="0px" border="0px">
                                 <td>
                                     <div class="column_img" id="5" onclick="myBorder('5')"> 
-										<img decoding="async" src="/images/PG05X.jpg" style="display:none;" id="img5" alt="05" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG05.jpg" onclick="myFunction('img5');">
+										<img decoding="async" src="/images/EGX05.jpg" style="display:none;" id="img5" alt="05" onclick="myFunction(this);">
+                                        <img decoding="async" style="width: 80px;" src="/images/EG05.jpg" onclick="myFunction('img5');">
                                     </div>
                                 </td>
                                 <td>
                                     <div class="column_img" id="6" onclick="myBorder('6')">
-                                        <img decoding="async" src="/images/PG06X.jpg" style="display:none;" id="img6" alt="06" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG06.jpg" onclick="myFunction('img6');">
+                                        <img decoding="async" src="/images/EGX06.jpg" style="display:none;" id="img6" alt="06" onclick="myFunction(this);">
+                                        <img decoding="async" style="width: 80px;" src="/images/EG06.jpg" onclick="myFunction('img6');">
                                     </div>
                                 </td>
                             </tr>
                             <tr height="80px" padding="0px" margin="0px" border="0px">
                                 <td>
                                     <div class="column_img" id="7" onclick="myBorder('7')">
-                                        <img decoding="async" src="/images/PG07X.jpg" style="display:none;" id="img7" alt="07" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG07.jpg" onclick="myFunction('img7');">
+                                        <img decoding="async" src="/images/EGX07.jpg" style="display:none;" id="img7" alt="07" onclick="myFunction(this);">
+                                        <img decoding="async" style="width: 80px;" src="/images/EG07.jpg" onclick="myFunction('img7');">
                                     </div>
                                 </td>
                                 <td>
                                     <div class="column_img" id="8" onclick="myBorder('8')">
-                                        <img decoding="async" src="/images/PG08X.jpg" style="display:none;" id="img8" alt="08" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG08.jpg" onclick="myFunction('img8');">
+                                        <img decoding="async" src="/images/EGX08.jpg" style="display:none;" id="img8" alt="08" onclick="myFunction(this);">
+                                        <img decoding="async" style="width: 80px;" src="/images/EG08.jpg" onclick="myFunction('img8');">
                                     </div>
                                 </td>
                             </tr>
                             <tr height="80px" padding="0px" margin="0px" border="0px">
                                 <td>
                                     <div class="column_img" id="9" onclick="myBorder('9')">
-                                        <img decoding="async" src="/images/PG09X.jpg" style="display:none;" id="img9" alt="09" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG09.jpg" onclick="myFunction('img9');">
+                                        <img decoding="async" src="/images/EGX092.jpg" style="display:none;" id="img9" alt="09" onclick="myFunction(this);">
+                                        <img decoding="async" style="width: 80px;" src="/images/EG09.jpg" onclick="myFunction('img9');">
                                     </div>
                                 </td>
                                 <td>
                                     <div class="column_img" id="10" onclick="myBorder('10')">
-                                        <img decoding="async" src="/images/PG10X.jpg" style="display:none;" id="img10" alt="10" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG10.jpg" onclick="myFunction('img10');">
+                                        <img decoding="async" src="/images/EGX10.jpg" style="display:none;" id="img10" alt="10" onclick="myFunction(this);">
+                                        <img decoding="async" style="width: 80px;" src="/images/EG10.jpg" onclick="myFunction('img10');">
                                     </div>
                                 </td>
                             </tr>
                             <tr height="80px" padding="0px" margin="0px" border="0px">
                                 <td>
                                     <div class="column_img" id="11" onclick="myBorder('11')">
-                                        <img decoding="async" src="/images/PG11X.jpg" style="display:none;" id="img11" alt="11" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG11.jpg" onclick="myFunction('img11');">
+                                        <img decoding="async" src="/images/EGX11.jpg" style="display:none;" id="img11" alt="11" onclick="myFunction(this);">
+                                        <img decoding="async" style="width: 80px;" src="/images/EG11.jpg" onclick="myFunction('img11');">
                                     </div>
                                 </td>
                                 <td>
                                     <div class="column_img" id="12" onclick="myBorder('12')">
-                                        <img decoding="async" src="/images/PG12X.jpg" style="display:none;" id="img12" alt="12" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG12.jpg" onclick="myFunction('img12');">
+                                        <img decoding="async" src="/images/EGX12.jpg" style="display:none;" id="img12" alt="12" onclick="myFunction(this);">
+                                        <img decoding="async" style="width: 80px;" src="/images/EG12.jpg" onclick="myFunction('img12');">
                                     </div>
                                 </td>
                             </tr>
                             <tr height="80px" padding="0px" margin="0px" border="0px">
                                 <td>
                                     <div class="column_img" id="13" onclick="myBorder('13')">
-                                        <img decoding="async" src="/images/PG13X.jpg" style="display:none;" id="img13" alt="13" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG13.jpg" onclick="myFunction('img13');">
+                                        <img decoding="async" src="/images/EGX13.jpg" style="display:none;" id="img13" alt="13" onclick="myFunction(this);">
+                                        <img decoding="async" style="width: 80px;" src="/images/EG13.jpg" onclick="myFunction('img13');">
                                     </div>
                                 </td>
                                 <td>
                                     <div class="column_img" id="14" onclick="myBorder('14')">
-                                        <img decoding="async" src="/images/PG14X.jpg" style="display:none;" id="img14" alt="14" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG14.jpg" onclick="myFunction('img14');">
+                                        <img decoding="async" src="/images/EGX14.jpg" style="display:none;" id="img14" alt="14" onclick="myFunction(this);">
+                                        <img decoding="async" style="width: 80px;" src="/images/EG14.jpg" onclick="myFunction('img14');">
                                     </div>
                                 </td>
                             </tr>
@@ -984,77 +963,78 @@ ALTRE OPERE ALTRE COSE</strong></p>
                             <tbody><tr height="80px" padding="0px" margin="0px" border="0px">
                                 <td>
                                     <div class="column_img" id="15" onclick="myBorder('15')">
-                                        <img decoding="async" src="/images/PG15X.jpg" style="display:none;" id="img15" alt="15" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG15.jpg" onclick="myFunction('img15');">
+                                        <img decoding="async" src="/images/EGX15.jpg" style="display:none;" id="img15" alt="15" onclick="myFunction(this);">
+                                        <img decoding="async" style="width: 80px;" src="/images/EG15.jpg" onclick="myFunction('img15');">
                                     </div>
                                 </td>
                                 <td>
                                     <div class="column_img" id="16" onclick="myBorder('16')">
-                                        <img decoding="async" src="/images/PG16X.jpg" style="display:none;" id="img16" alt="16" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG16.jpg" onclick="myFunction('img16');">
+                                        <img decoding="async" src="/images/EGX16.jpg" style="display:none;" id="img16" alt="16" onclick="myFunction(this);">
+                                        <img decoding="async" style="width: 80px;" src="/images/EG16.jpg" onclick="myFunction('img16');">
                                     </div>
                                 </td>
                             </tr>
                             <tr height="80px" padding="0px" margin="0px" border="0px">
                                 <td>
                                     <div class="column_img" id="17" onclick="myBorder('17')">
-                                        <img decoding="async" src="/images/PG17X.jpg" style="display:none;" id="img17" alt="17" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG17.jpg" onclick="myFunction('img17');">
+                                        <img decoding="async" src="/images/EGX17.jpg" style="display:none;" id="img17" alt="17" onclick="myFunction(this);">
+                                        <img decoding="async" style="width: 80px;" src="/images/EG17.jpg" onclick="myFunction('img17');">
                                     </div>
                                 </td>
                                 <td>
                                     <div class="column_img" id="18" onclick="myBorder('18')">
-                                        <img decoding="async" src="/images/PG18X.jpg" style="display:none;" id="img18" alt="18" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG18.jpg" onclick="myFunction('img18');">
+                                        <img decoding="async" src="/images/EGX18.jpg" style="display:none;" id="img18" alt="18" onclick="myFunction(this);">
+                                        <img decoding="async" style="width: 80px;" src="/images/EG18.jpg" onclick="myFunction('img18');">
                                     </div>
                                 </td>
                             </tr>
                             <tr height="80px" padding="0px" margin="0px" border="0px">
                                 <td>
                                     <div class="column_img" id="19" onclick="myBorder('19')">
-                                        <img decoding="async" src="/images/PG19X.jpg" style="display:none;" id="img19" alt="19" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG19.jpg" onclick="myFunction('img19');">
+                                        <img decoding="async" src="/images/EGX19.jpg" style="display:none;" id="img19" alt="19" onclick="myFunction(this);">
+                                        <img decoding="async" style="width: 80px;" src="/images/EG19.jpg" onclick="myFunction('img19');">
                                     </div>
                                 </td>
                                 <td>
                                     <div class="column_img" id="20" onclick="myBorder('20')">
-                                        <img decoding="async" src="/images/PG20X.jpg" style="display:none;" id="img20" alt="20" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG20.jpg" onclick="myFunction('img20');">
+                                        <img decoding="async" src="/images/EGX20.jpg" style="display:none;" id="img20" alt="20" onclick="myFunction(this);">
+                                        <img decoding="async" style="width: 80px;" src="/images/EG20.jpg" onclick="myFunction('img20');">
                                     </div>
                                 </td>
                             </tr>
                             <tr height="80px" padding="0px" margin="0px" border="0px">
                                 <td>
                                     <div class="column_img" id="21" onclick="myBorder('21')">
-                                        <img decoding="async" src="/images/PG21X.jpg" style="display:none;" id="img21" alt="21" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG21.jpg" onclick="myFunction('img21');">
+                                        <img decoding="async" src="/images/EGX21.jpg" style="display:none;" id="img21" alt="21" onclick="myFunction(this);">
+                                        <img decoding="async" style="width: 80px;" src="/images/EG21.jpg" onclick="myFunction('img21');">
                                     </div>
                                 </td>
                                 <td>
                                     <div class="column_img" id="22" onclick="myBorder('22')">
-                                        <img decoding="async" src="/images/PG22X.jpg" style="display:none;" id="img22" alt="22" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG22.jpg" onclick="myFunction('img22');">
+                                        <img decoding="async" src="/images/EGX22.jpg" style="display:none;" id="img22" alt="22" onclick="myFunction(this);">
+                                        <img decoding="async" style="width: 80px;" src="/images/EG22.jpg" onclick="myFunction('img22');">
                                     </div>
                                 </td>
                             </tr>
                             <tr height="80px" padding="0px" margin="0px" border="0px">
                                 <td>
                                     <div class="column_img" id="23" onclick="myBorder('23')">
-                                        <img decoding="async" src="/images/PG23X.jpg" style="display:none;" id="img23" alt="23" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG23.jpg" onclick="myFunction('img23');">
+                                        <img decoding="async" src="/images/EGX23.jpg" style="display:none;" id="img23" alt="23" onclick="myFunction(this);">
+                                        <img decoding="async" style="width: 80px;" src="/images/EG23.jpg" onclick="myFunction('img23');">
                                     </div>
                                 </td>
                                 <td>
                                     <div class="column_img" id="24" onclick="myBorder('24')">
-                                        <img decoding="async" src="/images/PG24X.jpg" style="display:none;" id="img24" alt="24" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG24.jpg" onclick="myFunction('img24');">
+                                        <img decoding="async" src="/images/EGX24.jpg" style="display:none;" id="img24" alt="24" onclick="myFunction(this);">
+                                        <img decoding="async" style="width: 80px;" src="/images/EG24.jpg" onclick="myFunction('img24');">
                                     </div>
                                 </td>
                             </tr>
                             <tr height="80px" padding="0px" margin="0px" border="0px">
                                 <td>
-                                    <div class="column_gri" id="25">
-                                        <img decoding="async" style="width: 80px;" src="/images/Quadrato-Vuoto.jpg">
+                                    <div class="column_gri" id="25" onclick="myBorder('25')">
+                                        <img decoding="async" src="/images/EGX25.jpg" style="display:none;" id="img25" alt="25" onclick="myFunction(this);">
+                                        <img decoding="async" style="width: 80px;" src="/images/EG25.jpg" onclick="myFunction('img25');">
                                     </div>
                                 </td>
                                 <td>
@@ -1065,7 +1045,7 @@ ALTRE OPERE ALTRE COSE</strong></p>
                             </tr>
                             <tr height="80px" padding="0px" margin="0px" border="0px">
                                 <td>
-                                   <div class="column_gri" id="27">
+                                    <div class="column_gri" id="27">
                                         <img decoding="async" style="width: 80px;" src="/images/Quadrato-Vuoto.jpg">
                                     </div>
                                 </td>
@@ -1077,17 +1057,16 @@ ALTRE OPERE ALTRE COSE</strong></p>
                             </tr>
                         </tbody></table>
                     </td>
+                    
                </tr>
             </tbody></table>
             <table height="210px" padding="0px" margin="0px" style="width: 1000px; border: 0px;"> <!-- Tabella Testi Didascalie-->
-                <tbody><tr height="60px">
-                    <td><div id="linearossa_didascalia" class="linearossa_didascalia"></div></td>
-                    <td width="465px"></td>
+                <tbody><tr height="60px"></tr>
+                    <tr><td width="465px"></td>
                     <td width="385px"></td>
                     <td width="385px"></td>
                     <td width="225px"></td>
-                </tr>
-                 <tr height="150px">
+                </tr><tr height="150px">
                     <td width="465px"></td>
                     <td width="385px" align="left"><div id="imgtext2" class="testosx"></div></td>
                     <td width="385px" align="right"><div id="imgtext3" class="testodx"></div></td>
@@ -1109,12 +1088,6 @@ ALTRE OPERE ALTRE COSE</strong></p>
                     <td width="690px"></td>
                 </tr>
             </tbody></table>
-            <table>
-                 <tbody><tr>
-                    <td width="385px" align="right"><div id="imgtext4" class="testoquadro"></div></td>
-                    <td width="225px"></td>
-                </tr>
-            </tbody></table>
             
             
             
@@ -1128,68 +1101,69 @@ ALTRE OPERE ALTRE COSE</strong></p>
 		</div>
 					</div>
 		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-fc9007c elementor-section-full_width sezionetitoli elementor-section-height-default elementor-section-height-default" data-id="fc9007c" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-e4384f7 elementor-section-full_width sezionetitoli elementor-section-height-default elementor-section-height-default" data-id="e4384f7" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-e7d9bb7" data-id="e7d9bb7" data-element_type="column">
+					<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-51aca69" data-id="51aca69" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-d03a859 titoli_opere elementor-widget elementor-widget-text-editor" data-id="d03a859" data-element_type="widget" data-widget_type="text-editor.default">
+						<div class="elementor-element elementor-element-73aec06 elementor-widget elementor-widget-text-editor" data-id="73aec06" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<a href="/esperienze-giovanili-1964-1977-2/">Esperienze Giovanili<br>
-1964-1977</a>						</div>
+							<a href="/en/astrazioni-simboliche-1978-1985/">Astrazione
+Simboliche<br>
+1978-1985</a>						</div>
 				</div>
 					</div>
 		</div>
-				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-7eac489 colonnatitoli" data-id="7eac489" data-element_type="column">
+				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-134c2f7 colonnatitoli" data-id="134c2f7" data-element_type="column">
 			<div class="elementor-widget-wrap">
 							</div>
 		</div>
-				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-9f411e6" data-id="9f411e6" data-element_type="column">
+				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-5faca10" data-id="5faca10" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-de15a47 titoli_opere elementor-widget elementor-widget-text-editor" data-id="de15a47" data-element_type="widget" data-widget_type="text-editor.default">
+						<div class="elementor-element elementor-element-e510d74 elementor-widget elementor-widget-text-editor" data-id="e510d74" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<a href="/geometrie-elementari-1986-1997">Geometrie
+							<a href="/en/geometrie-elementari-1986-1997">Geometrie
 Elementari<br>
 1986-1997</a>						</div>
 				</div>
 					</div>
 		</div>
-				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-42fd080 colonnatitoli" data-id="42fd080" data-element_type="column">
+				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-e37776e colonnatitoli" data-id="e37776e" data-element_type="column">
 			<div class="elementor-widget-wrap">
 							</div>
 		</div>
-				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-f38514d" data-id="f38514d" data-element_type="column">
+				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-b3ac909" data-id="b3ac909" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-db7d54d titoli_opere elementor-widget elementor-widget-text-editor" data-id="db7d54d" data-element_type="widget" data-widget_type="text-editor.default">
+						<div class="elementor-element elementor-element-7d6a45c elementor-widget elementor-widget-text-editor" data-id="7d6a45c" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<a href="/figurazioni-racconti-1998-2004-parte-prima/">Figurazioni
+							<a href="/en/figurazioni-racconti-1998-2004-parte-prima/">Figurazioni
 Racconti<br>
 1998-2004 I</a>						</div>
 				</div>
 					</div>
 		</div>
-				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-66c6889 colonnatitoli" data-id="66c6889" data-element_type="column">
+				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-a52860c colonnatitoli" data-id="a52860c" data-element_type="column">
 			<div class="elementor-widget-wrap">
 							</div>
 		</div>
-				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-da1c3cc" data-id="da1c3cc" data-element_type="column">
+				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-8318c1d" data-id="8318c1d" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-23df0d3 titoli_opere elementor-widget elementor-widget-text-editor" data-id="23df0d3" data-element_type="widget" data-widget_type="text-editor.default">
+						<div class="elementor-element elementor-element-72bb15f elementor-widget elementor-widget-text-editor" data-id="72bb15f" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<a href="/figurazioni-racconti-1998-2004-parte-seconda/">Figurazioni
+							<a href="/en/figurazioni-racconti-1998-2004-parte-seconda/">Figurazioni
 Racconti<br>
 1998-2004 II</a>						</div>
 				</div>
 					</div>
 		</div>
-				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-1e5733c colonnatitoli" data-id="1e5733c" data-element_type="column">
+				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-db9a6a5 colonnatitoli" data-id="db9a6a5" data-element_type="column">
 			<div class="elementor-widget-wrap">
 							</div>
 		</div>
-				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-bc0e130" data-id="bc0e130" data-element_type="column">
+				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-c2d0fb2" data-id="c2d0fb2" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-75128da titoli_opere elementor-widget elementor-widget-text-editor" data-id="75128da" data-element_type="widget" data-widget_type="text-editor.default">
+						<div class="elementor-element elementor-element-818e47f elementor-widget elementor-widget-text-editor" data-id="818e47f" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<a href="/1989-2003-disegni-collage/">Disegni<br>
+							<a href="/en/1989-2003-disegni-collage/">Disegni<br>
 Collage<br>
 1989-2003</a>						</div>
 				</div>

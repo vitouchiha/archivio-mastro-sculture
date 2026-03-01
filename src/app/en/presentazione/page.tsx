@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default function Pagegallery() {
+export default function Pagepresentazione() {
   return (
-    <div className="wp-singular page-template page-template-page-templates page-template-template-pagebuilder-full-width page-template-page-templatestemplate-pagebuilder-full-width-php page page-id-5821 wp-theme-neve  nv-blog-default nv-sidebar-full-width menu_sidebar_slide_left elementor-default elementor-kit-14 elementor-page elementor-page-5821 nv-template">
+    <div className="wp-singular page-template page-template-page-templates page-template-template-pagebuilder-full-width page-template-page-templatestemplate-pagebuilder-full-width-php page page-id-58 wp-theme-neve  nv-blog-default nv-sidebar-full-width menu_sidebar_slide_left elementor-default elementor-kit-14 elementor-page elementor-page-58 nv-template">
       <div dangerouslySetInnerHTML={{ __html: `<style id="wp-img-auto-sizes-contain-inline-css">
 img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 /*# sourceURL=wp-img-auto-sizes-contain-inline-css */
@@ -56,7 +56,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <link rel="stylesheet" id="swiper-css" href="/css/swiper.min.css" media="all">
 <link rel="stylesheet" id="elementor-post-14-css" href="/css/post-14.css" media="all">
 <link rel="stylesheet" id="elementor-global-css" href="/css/global.css" media="all">
-<link rel="stylesheet" id="elementor-post-5821-css" href="/css/post-5821.css" media="all">
+<link rel="stylesheet" id="elementor-post-58-css" href="/css/post-58.css" media="all">
 <link rel="stylesheet" id="neve-google-font-montserrat-css" href="/css/css_1.css" media="all">
 <link rel="stylesheet" id="neve-google-font-poppins-css" href="/css/css_2.css" media="all">
 <link rel="stylesheet" id="google-fonts-1-css" href="/css/css.css" media="all">
@@ -465,33 +465,33 @@ and
 				<div class="hfg-slot left"><div class="builder-item desktop-left"><div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
 	
 <div class="site-logo">
-	<a class="brand" href="/" aria-label="ARCHIVIO MASTRO SCULTURE" rel="home"><div class="title-with-logo"><img width="200" height="126" src="/images/cropped-logo3.png" class="neve-site-logo skip-lazy" alt="logo3" data-variant="logo" decoding="async"><div class="nv-title-tagline-wrap"></div></div></a></div>
+	<a class="brand" href="/en/" aria-label="ARCHIVIO MASTRO SCULTURE" rel="home"><div class="title-with-logo"><img width="200" height="126" src="/images/cropped-logo3.png" class="neve-site-logo skip-lazy" alt="logo3" data-variant="logo" decoding="async"><div class="nv-title-tagline-wrap"></div></div></a></div>
 	</div>
 
 </div></div><div class="hfg-slot center"><div class="builder-item has-nav"><div class="item--inner builder-item--primary-menu has_menu" data-section="header_menu_primary" data-item-id="primary-menu">
 	<div class="nv-nav-wrap">
 	<div role="navigation" class="nav-menu-primary" aria-label="Menu principale">
 
-		<ul id="nv-primary-navigation-main" class="primary-menu-ul nav-ul menu-desktop"><li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-51"><div class="wrap"><a href="/">Home</a></div></li>
-<li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><div class="wrap"><a href="/presentazione/">Presentazione</a></div></li>
-<li id="menu-item-189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-189"><div class="wrap"><a href="/biografia/">Biografia</a></div></li>
+		<ul id="nv-primary-navigation-main" class="primary-menu-ul nav-ul menu-desktop"><li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-51"><div class="wrap"><a href="/en/">Home</a></div></li>
+<li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-58 current_page_item menu-item-68 nv-active"><div class="wrap"><a href="/en/presentazione/" aria-current="page">Presentation</a></div></li>
+<li id="menu-item-189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-189"><div class="wrap"><a href="/en/biografia/">Biography</a></div></li>
 <li id="menu-item-884" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-884"><div class="wrap"><a><span class="menu-item-title-wrap dd-title">Opere</span></a><div role="button" aria-pressed="false" aria-label="Apri sottomenu" tabindex="0" class="caret-wrap caret 4" style="margin-left:5px;"><span class="caret"><svg fill="currentColor" aria-label="Menu a discesa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></div></div>
 <ul class="sub-menu">
-	<li id="menu-item-4509" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4509"><div class="wrap"><a href="/esperienze-giovanili-1964-1977-2/">1964-1977 Esperienze Giovanili</a></div></li>
-	<li id="menu-item-3892" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><div class="wrap"><a href="/astrazioni-simboliche-1978-1985/">1978-1985 Astrazioni Simboliche</a></div></li>
-	<li id="menu-item-4131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4131"><div class="wrap"><a href="/geometrie-elementari-1986-1997-2/">1986-1997 Geometrie Elementari</a></div></li>
+	<li id="menu-item-4509" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4509"><div class="wrap"><a href="/en/esperienze-giovanili-1964-1977-2/">1964-1977 Esperienze Giovanili</a></div></li>
+	<li id="menu-item-3892" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><div class="wrap"><a href="/en/astrazioni-simboliche-1978-1985/">1978-1985 Astrazioni Simboliche</a></div></li>
+	<li id="menu-item-4131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4131"><div class="wrap"><a href="/en/geometrie-elementari-1986-1997-2/">1986-1997 Geometrie Elementari</a></div></li>
 	<li id="menu-item-4226" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4226"><div class="wrap"><a><span class="menu-item-title-wrap dd-title">1998-2004 FIGURAZIONI RACCONTI</span></a><div role="button" aria-pressed="false" aria-label="Apri sottomenu" tabindex="0" class="caret-wrap caret 8" style="margin-left:5px;"><span class="caret"><svg fill="currentColor" aria-label="Menu a discesa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></div></div>
 	<ul class="sub-menu">
-		<li id="menu-item-4228" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4228"><div class="wrap"><a href="/figurazioni-racconti-1998-2004-parte-prima/">PARTE PRIMA</a></div></li>
-		<li id="menu-item-4227" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4227"><div class="wrap"><a href="/figurazioni-racconti-1998-2004-parte-seconda/">PARTE SECONDA</a></div></li>
+		<li id="menu-item-4228" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4228"><div class="wrap"><a href="/en/figurazioni-racconti-1998-2004-parte-prima/">PARTE PRIMA</a></div></li>
+		<li id="menu-item-4227" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4227"><div class="wrap"><a href="/en/figurazioni-racconti-1998-2004-parte-seconda/">PARTE SECONDA</a></div></li>
 	</ul>
 </li>
-	<li id="menu-item-5001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5001"><div class="wrap"><a href="/1989-2003-disegni-collage/">1989-2003 Disegni Collage</a></div></li>
+	<li id="menu-item-5001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5001"><div class="wrap"><a href="/en/1989-2003-disegni-collage/">1989-2003 Disegni Collage</a></div></li>
 </ul>
 </li>
-<li id="menu-item-6874" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-5821 current_page_item menu-item-6874 nv-active"><div class="wrap"><a href="/gallery/" aria-current="page">Photo Gallery</a></div></li>
-<li id="menu-item-5958" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5958"><div class="wrap"><a>Dispense</a></div></li>
-<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><div class="wrap"><a href="/contact/">Contatti</a></div></li>
+<li id="menu-item-6874" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6874"><div class="wrap"><a href="/en/gallery/">Photo Gallery</a></div></li>
+<li id="menu-item-5958" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5958"><div class="wrap"><a>Lectures</a></div></li>
+<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><div class="wrap"><a href="/en/contact/">Contatti</a></div></li>
 </ul>	</div>
 </div>
 
@@ -516,7 +516,7 @@ and
 				<div class="hfg-slot left"><div class="builder-item tablet-left mobile-left"><div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
 	
 <div class="site-logo">
-	<a class="brand" href="/" aria-label="ARCHIVIO MASTRO SCULTURE" rel="home"><div class="title-with-logo"><img width="200" height="126" src="/images/cropped-logo3.png" class="neve-site-logo skip-lazy" alt="logo3" data-variant="logo" decoding="async"><div class="nv-title-tagline-wrap"></div></div></a></div>
+	<a class="brand" href="/en/" aria-label="ARCHIVIO MASTRO SCULTURE" rel="home"><div class="title-with-logo"><img width="200" height="126" src="/images/cropped-logo3.png" class="neve-site-logo skip-lazy" alt="logo3" data-variant="logo" decoding="async"><div class="nv-title-tagline-wrap"></div></div></a></div>
 	</div>
 
 </div></div><div class="hfg-slot right"><div class="builder-item tablet-left mobile-left"><div class="item--inner builder-item--nav-icon" data-section="header_menu_icon" data-item-id="nav-icon">
@@ -577,26 +577,26 @@ and
 	<div class="nv-nav-wrap">
 	<div role="navigation" class="nav-menu-primary" aria-label="Menu principale">
 
-		<ul id="nv-primary-navigation-sidebar" class="primary-menu-ul nav-ul menu-mobile"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-51"><div class="wrap"><a href="/">Home</a></div></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><div class="wrap"><a href="/presentazione/">Presentazione</a></div></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-189"><div class="wrap"><a href="/biografia/">Biografia</a></div></li>
+		<ul id="nv-primary-navigation-sidebar" class="primary-menu-ul nav-ul menu-mobile"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-51"><div class="wrap"><a href="/en/">Home</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-58 current_page_item menu-item-68 nv-active"><div class="wrap"><a href="/en/presentazione/" aria-current="page">Presentation</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-189"><div class="wrap"><a href="/en/biografia/">Biography</a></div></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-884"><div class="wrap"><a><span class="menu-item-title-wrap dd-title">Opere</span></a><button tabindex="0" type="button" class="caret-wrap navbar-toggle 4 " style="margin-left:5px;" aria-label="Attiva/disattiva Opere"><span class="caret"><svg fill="currentColor" aria-label="Menu a discesa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></button></div>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4509"><div class="wrap"><a href="/esperienze-giovanili-1964-1977-2/">1964-1977 Esperienze Giovanili</a></div></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><div class="wrap"><a href="/astrazioni-simboliche-1978-1985/">1978-1985 Astrazioni Simboliche</a></div></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4131"><div class="wrap"><a href="/geometrie-elementari-1986-1997-2/">1986-1997 Geometrie Elementari</a></div></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4509"><div class="wrap"><a href="/en/esperienze-giovanili-1964-1977-2/">1964-1977 Esperienze Giovanili</a></div></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><div class="wrap"><a href="/en/astrazioni-simboliche-1978-1985/">1978-1985 Astrazioni Simboliche</a></div></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4131"><div class="wrap"><a href="/en/geometrie-elementari-1986-1997-2/">1986-1997 Geometrie Elementari</a></div></li>
 	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4226"><div class="wrap"><a><span class="menu-item-title-wrap dd-title">1998-2004 FIGURAZIONI RACCONTI</span></a><button tabindex="0" type="button" class="caret-wrap navbar-toggle 8 " style="margin-left:5px;" aria-label="Attiva/disattiva 1998-2004 FIGURAZIONI RACCONTI"><span class="caret"><svg fill="currentColor" aria-label="Menu a discesa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></button></div>
 	<ul class="sub-menu">
-		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4228"><div class="wrap"><a href="/figurazioni-racconti-1998-2004-parte-prima/">PARTE PRIMA</a></div></li>
-		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4227"><div class="wrap"><a href="/figurazioni-racconti-1998-2004-parte-seconda/">PARTE SECONDA</a></div></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4228"><div class="wrap"><a href="/en/figurazioni-racconti-1998-2004-parte-prima/">PARTE PRIMA</a></div></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4227"><div class="wrap"><a href="/en/figurazioni-racconti-1998-2004-parte-seconda/">PARTE SECONDA</a></div></li>
 	</ul>
 </li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5001"><div class="wrap"><a href="/1989-2003-disegni-collage/">1989-2003 Disegni Collage</a></div></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5001"><div class="wrap"><a href="/en/1989-2003-disegni-collage/">1989-2003 Disegni Collage</a></div></li>
 </ul>
 </li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-5821 current_page_item menu-item-6874 nv-active"><div class="wrap"><a href="/gallery/" aria-current="page">Photo Gallery</a></div></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5958"><div class="wrap"><a>Dispense</a></div></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><div class="wrap"><a href="/contact/">Contatti</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6874"><div class="wrap"><a href="/en/gallery/">Photo Gallery</a></div></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5958"><div class="wrap"><a>Lectures</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><div class="wrap"><a href="/en/contact/">Contatti</a></div></li>
 </ul>	</div>
 </div>
 
@@ -604,7 +604,7 @@ and
 
 </div><div class="builder-item desktop-left tablet-left mobile-left"><div class="item--inner builder-item--button_base" data-section="header_button" data-item-id="button_base">
 	<div class="component-wrap">
-	<a href="/contact/" class="button button-primary">Contact Now</a>
+	<a href="/en/contact/" class="button button-primary">Contact Now</a>
 </div>
 	</div>
 
@@ -620,18 +620,18 @@ and
 	
 	<main id="content" class="neve-main">
 
-		<div data-elementor-type="wp-page" data-elementor-id="5821" class="elementor elementor-5821">
-						<section class="elementor-section elementor-top-section elementor-element elementor-element-02ed1ac elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="02ed1ac" data-element_type="section">
+		<div data-elementor-type="wp-page" data-elementor-id="58" class="elementor elementor-58">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-ff45e7e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ff45e7e" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7049e41" data-id="7049e41" data-element_type="column">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-57eddb1" data-id="57eddb1" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-ac1609b elementor-widget elementor-widget-menu-anchor" data-id="ac1609b" data-element_type="widget" data-widget_type="menu-anchor.default">
+						<div class="elementor-element elementor-element-53b0d1a elementor-widget elementor-widget-menu-anchor" data-id="53b0d1a" data-element_type="widget" data-widget_type="menu-anchor.default">
 				<div class="elementor-widget-container">
 			<style>/*! elementor - v3.23.0 - 15-07-2024 */
 body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div class="elementor-menu-anchor" id="cima"></div>
 				</div>
 				</div>
-				<div class="elementor-element elementor-element-401cb77 elementor-widget elementor-widget-spacer" data-id="401cb77" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-element elementor-element-8543ccb elementor-widget elementor-widget-spacer" data-id="8543ccb" data-element_type="widget" data-widget_type="spacer.default">
 				<div class="elementor-widget-container">
 			<style>/*! elementor - v3.23.0 - 15-07-2024 */
 .elementor-column .elementor-spacer-inner{height:var(--spacer-size)}.e-con{--container-widget-width:100%}.e-con-inner>.elementor-widget-spacer,.e-con>.elementor-widget-spacer{width:var(--container-widget-width,var(--spacer-size));--align-self:var(--container-widget-align-self,initial);--flex-shrink:0}.e-con-inner>.elementor-widget-spacer>.elementor-widget-container,.e-con>.elementor-widget-spacer>.elementor-widget-container{height:100%;width:100%}.e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer,.e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer{height:100%}.e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner,.e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner{height:var(--container-widget-height,var(--spacer-size))}.e-con-inner>.elementor-widget-spacer.elementor-widget-empty,.e-con>.elementor-widget-spacer.elementor-widget-empty{position:relative;min-height:22px;min-width:22px}.e-con-inner>.elementor-widget-spacer.elementor-widget-empty .elementor-widget-empty-icon,.e-con>.elementor-widget-spacer.elementor-widget-empty .elementor-widget-empty-icon{position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;padding:0;width:22px;height:22px}</style>		<div class="elementor-spacer">
@@ -643,11 +643,27 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 		</div>
 					</div>
 		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-9b3b960 elementor-section-full_width sezionemastro elementor-section-height-default elementor-section-height-default" data-id="9b3b960" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-1d1c9d1 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="1d1c9d1" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d1a7fd5" data-id="d1a7fd5" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-59c506d" data-id="59c506d" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-ffea4cc" data-id="ffea4cc" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-6bdd32f elementor-widget elementor-widget-spacer" data-id="6bdd32f" data-element_type="widget" data-widget_type="spacer.default">
+						<div class="elementor-element elementor-element-9a57b24 elementor-widget elementor-widget-spacer" data-id="9a57b24" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-e38bbaf elementor-widget elementor-widget-image" data-id="e38bbaf" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.23.0 - 15-07-2024 */
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src\$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>										<img loading="lazy" decoding="async" width="1024" height="272" src="/images/presentazione_01-1024x272.png" class="attachment-large size-large wp-image-558" alt="presentazione_01" srcset="/images/presentazione_01-1024x272.png 1024w, /images/presentazione_01-300x80.png 300w, /images/presentazione_01-768x204.png 768w, /images/presentazione_01.png 1244w" sizes="(max-width: 1024px) 100vw, 1024px">													</div>
+				</div>
+				<div class="elementor-element elementor-element-7f39f11 elementor-widget elementor-widget-spacer" data-id="7f39f11" data-element_type="widget" data-widget_type="spacer.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-spacer">
 			<div class="elementor-spacer-inner"></div>
@@ -658,579 +674,151 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 		</div>
 					</div>
 		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-764e0cc elementor-section-full_width sezionemastro elementor-section-height-default elementor-section-height-default" data-id="764e0cc" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-a1322c3 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="a1322c3" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-80b3b2a" data-id="80b3b2a" data-element_type="column">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b9ef6c6" data-id="b9ef6c6" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-9b55e04" data-id="9b55e04" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-0e9e846 elementor-widget elementor-widget-spacer" data-id="0e9e846" data-element_type="widget" data-widget_type="spacer.default">
+						<div class="elementor-element elementor-element-c098ab3 elementor-widget elementor-widget-spacer" data-id="c098ab3" data-element_type="widget" data-widget_type="spacer.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-spacer">
 			<div class="elementor-spacer-inner"></div>
 		</div>
 				</div>
 				</div>
-				<div class="elementor-element elementor-element-2a87a5b elementor-widget elementor-widget-text-editor" data-id="2a87a5b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-6d6c5b4 elementor-widget elementor-widget-text-editor" data-id="6d6c5b4" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 			<style>/*! elementor - v3.23.0 - 15-07-2024 */
-.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<table>
-<tbody>
-<tr>
-<td>
-<div id="linearossa" class="linearossa" align="right"></div></td>
-<td>
-<p style="text-align: left; margin-left: -15px;">1964-2014-2024<br><strong> 
-ALTRE OPERE ALTRE COSE</strong></p>
-</td>
-</tr>
-</tbody>
-</table>						</div>
-				</div>
-				<div class="elementor-element elementor-element-edfbbfa elementor-widget elementor-widget-text-editor" data-id="edfbbfa" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<table class=" alignleft">
-<tbody>
-<tr>
-<td>
-<div id="linearossa2" class="linearossa2" align="right"></div></td>
-<td>
-<p style="margin-left: -15px;">In questa foto-raccolta, oltre a nuove opere in archivio, troveranno spazio altre esperienze professionali e di laboratorio, quali la fotografia, la ceramica, il designer ed altre attività progettuali. </p>
-</td>
-</tr>
-</tbody>
-</table>						</div>
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p><strong>La mia storia, la mia scultura</strong></p>						</div>
 				</div>
 					</div>
 		</div>
 					</div>
 		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-cb6f31d elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default" data-id="cb6f31d" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-19c1ab7 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="19c1ab7" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-554e1c2 sezioneschema" data-id="554e1c2" data-element_type="column">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-8d772c1" data-id="8d772c1" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-dedd24a" data-id="dedd24a" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-6d6ae0c elementor-widget elementor-widget-html" data-id="6d6ae0c" data-element_type="widget" data-widget_type="html.default">
+						<div class="elementor-element elementor-element-ece0849 elementor-widget elementor-widget-spacer" data-id="ece0849" data-element_type="widget" data-widget_type="spacer.default">
 				<div class="elementor-widget-container">
-			
-      
-    <title>Schema</title>
-       <style>   
-       
-            .column_img {
-                width: 80px;
-                height: 80px;
-                align-items: center;
-                opacity: 0,55;
-                cursor: pointer;  
-                border: 4px solid #777777;
-            }
-
-            .column_gri {
-                width: 80px;
-                height: 80px;
-                align-items: center;
-                border: 4px solid #777777;
-            }
-            
-            .testoquadro {
-                width: 625px;
-                height: 140px;
-                text-align: left;
-                line-height: 14px;
-                color: white;
-                font-size: 13px;
-                font-family: Arial, Helvetica, sans-serif;
-                
-                margin-top: -130px;
-                margin-left: 205px;
-                margin-bottom: 20px;
-            }
-
-            .testosx {
-                margin-top: -110px;
-                margin-left: -37px;
-                text-align: left;
-                line-height: 14px;
-                color: white;
-                font-size: 13px;
-                font-family: Arial, Helvetica, sans-serif;
-                width: 610px;
-                height: 140px;
-            }
-
-            .testodx {
-                margin-top: -110px; 
-                margin-left: -125px; 
-                line-height: 14px;
-                color: white;
-                text-align: right;
-                font-family: Arial, Helvetica, sans-serif;
-                width: 130px;
-                height: 140px;
-            }
-
-            .linearossa {
-                margin-top: -25px;
-                margin-right: -3px;
-                width:10px; /*width of your image*/
-                height:50px; /*height of your image*/
-                align-content: right;
-                background-image:url('images/linea-rossa.jpg');
-                
-            }
-            
-             .linearossa_didascalia {
-                margin-left: 203px;
-                width:10px; /*width of your image*/
-                height:48px; /*height of your image*/
-                align-content: right;
-                background-image:url('images/linea-rossa.jpg');
-                
-            }
-            
-            
-            .linearossa2 {
-                margin-top: -25px;
-                width:10px; /*width of your image*/
-                height:50px; /*height of your image*/
-                align-content: right;
-               
-            }
-
-            p7 {
-                font-size: 10px;
-                line-height: 8px;
-            }
-
-            p8 {
-                font-size: 11px;
-                line-height: 11px;
-            }
-
-            
-            body {
-                background-color: #777777;
-            }
-
-            td, th {
-
-                border-bottom: 0px;
-                padding: 1px !important;   
-
-            }
-
-            table {
-                margin: 0 !important;
-                padding: 0 !important;
-                
-            }
-
-            .riquadrodiv {
-                margin-top: -180px;
-                align-items: left;
-                height: 80px;
-                width: 80px;
-                margin-left: -5px;
-                opacity: 1;
-
-            }
-            
-            .immaginecentrale {
-                width: 630px;
-                height: 630px;
-            }
-
-            .container_img{
-                width: 630px;
-                height: 630px;
-
-            }
-            
-            .freccie {
-                margin-right: 7px;
-     		    margin-left: 7px;
-                margin-top: 10px;
-                width:20px;
-                
-            }
-            
-          
-       </style>
-    
-        
-            <img decoding="async" src="/#" style="display:none; visibility:hidden;" id="imgCounter" alt="1">
-            <table height="650px" padding="0px" margin="0px" style="width:1000px; border: 0px;"> <!--Tabella Principale -->
-               <tbody><tr height="650px">
-                  <td width="165px">
-                        <table width="165px" height="650px" padding="0px" margin="0px" border="0px"> <!--Tabella Colonna di Sinistra -->
-                            <tbody><tr height="80px" padding="0px" margin="0px" border="0px">
-                                <td>
-                                    <div class="column_img" id="1" onclick="myBorder('1')">
-                                        <img decoding="async" src="/images/PG01X.jpg" style="display:none;" id="img1" alt="01">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG01.jpg" onclick="myFunction('img1');">
-                                    </div>
-                                       
-                                </td>
-                                <td>
-                                    <div class="column_img" id="2" onclick="myBorder('2')">   
-										<img decoding="async" src="/images/PG02X.jpg" style="display:none;" id="img2" alt="02">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG02.jpg" onclick="myFunction('img2');">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr height="80px" padding="0px" margin="0px" border="0px">
-                                <td>
-                                    <div class="column_img" id="3" onclick="myBorder('3')">   
-										<img decoding="async" src="/images/PG03X.jpg" style="display:none;" id="img3" alt="03" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG03.jpg" onclick="myFunction('img3');">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="column_img" id="4" onclick="myBorder('4')">   
-										<img decoding="async" src="/images/PG04X.jpg" style="display:none;" id="img4" alt="04" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG04.jpg" onclick="myFunction('img4');">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr height="80px" padding="0px" margin="0px" border="0px">
-                                <td>
-                                    <div class="column_img" id="5" onclick="myBorder('5')"> 
-										<img decoding="async" src="/images/PG05X.jpg" style="display:none;" id="img5" alt="05" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG05.jpg" onclick="myFunction('img5');">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="column_img" id="6" onclick="myBorder('6')">
-                                        <img decoding="async" src="/images/PG06X.jpg" style="display:none;" id="img6" alt="06" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG06.jpg" onclick="myFunction('img6');">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr height="80px" padding="0px" margin="0px" border="0px">
-                                <td>
-                                    <div class="column_img" id="7" onclick="myBorder('7')">
-                                        <img decoding="async" src="/images/PG07X.jpg" style="display:none;" id="img7" alt="07" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG07.jpg" onclick="myFunction('img7');">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="column_img" id="8" onclick="myBorder('8')">
-                                        <img decoding="async" src="/images/PG08X.jpg" style="display:none;" id="img8" alt="08" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG08.jpg" onclick="myFunction('img8');">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr height="80px" padding="0px" margin="0px" border="0px">
-                                <td>
-                                    <div class="column_img" id="9" onclick="myBorder('9')">
-                                        <img decoding="async" src="/images/PG09X.jpg" style="display:none;" id="img9" alt="09" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG09.jpg" onclick="myFunction('img9');">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="column_img" id="10" onclick="myBorder('10')">
-                                        <img decoding="async" src="/images/PG10X.jpg" style="display:none;" id="img10" alt="10" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG10.jpg" onclick="myFunction('img10');">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr height="80px" padding="0px" margin="0px" border="0px">
-                                <td>
-                                    <div class="column_img" id="11" onclick="myBorder('11')">
-                                        <img decoding="async" src="/images/PG11X.jpg" style="display:none;" id="img11" alt="11" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG11.jpg" onclick="myFunction('img11');">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="column_img" id="12" onclick="myBorder('12')">
-                                        <img decoding="async" src="/images/PG12X.jpg" style="display:none;" id="img12" alt="12" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG12.jpg" onclick="myFunction('img12');">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr height="80px" padding="0px" margin="0px" border="0px">
-                                <td>
-                                    <div class="column_img" id="13" onclick="myBorder('13')">
-                                        <img decoding="async" src="/images/PG13X.jpg" style="display:none;" id="img13" alt="13" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG13.jpg" onclick="myFunction('img13');">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="column_img" id="14" onclick="myBorder('14')">
-                                        <img decoding="async" src="/images/PG14X.jpg" style="display:none;" id="img14" alt="14" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG14.jpg" onclick="myFunction('img14');">
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody></table>
-                    </td>
-                    <td width="650px">
-                        <table width="770px" height="650px" border="0px" cellpadding="0" cellspacing="0"> <!--Tabella immagine centrale-->
-                            <tbody><tr>
-                                <td width="40px"><div class="freccie" onclick="clickIndietro();" style="cursor:pointer;"><img decoding="async" src="/images/icona-sx.png"></div></td>
-                                <td width="650px">
-                                    <!-- The expanding image container -->
-                                    <div class="container_img">
-                                                    
-                                        <!-- Expanded image -->
-                                        <img id="expandedImg" class="immaginecentrale">
-
-                                    </div>
-                                </td>
-                                <td width="40px"><div class="freccie" onclick="clickAvanti();" style="cursor:pointer;" align="right"><img decoding="async" src="/images/icona_dx.png"></div></td>
-                            </tr>
-                        </tbody></table>                        
-                  </td>
-                    <td width="165px">
-                        <table width="165px" height="650px" padding="0px" margin="0px" border="0px"> <!--Tabell colonna destra-->
-                            <tbody><tr height="80px" padding="0px" margin="0px" border="0px">
-                                <td>
-                                    <div class="column_img" id="15" onclick="myBorder('15')">
-                                        <img decoding="async" src="/images/PG15X.jpg" style="display:none;" id="img15" alt="15" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG15.jpg" onclick="myFunction('img15');">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="column_img" id="16" onclick="myBorder('16')">
-                                        <img decoding="async" src="/images/PG16X.jpg" style="display:none;" id="img16" alt="16" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG16.jpg" onclick="myFunction('img16');">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr height="80px" padding="0px" margin="0px" border="0px">
-                                <td>
-                                    <div class="column_img" id="17" onclick="myBorder('17')">
-                                        <img decoding="async" src="/images/PG17X.jpg" style="display:none;" id="img17" alt="17" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG17.jpg" onclick="myFunction('img17');">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="column_img" id="18" onclick="myBorder('18')">
-                                        <img decoding="async" src="/images/PG18X.jpg" style="display:none;" id="img18" alt="18" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG18.jpg" onclick="myFunction('img18');">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr height="80px" padding="0px" margin="0px" border="0px">
-                                <td>
-                                    <div class="column_img" id="19" onclick="myBorder('19')">
-                                        <img decoding="async" src="/images/PG19X.jpg" style="display:none;" id="img19" alt="19" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG19.jpg" onclick="myFunction('img19');">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="column_img" id="20" onclick="myBorder('20')">
-                                        <img decoding="async" src="/images/PG20X.jpg" style="display:none;" id="img20" alt="20" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG20.jpg" onclick="myFunction('img20');">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr height="80px" padding="0px" margin="0px" border="0px">
-                                <td>
-                                    <div class="column_img" id="21" onclick="myBorder('21')">
-                                        <img decoding="async" src="/images/PG21X.jpg" style="display:none;" id="img21" alt="21" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG21.jpg" onclick="myFunction('img21');">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="column_img" id="22" onclick="myBorder('22')">
-                                        <img decoding="async" src="/images/PG22X.jpg" style="display:none;" id="img22" alt="22" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG22.jpg" onclick="myFunction('img22');">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr height="80px" padding="0px" margin="0px" border="0px">
-                                <td>
-                                    <div class="column_img" id="23" onclick="myBorder('23')">
-                                        <img decoding="async" src="/images/PG23X.jpg" style="display:none;" id="img23" alt="23" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG23.jpg" onclick="myFunction('img23');">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="column_img" id="24" onclick="myBorder('24')">
-                                        <img decoding="async" src="/images/PG24X.jpg" style="display:none;" id="img24" alt="24" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG24.jpg" onclick="myFunction('img24');">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr height="80px" padding="0px" margin="0px" border="0px">
-                                <td>
-                                    <div class="column_gri" id="25">
-                                        <img decoding="async" style="width: 80px;" src="/images/Quadrato-Vuoto.jpg">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="column_gri" id="26">
-                                        <img decoding="async" style="width: 80px;" src="/images/Quadrato-Vuoto.jpg">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr height="80px" padding="0px" margin="0px" border="0px">
-                                <td>
-                                   <div class="column_gri" id="27">
-                                        <img decoding="async" style="width: 80px;" src="/images/Quadrato-Vuoto.jpg">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="column_gri" id="28">
-                                        <img decoding="async" style="width: 80px;" src="/images/Quadrato-Vuoto.jpg">
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody></table>
-                    </td>
-               </tr>
-            </tbody></table>
-            <table height="210px" padding="0px" margin="0px" style="width: 1000px; border: 0px;"> <!-- Tabella Testi Didascalie-->
-                <tbody><tr height="60px">
-                    <td><div id="linearossa_didascalia" class="linearossa_didascalia"></div></td>
-                    <td width="465px"></td>
-                    <td width="385px"></td>
-                    <td width="385px"></td>
-                    <td width="225px"></td>
-                </tr>
-                 <tr height="150px">
-                    <td width="465px"></td>
-                    <td width="385px" align="left"><div id="imgtext2" class="testosx"></div></td>
-                    <td width="385px" align="right"><div id="imgtext3" class="testodx"></div></td>
-                    <td width="225px"></td>
-                </tr>
-            </tbody></table>
-            <table height="100px" padding="0px" margin="0px" style="width: 1000px; border: 0px;"> <!-- Tabella Riquadri Immagini-->
-                <tbody><tr>
-                    <td width="270px"></td>
-                    <td width="90px">
-                        <div class="riquadrodiv" onclick="riquadriabc('A')"> <img id="riquadroAimg" height="80px" width="80px"> </div>
-                    </td>
-                    <td width="90px">
-                        <div class="riquadrodiv" onclick="riquadriabc('B')"> <img id="riquadroBimg" height="80px" width="80px"> </div>
-                    </td>
-                    <td width="90px">
-                        <div class="riquadrodiv" onclick="riquadriabc('C')"> <img id="riquadroCimg" height="80px" width="80px"> </div>
-                    </td>
-                    <td width="690px"></td>
-                </tr>
-            </tbody></table>
-            <table>
-                 <tbody><tr>
-                    <td width="385px" align="right"><div id="imgtext4" class="testoquadro"></div></td>
-                    <td width="225px"></td>
-                </tr>
-            </tbody></table>
-            
-            
-            
-        
-    
-
-
-    		</div>
-				</div>
-					</div>
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
 		</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-fc9007c elementor-section-full_width sezionetitoli elementor-section-height-default elementor-section-height-default" data-id="fc9007c" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-e7d9bb7" data-id="e7d9bb7" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-d03a859 titoli_opere elementor-widget elementor-widget-text-editor" data-id="d03a859" data-element_type="widget" data-widget_type="text-editor.default">
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-860e0a8 elementor-widget elementor-widget-text-editor" data-id="860e0a8" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<a href="/esperienze-giovanili-1964-1977-2/">Esperienze Giovanili<br>
-1964-1977</a>						</div>
+							<p>Sul finire degli anni Settanta mi sono chiesto se il discorso sulla scultura, portato avanti da Constantin Brancusi, Arturo Martini e Fausto Melotti, potesse avere un seguito.<br>Mi sono chiesto se le loro opere, oltre ad essere ciò che sono e dicono, fossero anche una via da seguire verso un’innovazione nella tradizione del linguaggio plastico.<br>Mi sono chiesto se agli artisti del mio tempo sfuggisse qualcosa riguardo alla lezione dei maestri del Primo Novecento.</p>						</div>
 				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-7eac489 colonnatitoli" data-id="7eac489" data-element_type="column">
-			<div class="elementor-widget-wrap">
-							</div>
-		</div>
-				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-9f411e6" data-id="9f411e6" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-de15a47 titoli_opere elementor-widget elementor-widget-text-editor" data-id="de15a47" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<a href="/geometrie-elementari-1986-1997">Geometrie
-Elementari<br>
-1986-1997</a>						</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-42fd080 colonnatitoli" data-id="42fd080" data-element_type="column">
-			<div class="elementor-widget-wrap">
-							</div>
-		</div>
-				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-f38514d" data-id="f38514d" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-db7d54d titoli_opere elementor-widget elementor-widget-text-editor" data-id="db7d54d" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<a href="/figurazioni-racconti-1998-2004-parte-prima/">Figurazioni
-Racconti<br>
-1998-2004 I</a>						</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-66c6889 colonnatitoli" data-id="66c6889" data-element_type="column">
-			<div class="elementor-widget-wrap">
-							</div>
-		</div>
-				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-da1c3cc" data-id="da1c3cc" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-23df0d3 titoli_opere elementor-widget elementor-widget-text-editor" data-id="23df0d3" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<a href="/figurazioni-racconti-1998-2004-parte-seconda/">Figurazioni
-Racconti<br>
-1998-2004 II</a>						</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-1e5733c colonnatitoli" data-id="1e5733c" data-element_type="column">
-			<div class="elementor-widget-wrap">
-							</div>
-		</div>
-				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-bc0e130" data-id="bc0e130" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-75128da titoli_opere elementor-widget elementor-widget-text-editor" data-id="75128da" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<a href="/1989-2003-disegni-collage/">Disegni<br>
-Collage<br>
-1989-2003</a>						</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-3769b05 elementor-section-stretched elementor-section-full_width elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle" data-id="3769b05" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-0d1df7a" data-id="0d1df7a" data-element_type="column">
-			<div class="elementor-widget-wrap">
-							</div>
-		</div>
-				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-fb00ed8" data-id="fb00ed8" data-element_type="column">
-			<div class="elementor-widget-wrap">
-							</div>
-		</div>
-				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-454d996" data-id="454d996" data-element_type="column">
-			<div class="elementor-widget-wrap">
-							</div>
-		</div>
-				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-2cbf232" data-id="2cbf232" data-element_type="column">
-			<div class="elementor-widget-wrap">
-							</div>
-		</div>
-				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-6089761" data-id="6089761" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-ecd66fd elementor-widget elementor-widget-image" data-id="ecd66fd" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-element elementor-element-b98edf8 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="b98edf8" data-element_type="widget" data-widget_type="divider.default">
 				<div class="elementor-widget-container">
 			<style>/*! elementor - v3.23.0 - 15-07-2024 */
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src\$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>											<a href="#cima">
+.elementor-widget-divider{--divider-border-style:none;--divider-border-width:1px;--divider-color:#0c0d0e;--divider-icon-size:20px;--divider-element-spacing:10px;--divider-pattern-height:24px;--divider-pattern-size:20px;--divider-pattern-url:none;--divider-pattern-repeat:repeat-x}.elementor-widget-divider .elementor-divider{display:flex}.elementor-widget-divider .elementor-divider__text{font-size:15px;line-height:1;max-width:95%}.elementor-widget-divider .elementor-divider__element{margin:0 var(--divider-element-spacing);flex-shrink:0}.elementor-widget-divider .elementor-icon{font-size:var(--divider-icon-size)}.elementor-widget-divider .elementor-divider-separator{display:flex;margin:0;direction:ltr}.elementor-widget-divider--view-line_icon .elementor-divider-separator,.elementor-widget-divider--view-line_text .elementor-divider-separator{align-items:center}.elementor-widget-divider--view-line_icon .elementor-divider-separator:after,.elementor-widget-divider--view-line_icon .elementor-divider-separator:before,.elementor-widget-divider--view-line_text .elementor-divider-separator:after,.elementor-widget-divider--view-line_text .elementor-divider-separator:before{display:block;content:"";border-block-end:0;flex-grow:1;border-block-start:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-left .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-left .elementor-divider__element{margin-left:0}.elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-right .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-right .elementor-divider__element{margin-right:0}.elementor-widget-divider--element-align-start .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-start .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-start .elementor-divider__element{margin-inline-start:0}.elementor-widget-divider--element-align-end .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-end .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-end .elementor-divider__element{margin-inline-end:0}.elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator{border-block-start:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--separator-type-pattern{--divider-border-style:none}.elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,.elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator{width:100%;min-height:var(--divider-pattern-height);-webkit-mask-size:var(--divider-pattern-size) 100%;mask-size:var(--divider-pattern-size) 100%;-webkit-mask-repeat:var(--divider-pattern-repeat);mask-repeat:var(--divider-pattern-repeat);background-color:var(--divider-color);-webkit-mask-image:var(--divider-pattern-url);mask-image:var(--divider-pattern-url)}.elementor-widget-divider--no-spacing{--divider-pattern-size:auto}.elementor-widget-divider--bg-round{--divider-pattern-repeat:round}.rtl .elementor-widget-divider .elementor-divider__text{direction:rtl}.e-con-inner>.elementor-widget-divider,.e-con>.elementor-widget-divider{width:var(--container-widget-width,100%);--flex-grow:var(--container-widget-flex-grow)}</style>		<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-b2c1cb8 elementor-widget elementor-widget-text-editor" data-id="b2c1cb8" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Facciamo un passo indietro, nel 1972, completato il corso di Scultura presso l’Accademia di Belle Arti di Firenze, ho fatto una scelta riguardo alle tendenze artistiche del mio tempo, ho scelto la manualità e le tecniche tradizionali, rispetto alle espressività più astratte e concettuali di quegli anni. Una scelta non contro quelle nuove frontiere della ricerca estetica (Performance Art, Arte Povera, Pop Art, Video Art e altro) ma a favore di un’esperienza tattile, manuale, che ha fatto la storia della figurazione. Una scelta di formazione, per me che ero cresciuto nella Bottega ceramica di mio padre a Grottaglie, maturata in Accademia a Firenze, “alla scuola” dei grandi&nbsp; maestri del Rinascimento.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-69d6ac5 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="69d6ac5" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-6979cc8 elementor-widget elementor-widget-text-editor" data-id="6979cc8" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Tornando al panorama culturale del mio tempo, nella seconda metà degli anni Settanta, Bonito Oliva, con la sua Transavanguardia, teorizzava un ritorno alla manualità e Paolo Portoghesi, nel 1980, con la sua Strada Novissima, alla Biennale di Architettura di Venezia, dava corpo e forma a quella corrente estetica e di pensiero chiamato Postmoderno. A quel “presente che guarda al passato” in cui in qualche misura mi rivedevo.<br><span style="letter-spacing: var(--bodyletterspacing); text-transform: var(--bodytexttransform);">In quegli anni di crescita professionale e artistica, ho vinto due Concorsi Nazionali per Opere Pubbliche e partecipato alla Quadriennale di Roma nel 1975. Poi l’insegnamento – l’arte di conoscere e saper comunicare i saperi dell’arte – ha allargato gli orizzonti della mia ricerca estetica; lo studio, la didattica e il lavoro in fonderia non mi lasciavano molto tempo per mostre o concorsi. Dovevo scegliere tra fare l’artista o l’artigiano, come lavoro a tempo pieno, e l’insegnamento come professione; magari portando avanti il mio discorso sulla scultura libero da vincoli con il mercato dell’arte.</span></p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-de08891 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="de08891" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-45b2ca0 elementor-widget elementor-widget-text-editor" data-id="45b2ca0" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Detto questo, torniamo all’innovazione nella tradizione del linguaggio plastico. Torniamo a Brancusi, Martini e Melotti, maestri scultori di un’arte “senza tempo”, almeno per due ragioni: la prima riguarda la corrispondenza al registro semantico di ciò che da sempre, la storia e l’umano sentire riconosce come arte plastica, come arte della scultura millenaria e universale, la seconda riguarda l’approccio tattile – ragionato e manuale – del loro dire, pensare, fare scultura. Ecco, con un certo orgoglio, so di essere in linea con quel presupposto spirituale che cerca nel governo della materia un pensiero o un racconto da figurare.<br><span style="letter-spacing: var(--bodyletterspacing); text-transform: var(--bodytexttransform);">Come prima dicevo, sul finire degli anni Settanta, pensavo che la scultura come ricerca e l’insegnamento come professione potessero bastare, invece, la didattica e le sue problematiche teoriche, e la scultura nel racconto del sacro e del simbolico, sono diventati l’esperienza estetica nella quale ancora mi specchio. Per quarant’anni (sia pure in maniera discontinua) ho cercato le “forme semplici”, lo “spirituale”, gli “universali”, nel racconto e nelle forme della scultura. Ho cercato nella bellezza e nel rigore del segno geometrico, le radici del sacro e il significato della mia scultura.<br></span><span style="letter-spacing: var(--bodyletterspacing); text-transform: var(--bodytexttransform);">Per quarant’anni ho insegnato i saperi e le forme del linguaggio delle immagini, un’esperienza professionale, che mi ha fatto crescere come insegnante e come persona. Scultore, invece, lo sono sempre stato – o tale mi sono sentito – sino a quando ho capito che per esserlo davvero dovevo guardare alle radici, alla storia della scultura, dovevo guardare al suo millenario racconto. Avevo un progetto da sviluppare ma avevo bisogno di tempo, sapevo cosa fare ma ero lento. Ero lento, ambizioso e fuori dal mercato dell’arte.</span></p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-381aca0 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="381aca0" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-e0ab102 elementor-widget elementor-widget-text-editor" data-id="e0ab102" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Negli anni Ottanta e Novanta ho disegnato, modellato e poi realizzato, in poliestere e in bronzo, modelli per sculture da ingrandire in travertino, granito o in bronzo. Sono la mia scultura “finita”, “compiuta”, poiché, anche solo un modello o un progetto possono bastare quando non si hanno i mezzi per ingrandire. Quando per propri limiti o per scelta, si è fuori dal quel circolo esclusivo – culturale e commerciale – che è il mondo dell’arte. Oltre a queste sculture iconiche, astratte, totemiche, tra gli anni Ottanta e Duemila, ho portato a termine un ciclo di opere più piccole, lineari, leggere, quasi dei disegni sospesi nell’aria. Realizzate in ottone lavorato a freddo, sono figurazioni, racconti e tanto altro. Sono la mia scultura libera, il mio “canto libero”, nel registro e nel lessico di quest’antica arte.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-de89a2c elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="de89a2c" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-915dcdc elementor-widget elementor-widget-text-editor" data-id="915dcdc" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p><span style="letter-spacing: var(--bodyletterspacing); text-transform: var(--bodytexttransform);">Ora però, se queste note fossero una più estesa conversazione sul mio lavoro, altro ci sarebbe da dire riguardo alla rinuncia – pure sofferta e controversa – al dialogo con il presente del mondo dell’arte. Come già detto, avevo bisogno di tempo per dar corpo e forma al mio discorso sulla scultura. Dovevo mettere assieme un certo numero di opere per propormi in qualche mostra o concorso, invece, con il tempo, l’attesa si è fatta rinuncia. Non ho più cercato la critica, le istituzioni, il mercato.</span> <br>Diciamo che sono in un altro racconto – in un’altra “scala di valori” – non riguardo alle ragioni dell’arte, ma nei confronti del sociale, del mercato, divenuto la prima voce, se non l’“autorità culturale” dell’arte stessa.<br><span style="letter-spacing: var(--bodyletterspacing); text-transform: var(--bodytexttransform);">Insomma, ho fatto scultura per studio, per ricerca (o magari solo per me stesso), ma ho fatto scultura. Ho fatto scultura perché ho cercato in quell’arte un mio racconto. Ho cercato nel suo racconto un’appartenenza, una risonanza elettiva, sapienziale, con cui dialogare… fare scultura.</span></p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-f5b7213" data-id="f5b7213" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-9d90f16 elementor-section-stretched elementor-section-full_width elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle" data-id="9d90f16" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-37feb79" data-id="37feb79" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-82605c5" data-id="82605c5" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-cc248ef" data-id="cc248ef" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-1cdff8a" data-id="1cdff8a" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-b0d0d8c" data-id="b0d0d8c" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-276db51" data-id="276db51" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2733956 elementor-widget elementor-widget-image" data-id="2733956" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+														<a href="#cima">
 							<img loading="lazy" decoding="async" width="98" height="38" src="/images/icona_in_alto.png" class="attachment-full size-full wp-image-5042" alt="alto">								</a>
 													</div>
 				</div>
 					</div>
 		</div>
-				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-1cc1a0a" data-id="1cc1a0a" data-element_type="column">
-			<div class="elementor-widget-wrap">
-							</div>
-		</div>
-				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-bddb061" data-id="bddb061" data-element_type="column">
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-423e768" data-id="423e768" data-element_type="column">
 			<div class="elementor-widget-wrap">
 							</div>
 		</div>

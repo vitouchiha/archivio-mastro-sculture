@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default function Pagegallery() {
+export default function Page() {
   return (
-    <div className="wp-singular page-template page-template-page-templates page-template-template-pagebuilder-full-width page-template-page-templatestemplate-pagebuilder-full-width-php page page-id-5821 wp-theme-neve  nv-blog-default nv-sidebar-full-width menu_sidebar_slide_left elementor-default elementor-kit-14 elementor-page elementor-page-5821 nv-template">
+    <div className="home wp-singular page-template-default page page-id-32 wp-theme-neve  nv-blog-default nv-sidebar-full-width nv-without-title menu_sidebar_slide_left elementor-default elementor-kit-14 elementor-page elementor-page-32">
       <div dangerouslySetInnerHTML={{ __html: `<style id="wp-img-auto-sizes-contain-inline-css">
 img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 /*# sourceURL=wp-img-auto-sizes-contain-inline-css */
@@ -49,6 +49,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		}
  :root{ --container: 350px;--postwidth:100%; --primarybtnbg: var(--nv-secondary-accent); --secondarybtnbg: var(--nv-primary-accent); --primarybtnhoverbg: var(--nv-secondary-accent); --secondarybtnhoverbg: var(--nv-primary-accent); --primarybtncolor: var(--nv-text-color); --secondarybtncolor: var(--nv-text-dark-bg); --primarybtnhovercolor: var(--nv-text-color); --secondarybtnhovercolor: var(--nv-text-dark-bg);--primarybtnborderradius:0;--secondarybtnborderradius:0;--btnpadding:16px 35px;--primarybtnpadding:16px 35px;--secondarybtnpadding:16px 35px; --btnfs: 14px; --btnlineheight: 1.6em; --bodyfontfamily: Poppins; --bodyfontsize: 15px; --bodylineheight: 1.6em; --bodyletterspacing: 0px; --bodyfontweight: 400; --bodytexttransform: none; --headingsfontfamily: Poppins; --h1fontsize: 39px; --h1fontweight: 600; --h1lineheight: 1.2em; --h1letterspacing: 0px; --h1texttransform: none; --h2fontsize: 30px; --h2fontweight: 600; --h2lineheight: 1.3em; --h2letterspacing: 0px; --h2texttransform: none; --h3fontsize: 20px; --h3fontweight: 600; --h3lineheight: 1.3em; --h3letterspacing: 0px; --h3texttransform: none; --h4fontsize: 16px; --h4fontweight: 600; --h4lineheight: 1.3em; --h4letterspacing: 0px; --h4texttransform: none; --h5fontsize: 14px; --h5fontweight: 600; --h5lineheight: 1.3em; --h5letterspacing: 0px; --h5texttransform: none; --h6fontsize: 14px; --h6fontweight: 600; --h6lineheight: 1.3em; --h6letterspacing: 0px; --h6texttransform: none;--formfieldborderwidth:2px;--formfieldborderradius:3px; --formfieldbgcolor: var(--nv-site-bg); --formfieldbordercolor: #dddddd; --formfieldcolor: var(--nv-text-color);--formfieldpadding:10px 12px; } .nv-index-posts{ --borderradius:0px; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:320px } .nv-meta-list{ --avatarsize: 20px; } .single .nv-meta-list{ --avatarsize: 20px; } .nv-post-cover{ --height: 250px;--padding:40px 15px;--justify: flex-start; --textalign: left; --valign: center; } .nv-post-cover .nv-title-meta-wrap, .nv-page-title-wrap, .entry-header{ --textalign: left; } .nv-is-boxed.nv-title-meta-wrap{ --padding:40px 15px; --bgcolor: var(--nv-dark-bg); } .nv-overlay{ --opacity: 50; --blendmode: normal; } .nv-is-boxed.nv-comments-wrap{ --padding:20px; } .nv-is-boxed.comment-respond{ --padding:20px; } .single:not(.single-product), .page{ --c-vspace:0 0 0 0;; } .scroll-to-top{ --color: var(--nv-text-dark-bg);--padding:8px 10px; --borderradius: 3px; --bgcolor: var(--nv-primary-accent); --hovercolor: var(--nv-text-dark-bg); --hoverbgcolor: var(--nv-primary-accent);--size:16px; } .global-styled{ --bgcolor: var(--nv-site-bg); } .header-top{ --rowbcolor: var(--nv-light-bg); --color: var(--nv-text-color); --bgcolor: var(--nv-site-bg); } .header-main{ --rowbcolor: var(--nv-light-bg); --color: var(--nv-text-color); --bgcolor: #ebebe9; } .header-bottom{ --rowbcolor: var(--nv-light-bg); --color: var(--nv-text-color); --bgcolor: var(--nv-site-bg); } .header-menu-sidebar-bg{ --justify: flex-start; --textalign: left;--flexg: 1;--wrapdropdownwidth: auto; --color: var(--nv-text-color); --bgcolor: var(--nv-site-bg); } .header-menu-sidebar{ width: 360px; } .builder-item--logo{ --maxwidth: 85px; --fs: 24px;--padding:10px 0;--margin:0; --textalign: left;--justify: flex-start; } .builder-item--nav-icon,.header-menu-sidebar .close-sidebar-panel .navbar-toggle{ --color: var(--nv-text-color);--borderradius:3px;--borderwidth:0; } .builder-item--nav-icon{ --label-margin:0 5px 0 0;;--padding:10px 15px 10px 15px;;--margin:0; } .builder-item--primary-menu{ --color: var(--nv-text-color); --hovercolor: #d2ae80; --hovertextcolor: var(--nv-text-color); --activecolor: #a07427; --spacing: 20px; --height: 25px;--padding:0;--margin:0; --fontfamily: Montserrat; --fontsize: 1em; --lineheight: 1.6em; --letterspacing: 0px; --fontweight: 700; --texttransform: uppercase; --iconsize: 1em; } .hfg-is-group.has-primary-menu .inherit-ff{ --inheritedff: Montserrat; --inheritedfw: 700; } .builder-item--button_base{ --primarybtnbg: var(--nv-primary-accent); --primarybtncolor: #fff; --primarybtnhoverbg: var(--nv-primary-accent); --primarybtnhovercolor: #fff;--primarybtnborderradius:3px;--primarybtnshadow:none;--primarybtnhovershadow:none;--padding:8px 12px;--margin:0; } .builder-item--custom_html{ --padding:0;--margin:0; --fontsize: 1em; --lineheight: 1.6; --letterspacing: 0px; --fontweight: 500; --texttransform: none; --iconsize: 1em; --textalign: left;--justify: flex-start; } .builder-item--header_search{ --height: 45px;--formfieldborderwidth:2px;--formfieldborderradius:2px; --formfieldbordercolor: var(--nv-primary-accent); --formfieldcolor: var(--nv-primary-accent);--padding:0;--margin:0; } .footer-top-inner .row{ grid-template-columns:1fr 1fr 1fr; --valign: flex-start; } .footer-top{ --rowbcolor: var(--nv-light-bg); --color: var(--nv-text-color); --bgcolor: var(--nv-site-bg); } .footer-main-inner .row{ grid-template-columns:1fr 1fr; --valign: flex-start; } .footer-main{ --rowbcolor: var(--nv-light-bg); --color: var(--nv-text-color); --bgcolor: var(--nv-site-bg); } .footer-bottom-inner .row{ grid-template-columns:2fr 1fr; --valign: flex-start; } .footer-bottom{ --rowbcolor: var(--nv-light-bg); --color: #ffffff; --bgcolor: var(--nv-text-color); } .builder-item--footer-two-widgets{ --padding:0;--margin:0; --textalign: left;--justify: flex-start; } .builder-item--footer-three-widgets{ --padding:0;--margin:0; --textalign: left;--justify: flex-start; } @media(min-width: 576px){ :root{ --container: 992px;--postwidth:100%;--btnpadding:16px 35px;--primarybtnpadding:16px 35px;--secondarybtnpadding:16px 35px; --btnfs: 14px; --btnlineheight: 1.6em; --bodyfontsize: 16px; --bodylineheight: 1.6em; --bodyletterspacing: 0px; --h1fontsize: 55px; --h1lineheight: 1.3em; --h1letterspacing: 0px; --h2fontsize: 35px; --h2lineheight: 1.3em; --h2letterspacing: 0px; --h3fontsize: 20px; --h3lineheight: 1.3em; --h3letterspacing: 0px; --h4fontsize: 16px; --h4lineheight: 1.3em; --h4letterspacing: 0px; --h5fontsize: 14px; --h5lineheight: 1.3em; --h5letterspacing: 0px; --h6fontsize: 14px; --h6lineheight: 1.3em; --h6letterspacing: 0px; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:962px } .nv-meta-list{ --avatarsize: 20px; } .single .nv-meta-list{ --avatarsize: 20px; } .nv-post-cover{ --height: 320px;--padding:60px 30px;--justify: flex-start; --textalign: left; --valign: center; } .nv-post-cover .nv-title-meta-wrap, .nv-page-title-wrap, .entry-header{ --textalign: left; } .nv-is-boxed.nv-title-meta-wrap{ --padding:60px 30px; } .nv-is-boxed.nv-comments-wrap{ --padding:30px; } .nv-is-boxed.comment-respond{ --padding:30px; } .single:not(.single-product), .page{ --c-vspace:0 0 0 0;; } .scroll-to-top{ --padding:8px 10px;--size:16px; } .header-menu-sidebar-bg{ --justify: flex-start; --textalign: left;--flexg: 1;--wrapdropdownwidth: auto; } .header-menu-sidebar{ width: 360px; } .builder-item--logo{ --maxwidth: 32px; --fs: 24px;--padding:10px 0;--margin:0; --textalign: left;--justify: flex-start; } .builder-item--nav-icon{ --label-margin:0 5px 0 0;;--padding:10px 15px;--margin:0; } .builder-item--primary-menu{ --spacing: 20px; --height: 25px;--padding:0;--margin:0; --fontsize: 1em; --lineheight: 1.6em; --letterspacing: 0px; --iconsize: 1em; } .builder-item--button_base{ --padding:8px 12px;--margin:0; } .builder-item--custom_html{ --padding:0;--margin:0; --fontsize: 1em; --lineheight: 1.6; --letterspacing: 0px; --iconsize: 1em; --textalign: left;--justify: flex-start; } .builder-item--header_search{ --height: 40px;--formfieldborderwidth:1px;--formfieldborderradius:2px;--padding:0;--margin:0; } .builder-item--footer-two-widgets{ --padding:0;--margin:0; --textalign: left;--justify: flex-start; } .builder-item--footer-three-widgets{ --padding:0;--margin:0; --textalign: left;--justify: flex-start; } }@media(min-width: 960px){ :root{ --container: 1170px;--postwidth:100%;--btnpadding:16px 35px;--primarybtnpadding:16px 35px;--secondarybtnpadding:16px 35px; --btnfs: 16px; --btnlineheight: 1.6em; --bodyfontsize: 16px; --bodylineheight: 1.7em; --bodyletterspacing: 0px; --h1fontsize: 70px; --h1lineheight: 1.3em; --h1letterspacing: 0px; --h2fontsize: 50px; --h2lineheight: 1.3em; --h2letterspacing: 0px; --h3fontsize: 24px; --h3lineheight: 1.3em; --h3letterspacing: 0px; --h4fontsize: 20px; --h4lineheight: 1.3em; --h4letterspacing: 0px; --h5fontsize: 16px; --h5lineheight: 1.3em; --h5letterspacing: 0px; --h6fontsize: 16px; --h6lineheight: 1.3em; --h6letterspacing: 0px; } body:not(.single):not(.archive):not(.blog):not(.search):not(.error404) .neve-main > .container .col, body.post-type-archive-course .neve-main > .container .col, body.post-type-archive-llms_membership .neve-main > .container .col{ max-width: 100%; } body:not(.single):not(.archive):not(.blog):not(.search):not(.error404) .nv-sidebar-wrap, body.post-type-archive-course .nv-sidebar-wrap, body.post-type-archive-llms_membership .nv-sidebar-wrap{ max-width: 0%; } .neve-main > .archive-container .nv-index-posts.col{ max-width: 100%; } .neve-main > .archive-container .nv-sidebar-wrap{ max-width: 0%; } .neve-main > .single-post-container .nv-single-post-wrap.col{ max-width: 70%; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:789px } .container-fluid.single-post-container .alignfull > [class*="__inner-container"], .container-fluid.single-post-container .alignwide > [class*="__inner-container"]{ max-width:calc(70% + 15px) } .neve-main > .single-post-container .nv-sidebar-wrap{ max-width: 30%; } .nv-meta-list{ --avatarsize: 20px; } .single .nv-meta-list{ --avatarsize: 20px; } .nv-post-cover{ --height: 400px;--padding:60px 40px;--justify: flex-start; --textalign: left; --valign: center; } .nv-post-cover .nv-title-meta-wrap, .nv-page-title-wrap, .entry-header{ --textalign: left; } .nv-is-boxed.nv-title-meta-wrap{ --padding:60px 40px; } .nv-is-boxed.nv-comments-wrap{ --padding:40px; } .nv-is-boxed.comment-respond{ --padding:40px; } .single:not(.single-product), .page{ --c-vspace:0 0 0 0;; } .scroll-to-top{ --padding:8px 10px;--size:16px; } .header-menu-sidebar-bg{ --justify: flex-start; --textalign: left;--flexg: 1;--wrapdropdownwidth: auto; } .header-menu-sidebar{ width: 360px; } .builder-item--logo{ --maxwidth: 150px; --fs: 24px;--padding:10px 0;--margin:1% 0 0 50%;; --textalign: left;--justify: flex-start; } .builder-item--nav-icon{ --label-margin:0 5px 0 0;;--padding:10px 15px;--margin:0; } .builder-item--primary-menu{ --spacing: 20px; --height: 25px;--padding:0;--margin:60px -280px 8px 0;; --fontsize: 0.8em; --lineheight: 1.6em; --letterspacing: 0px; --iconsize: 0.8em; } .builder-item--button_base{ --padding:8px 16px;--margin:0; } .builder-item--custom_html{ --padding:0;--margin:37px -10px -17px 0;; --fontsize: 1em; --lineheight: 1.6; --letterspacing: 0px; --iconsize: 1em; --textalign: left;--justify: flex-start; } .builder-item--header_search{ --height: 40px;--formfieldborderwidth:1px;--formfieldborderradius:2px;--padding:0;--margin:0; } .builder-item--footer-two-widgets{ --padding:0;--margin:0 0 0 22%;; --textalign: left;--justify: flex-start; } .builder-item--footer-three-widgets{ --padding:0;--margin:-4% 0 0 -44%;; --textalign: center;--justify: center; } }.nv-content-wrap .elementor a:not(.button):not(.wp-block-file__button){ text-decoration: none; }.scroll-to-top {right: 20px; border: none; position: fixed; bottom: 30px; display: none; opacity: 0; visibility: hidden; transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; align-items: center; justify-content: center; z-index: 999; } @supports (-webkit-overflow-scrolling: touch) { .scroll-to-top { bottom: 74px; } } .scroll-to-top.image { background-position: center; } .scroll-to-top .scroll-to-top-image { width: 100%; height: 100%; } .scroll-to-top .scroll-to-top-label { margin: 0; padding: 5px; } .scroll-to-top:hover { text-decoration: none; } .scroll-to-top.scroll-to-top-left {left: 20px; right: unset;} .scroll-to-top.scroll-show-mobile { display: flex; } @media (min-width: 960px) { .scroll-to-top { display: flex; } }.scroll-to-top { color: var(--color); padding: var(--padding); border-radius: var(--borderradius); background: var(--bgcolor); } .scroll-to-top:hover, .scroll-to-top:focus { color: var(--hovercolor); background: var(--hoverbgcolor); } .scroll-to-top-icon, .scroll-to-top.image .scroll-to-top-image { width: var(--size); height: var(--size); } .scroll-to-top-image { background-image: var(--bgimage); background-size: cover; }:root{--nv-primary-accent:#ffffff;--nv-secondary-accent:#6c0001;--nv-site-bg:#777777;--nv-light-bg:#ededed;--nv-dark-bg:#14171c;--nv-text-color:#14171c;--nv-text-dark-bg:#ffffff;--nv-c-1:#77b978;--nv-c-2:#f37262;--nv-fallback-ff:Arial, Helvetica, sans-serif;}
 :root{--e-global-color-nvprimaryaccent:#ffffff;--e-global-color-nvsecondaryaccent:#6c0001;--e-global-color-nvsitebg:#777777;--e-global-color-nvlightbg:#ededed;--e-global-color-nvdarkbg:#14171c;--e-global-color-nvtextcolor:#14171c;--e-global-color-nvtextdarkbg:#ffffff;--e-global-color-nvc1:#77b978;--e-global-color-nvc2:#f37262;}
+ #content.neve-main .container .alignfull > [class*="__inner-container"],#content.neve-main .alignwide > [class*="__inner-container"]{ max-width: 320px; } @media(min-width: 576px){ #content.neve-main .container .alignfull > [class*="__inner-container"],#content.neve-main .alignwide > [class*="__inner-container"]{ max-width: 962px; } } @media(min-width: 960px) { #content.neve-main .container .alignfull > [class*="__inner-container"],#content.neve-main .container .alignwide > [class*="__inner-container"]{ max-width: 1140px; } #content.neve-main > .container > .row > .col{ max-width: 100%; } body:not(.neve-off-canvas) #content.neve-main > .container > .row > .nv-sidebar-wrap, body:not(.neve-off-canvas) #content.neve-main > .container > .row > .nv-sidebar-wrap.shop-sidebar { max-width: 0%; } } 
 /*# sourceURL=neve-style-inline-css */
 </style>
 <link rel="stylesheet" id="elementor-icons-css" href="/css/elementor-icons.min.css" media="all">
@@ -56,7 +57,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <link rel="stylesheet" id="swiper-css" href="/css/swiper.min.css" media="all">
 <link rel="stylesheet" id="elementor-post-14-css" href="/css/post-14.css" media="all">
 <link rel="stylesheet" id="elementor-global-css" href="/css/global.css" media="all">
-<link rel="stylesheet" id="elementor-post-5821-css" href="/css/post-5821.css" media="all">
+<link rel="stylesheet" id="elementor-post-32-css" href="/css/post-32.css" media="all">
 <link rel="stylesheet" id="neve-google-font-montserrat-css" href="/css/css_1.css" media="all">
 <link rel="stylesheet" id="neve-google-font-poppins-css" href="/css/css_2.css" media="all">
 <link rel="stylesheet" id="google-fonts-1-css" href="/css/css.css" media="all">
@@ -465,33 +466,33 @@ and
 				<div class="hfg-slot left"><div class="builder-item desktop-left"><div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
 	
 <div class="site-logo">
-	<a class="brand" href="/" aria-label="ARCHIVIO MASTRO SCULTURE" rel="home"><div class="title-with-logo"><img width="200" height="126" src="/images/cropped-logo3.png" class="neve-site-logo skip-lazy" alt="logo3" data-variant="logo" decoding="async"><div class="nv-title-tagline-wrap"></div></div></a></div>
+	<a class="brand" href="/en/" aria-label="ARCHIVIO MASTRO SCULTURE" rel="home"><div class="title-with-logo"><img width="200" height="126" src="/images/cropped-logo3.png" class="neve-site-logo skip-lazy" alt="logo3" data-variant="logo" decoding="async"><div class="nv-title-tagline-wrap"></div></div></a></div>
 	</div>
 
 </div></div><div class="hfg-slot center"><div class="builder-item has-nav"><div class="item--inner builder-item--primary-menu has_menu" data-section="header_menu_primary" data-item-id="primary-menu">
 	<div class="nv-nav-wrap">
 	<div role="navigation" class="nav-menu-primary" aria-label="Menu principale">
 
-		<ul id="nv-primary-navigation-main" class="primary-menu-ul nav-ul menu-desktop"><li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-51"><div class="wrap"><a href="/">Home</a></div></li>
-<li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><div class="wrap"><a href="/presentazione/">Presentazione</a></div></li>
-<li id="menu-item-189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-189"><div class="wrap"><a href="/biografia/">Biografia</a></div></li>
+		<ul id="nv-primary-navigation-main" class="primary-menu-ul nav-ul menu-desktop"><li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-32 current_page_item menu-item-51 nv-active"><div class="wrap"><a href="/en/" aria-current="page">Home</a></div></li>
+<li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><div class="wrap"><a href="/en/presentazione/">Presentation</a></div></li>
+<li id="menu-item-189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-189"><div class="wrap"><a href="/en/biografia/">Biography</a></div></li>
 <li id="menu-item-884" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-884"><div class="wrap"><a><span class="menu-item-title-wrap dd-title">Opere</span></a><div role="button" aria-pressed="false" aria-label="Apri sottomenu" tabindex="0" class="caret-wrap caret 4" style="margin-left:5px;"><span class="caret"><svg fill="currentColor" aria-label="Menu a discesa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></div></div>
 <ul class="sub-menu">
-	<li id="menu-item-4509" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4509"><div class="wrap"><a href="/esperienze-giovanili-1964-1977-2/">1964-1977 Esperienze Giovanili</a></div></li>
-	<li id="menu-item-3892" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><div class="wrap"><a href="/astrazioni-simboliche-1978-1985/">1978-1985 Astrazioni Simboliche</a></div></li>
-	<li id="menu-item-4131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4131"><div class="wrap"><a href="/geometrie-elementari-1986-1997-2/">1986-1997 Geometrie Elementari</a></div></li>
+	<li id="menu-item-4509" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4509"><div class="wrap"><a href="/en/esperienze-giovanili-1964-1977-2/">1964-1977 Esperienze Giovanili</a></div></li>
+	<li id="menu-item-3892" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><div class="wrap"><a href="/en/astrazioni-simboliche-1978-1985/">1978-1985 Astrazioni Simboliche</a></div></li>
+	<li id="menu-item-4131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4131"><div class="wrap"><a href="/en/geometrie-elementari-1986-1997-2/">1986-1997 Geometrie Elementari</a></div></li>
 	<li id="menu-item-4226" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4226"><div class="wrap"><a><span class="menu-item-title-wrap dd-title">1998-2004 FIGURAZIONI RACCONTI</span></a><div role="button" aria-pressed="false" aria-label="Apri sottomenu" tabindex="0" class="caret-wrap caret 8" style="margin-left:5px;"><span class="caret"><svg fill="currentColor" aria-label="Menu a discesa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></div></div>
 	<ul class="sub-menu">
-		<li id="menu-item-4228" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4228"><div class="wrap"><a href="/figurazioni-racconti-1998-2004-parte-prima/">PARTE PRIMA</a></div></li>
-		<li id="menu-item-4227" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4227"><div class="wrap"><a href="/figurazioni-racconti-1998-2004-parte-seconda/">PARTE SECONDA</a></div></li>
+		<li id="menu-item-4228" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4228"><div class="wrap"><a href="/en/figurazioni-racconti-1998-2004-parte-prima/">PARTE PRIMA</a></div></li>
+		<li id="menu-item-4227" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4227"><div class="wrap"><a href="/en/figurazioni-racconti-1998-2004-parte-seconda/">PARTE SECONDA</a></div></li>
 	</ul>
 </li>
-	<li id="menu-item-5001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5001"><div class="wrap"><a href="/1989-2003-disegni-collage/">1989-2003 Disegni Collage</a></div></li>
+	<li id="menu-item-5001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5001"><div class="wrap"><a href="/en/1989-2003-disegni-collage/">1989-2003 Disegni Collage</a></div></li>
 </ul>
 </li>
-<li id="menu-item-6874" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-5821 current_page_item menu-item-6874 nv-active"><div class="wrap"><a href="/gallery/" aria-current="page">Photo Gallery</a></div></li>
-<li id="menu-item-5958" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5958"><div class="wrap"><a>Dispense</a></div></li>
-<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><div class="wrap"><a href="/contact/">Contatti</a></div></li>
+<li id="menu-item-6874" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6874"><div class="wrap"><a href="/en/gallery/">Photo Gallery</a></div></li>
+<li id="menu-item-5958" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5958"><div class="wrap"><a>Lectures</a></div></li>
+<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><div class="wrap"><a href="/en/contact/">Contatti</a></div></li>
 </ul>	</div>
 </div>
 
@@ -516,7 +517,7 @@ and
 				<div class="hfg-slot left"><div class="builder-item tablet-left mobile-left"><div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
 	
 <div class="site-logo">
-	<a class="brand" href="/" aria-label="ARCHIVIO MASTRO SCULTURE" rel="home"><div class="title-with-logo"><img width="200" height="126" src="/images/cropped-logo3.png" class="neve-site-logo skip-lazy" alt="logo3" data-variant="logo" decoding="async"><div class="nv-title-tagline-wrap"></div></div></a></div>
+	<a class="brand" href="/en/" aria-label="ARCHIVIO MASTRO SCULTURE" rel="home"><div class="title-with-logo"><img width="200" height="126" src="/images/cropped-logo3.png" class="neve-site-logo skip-lazy" alt="logo3" data-variant="logo" decoding="async"><div class="nv-title-tagline-wrap"></div></div></a></div>
 	</div>
 
 </div></div><div class="hfg-slot right"><div class="builder-item tablet-left mobile-left"><div class="item--inner builder-item--nav-icon" data-section="header_menu_icon" data-item-id="nav-icon">
@@ -577,26 +578,26 @@ and
 	<div class="nv-nav-wrap">
 	<div role="navigation" class="nav-menu-primary" aria-label="Menu principale">
 
-		<ul id="nv-primary-navigation-sidebar" class="primary-menu-ul nav-ul menu-mobile"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-51"><div class="wrap"><a href="/">Home</a></div></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><div class="wrap"><a href="/presentazione/">Presentazione</a></div></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-189"><div class="wrap"><a href="/biografia/">Biografia</a></div></li>
+		<ul id="nv-primary-navigation-sidebar" class="primary-menu-ul nav-ul menu-mobile"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-32 current_page_item menu-item-51 nv-active"><div class="wrap"><a href="/en/" aria-current="page">Home</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><div class="wrap"><a href="/en/presentazione/">Presentation</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-189"><div class="wrap"><a href="/en/biografia/">Biography</a></div></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-884"><div class="wrap"><a><span class="menu-item-title-wrap dd-title">Opere</span></a><button tabindex="0" type="button" class="caret-wrap navbar-toggle 4 " style="margin-left:5px;" aria-label="Attiva/disattiva Opere"><span class="caret"><svg fill="currentColor" aria-label="Menu a discesa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></button></div>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4509"><div class="wrap"><a href="/esperienze-giovanili-1964-1977-2/">1964-1977 Esperienze Giovanili</a></div></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><div class="wrap"><a href="/astrazioni-simboliche-1978-1985/">1978-1985 Astrazioni Simboliche</a></div></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4131"><div class="wrap"><a href="/geometrie-elementari-1986-1997-2/">1986-1997 Geometrie Elementari</a></div></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4509"><div class="wrap"><a href="/en/esperienze-giovanili-1964-1977-2/">1964-1977 Esperienze Giovanili</a></div></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><div class="wrap"><a href="/en/astrazioni-simboliche-1978-1985/">1978-1985 Astrazioni Simboliche</a></div></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4131"><div class="wrap"><a href="/en/geometrie-elementari-1986-1997-2/">1986-1997 Geometrie Elementari</a></div></li>
 	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4226"><div class="wrap"><a><span class="menu-item-title-wrap dd-title">1998-2004 FIGURAZIONI RACCONTI</span></a><button tabindex="0" type="button" class="caret-wrap navbar-toggle 8 " style="margin-left:5px;" aria-label="Attiva/disattiva 1998-2004 FIGURAZIONI RACCONTI"><span class="caret"><svg fill="currentColor" aria-label="Menu a discesa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></button></div>
 	<ul class="sub-menu">
-		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4228"><div class="wrap"><a href="/figurazioni-racconti-1998-2004-parte-prima/">PARTE PRIMA</a></div></li>
-		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4227"><div class="wrap"><a href="/figurazioni-racconti-1998-2004-parte-seconda/">PARTE SECONDA</a></div></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4228"><div class="wrap"><a href="/en/figurazioni-racconti-1998-2004-parte-prima/">PARTE PRIMA</a></div></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4227"><div class="wrap"><a href="/en/figurazioni-racconti-1998-2004-parte-seconda/">PARTE SECONDA</a></div></li>
 	</ul>
 </li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5001"><div class="wrap"><a href="/1989-2003-disegni-collage/">1989-2003 Disegni Collage</a></div></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5001"><div class="wrap"><a href="/en/1989-2003-disegni-collage/">1989-2003 Disegni Collage</a></div></li>
 </ul>
 </li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-5821 current_page_item menu-item-6874 nv-active"><div class="wrap"><a href="/gallery/" aria-current="page">Photo Gallery</a></div></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5958"><div class="wrap"><a>Dispense</a></div></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><div class="wrap"><a href="/contact/">Contatti</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6874"><div class="wrap"><a href="/en/gallery/">Photo Gallery</a></div></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5958"><div class="wrap"><a>Lectures</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><div class="wrap"><a href="/en/contact/">Contatti</a></div></li>
 </ul>	</div>
 </div>
 
@@ -604,7 +605,7 @@ and
 
 </div><div class="builder-item desktop-left tablet-left mobile-left"><div class="item--inner builder-item--button_base" data-section="header_button" data-item-id="button_base">
 	<div class="component-wrap">
-	<a href="/contact/" class="button button-primary">Contact Now</a>
+	<a href="/en/contact/" class="button button-primary">Contact Now</a>
 </div>
 	</div>
 
@@ -620,18 +621,21 @@ and
 	
 	<main id="content" class="neve-main">
 
-		<div data-elementor-type="wp-page" data-elementor-id="5821" class="elementor elementor-5821">
-						<section class="elementor-section elementor-top-section elementor-element elementor-element-02ed1ac elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="02ed1ac" data-element_type="section">
+<div class="container single-page-container">
+	<div class="row">
+				<div class="nv-single-page-wrap col">
+			<div class="nv-content-wrap entry-content">		<div data-elementor-type="wp-page" data-elementor-id="32" class="elementor elementor-32">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-3781566 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3781566" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7049e41" data-id="7049e41" data-element_type="column">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4ae8979" data-id="4ae8979" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-ac1609b elementor-widget elementor-widget-menu-anchor" data-id="ac1609b" data-element_type="widget" data-widget_type="menu-anchor.default">
+						<div class="elementor-element elementor-element-f80fda8 elementor-widget elementor-widget-menu-anchor" data-id="f80fda8" data-element_type="widget" data-widget_type="menu-anchor.default">
 				<div class="elementor-widget-container">
 			<style>/*! elementor - v3.23.0 - 15-07-2024 */
 body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div class="elementor-menu-anchor" id="cima"></div>
 				</div>
 				</div>
-				<div class="elementor-element elementor-element-401cb77 elementor-widget elementor-widget-spacer" data-id="401cb77" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-element elementor-element-2a31442 elementor-widget elementor-widget-spacer" data-id="2a31442" data-element_type="widget" data-widget_type="spacer.default">
 				<div class="elementor-widget-container">
 			<style>/*! elementor - v3.23.0 - 15-07-2024 */
 .elementor-column .elementor-spacer-inner{height:var(--spacer-size)}.e-con{--container-widget-width:100%}.e-con-inner>.elementor-widget-spacer,.e-con>.elementor-widget-spacer{width:var(--container-widget-width,var(--spacer-size));--align-self:var(--container-widget-align-self,initial);--flex-shrink:0}.e-con-inner>.elementor-widget-spacer>.elementor-widget-container,.e-con>.elementor-widget-spacer>.elementor-widget-container{height:100%;width:100%}.e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer,.e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer{height:100%}.e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner,.e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner{height:var(--container-widget-height,var(--spacer-size))}.e-con-inner>.elementor-widget-spacer.elementor-widget-empty,.e-con>.elementor-widget-spacer.elementor-widget-empty{position:relative;min-height:22px;min-width:22px}.e-con-inner>.elementor-widget-spacer.elementor-widget-empty .elementor-widget-empty-icon,.e-con>.elementor-widget-spacer.elementor-widget-empty .elementor-widget-empty-icon{position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;padding:0;width:22px;height:22px}</style>		<div class="elementor-spacer">
@@ -643,601 +647,461 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 		</div>
 					</div>
 		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-9b3b960 elementor-section-full_width sezionemastro elementor-section-height-default elementor-section-height-default" data-id="9b3b960" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-71f273a8 elementor-section-full_width elementor-section-stretched elementor-section-height-min-height immagine_home elementor-section-height-default elementor-section-items-middle" data-id="71f273a8" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d1a7fd5" data-id="d1a7fd5" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-6bdd32f elementor-widget elementor-widget-spacer" data-id="6bdd32f" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
-				</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-764e0cc elementor-section-full_width sezionemastro elementor-section-height-default elementor-section-height-default" data-id="764e0cc" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-80b3b2a" data-id="80b3b2a" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-0e9e846 elementor-widget elementor-widget-spacer" data-id="0e9e846" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-2a87a5b elementor-widget elementor-widget-text-editor" data-id="2a87a5b" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.23.0 - 15-07-2024 */
-.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<table>
-<tbody>
-<tr>
-<td>
-<div id="linearossa" class="linearossa" align="right"></div></td>
-<td>
-<p style="text-align: left; margin-left: -15px;">1964-2014-2024<br><strong> 
-ALTRE OPERE ALTRE COSE</strong></p>
-</td>
-</tr>
-</tbody>
-</table>						</div>
-				</div>
-				<div class="elementor-element elementor-element-edfbbfa elementor-widget elementor-widget-text-editor" data-id="edfbbfa" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<table class=" alignleft">
-<tbody>
-<tr>
-<td>
-<div id="linearossa2" class="linearossa2" align="right"></div></td>
-<td>
-<p style="margin-left: -15px;">In questa foto-raccolta, oltre a nuove opere in archivio, troveranno spazio altre esperienze professionali e di laboratorio, quali la fotografia, la ceramica, il designer ed altre attività progettuali. </p>
-</td>
-</tr>
-</tbody>
-</table>						</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-cb6f31d elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default" data-id="cb6f31d" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-554e1c2 sezioneschema" data-id="554e1c2" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-6d6ae0c elementor-widget elementor-widget-html" data-id="6d6ae0c" data-element_type="widget" data-widget_type="html.default">
-				<div class="elementor-widget-container">
-			
-      
-    <title>Schema</title>
-       <style>   
-       
-            .column_img {
-                width: 80px;
-                height: 80px;
-                align-items: center;
-                opacity: 0,55;
-                cursor: pointer;  
-                border: 4px solid #777777;
-            }
-
-            .column_gri {
-                width: 80px;
-                height: 80px;
-                align-items: center;
-                border: 4px solid #777777;
-            }
-            
-            .testoquadro {
-                width: 625px;
-                height: 140px;
-                text-align: left;
-                line-height: 14px;
-                color: white;
-                font-size: 13px;
-                font-family: Arial, Helvetica, sans-serif;
-                
-                margin-top: -130px;
-                margin-left: 205px;
-                margin-bottom: 20px;
-            }
-
-            .testosx {
-                margin-top: -110px;
-                margin-left: -37px;
-                text-align: left;
-                line-height: 14px;
-                color: white;
-                font-size: 13px;
-                font-family: Arial, Helvetica, sans-serif;
-                width: 610px;
-                height: 140px;
-            }
-
-            .testodx {
-                margin-top: -110px; 
-                margin-left: -125px; 
-                line-height: 14px;
-                color: white;
-                text-align: right;
-                font-family: Arial, Helvetica, sans-serif;
-                width: 130px;
-                height: 140px;
-            }
-
-            .linearossa {
-                margin-top: -25px;
-                margin-right: -3px;
-                width:10px; /*width of your image*/
-                height:50px; /*height of your image*/
-                align-content: right;
-                background-image:url('images/linea-rossa.jpg');
-                
-            }
-            
-             .linearossa_didascalia {
-                margin-left: 203px;
-                width:10px; /*width of your image*/
-                height:48px; /*height of your image*/
-                align-content: right;
-                background-image:url('images/linea-rossa.jpg');
-                
-            }
-            
-            
-            .linearossa2 {
-                margin-top: -25px;
-                width:10px; /*width of your image*/
-                height:50px; /*height of your image*/
-                align-content: right;
-               
-            }
-
-            p7 {
-                font-size: 10px;
-                line-height: 8px;
-            }
-
-            p8 {
-                font-size: 11px;
-                line-height: 11px;
-            }
-
-            
-            body {
-                background-color: #777777;
-            }
-
-            td, th {
-
-                border-bottom: 0px;
-                padding: 1px !important;   
-
-            }
-
-            table {
-                margin: 0 !important;
-                padding: 0 !important;
-                
-            }
-
-            .riquadrodiv {
-                margin-top: -180px;
-                align-items: left;
-                height: 80px;
-                width: 80px;
-                margin-left: -5px;
-                opacity: 1;
-
-            }
-            
-            .immaginecentrale {
-                width: 630px;
-                height: 630px;
-            }
-
-            .container_img{
-                width: 630px;
-                height: 630px;
-
-            }
-            
-            .freccie {
-                margin-right: 7px;
-     		    margin-left: 7px;
-                margin-top: 10px;
-                width:20px;
-                
-            }
-            
-          
-       </style>
-    
-        
-            <img decoding="async" src="/#" style="display:none; visibility:hidden;" id="imgCounter" alt="1">
-            <table height="650px" padding="0px" margin="0px" style="width:1000px; border: 0px;"> <!--Tabella Principale -->
-               <tbody><tr height="650px">
-                  <td width="165px">
-                        <table width="165px" height="650px" padding="0px" margin="0px" border="0px"> <!--Tabella Colonna di Sinistra -->
-                            <tbody><tr height="80px" padding="0px" margin="0px" border="0px">
-                                <td>
-                                    <div class="column_img" id="1" onclick="myBorder('1')">
-                                        <img decoding="async" src="/images/PG01X.jpg" style="display:none;" id="img1" alt="01">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG01.jpg" onclick="myFunction('img1');">
-                                    </div>
-                                       
-                                </td>
-                                <td>
-                                    <div class="column_img" id="2" onclick="myBorder('2')">   
-										<img decoding="async" src="/images/PG02X.jpg" style="display:none;" id="img2" alt="02">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG02.jpg" onclick="myFunction('img2');">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr height="80px" padding="0px" margin="0px" border="0px">
-                                <td>
-                                    <div class="column_img" id="3" onclick="myBorder('3')">   
-										<img decoding="async" src="/images/PG03X.jpg" style="display:none;" id="img3" alt="03" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG03.jpg" onclick="myFunction('img3');">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="column_img" id="4" onclick="myBorder('4')">   
-										<img decoding="async" src="/images/PG04X.jpg" style="display:none;" id="img4" alt="04" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG04.jpg" onclick="myFunction('img4');">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr height="80px" padding="0px" margin="0px" border="0px">
-                                <td>
-                                    <div class="column_img" id="5" onclick="myBorder('5')"> 
-										<img decoding="async" src="/images/PG05X.jpg" style="display:none;" id="img5" alt="05" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG05.jpg" onclick="myFunction('img5');">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="column_img" id="6" onclick="myBorder('6')">
-                                        <img decoding="async" src="/images/PG06X.jpg" style="display:none;" id="img6" alt="06" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG06.jpg" onclick="myFunction('img6');">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr height="80px" padding="0px" margin="0px" border="0px">
-                                <td>
-                                    <div class="column_img" id="7" onclick="myBorder('7')">
-                                        <img decoding="async" src="/images/PG07X.jpg" style="display:none;" id="img7" alt="07" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG07.jpg" onclick="myFunction('img7');">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="column_img" id="8" onclick="myBorder('8')">
-                                        <img decoding="async" src="/images/PG08X.jpg" style="display:none;" id="img8" alt="08" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG08.jpg" onclick="myFunction('img8');">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr height="80px" padding="0px" margin="0px" border="0px">
-                                <td>
-                                    <div class="column_img" id="9" onclick="myBorder('9')">
-                                        <img decoding="async" src="/images/PG09X.jpg" style="display:none;" id="img9" alt="09" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG09.jpg" onclick="myFunction('img9');">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="column_img" id="10" onclick="myBorder('10')">
-                                        <img decoding="async" src="/images/PG10X.jpg" style="display:none;" id="img10" alt="10" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG10.jpg" onclick="myFunction('img10');">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr height="80px" padding="0px" margin="0px" border="0px">
-                                <td>
-                                    <div class="column_img" id="11" onclick="myBorder('11')">
-                                        <img decoding="async" src="/images/PG11X.jpg" style="display:none;" id="img11" alt="11" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG11.jpg" onclick="myFunction('img11');">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="column_img" id="12" onclick="myBorder('12')">
-                                        <img decoding="async" src="/images/PG12X.jpg" style="display:none;" id="img12" alt="12" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG12.jpg" onclick="myFunction('img12');">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr height="80px" padding="0px" margin="0px" border="0px">
-                                <td>
-                                    <div class="column_img" id="13" onclick="myBorder('13')">
-                                        <img decoding="async" src="/images/PG13X.jpg" style="display:none;" id="img13" alt="13" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG13.jpg" onclick="myFunction('img13');">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="column_img" id="14" onclick="myBorder('14')">
-                                        <img decoding="async" src="/images/PG14X.jpg" style="display:none;" id="img14" alt="14" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG14.jpg" onclick="myFunction('img14');">
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody></table>
-                    </td>
-                    <td width="650px">
-                        <table width="770px" height="650px" border="0px" cellpadding="0" cellspacing="0"> <!--Tabella immagine centrale-->
-                            <tbody><tr>
-                                <td width="40px"><div class="freccie" onclick="clickIndietro();" style="cursor:pointer;"><img decoding="async" src="/images/icona-sx.png"></div></td>
-                                <td width="650px">
-                                    <!-- The expanding image container -->
-                                    <div class="container_img">
-                                                    
-                                        <!-- Expanded image -->
-                                        <img id="expandedImg" class="immaginecentrale">
-
-                                    </div>
-                                </td>
-                                <td width="40px"><div class="freccie" onclick="clickAvanti();" style="cursor:pointer;" align="right"><img decoding="async" src="/images/icona_dx.png"></div></td>
-                            </tr>
-                        </tbody></table>                        
-                  </td>
-                    <td width="165px">
-                        <table width="165px" height="650px" padding="0px" margin="0px" border="0px"> <!--Tabell colonna destra-->
-                            <tbody><tr height="80px" padding="0px" margin="0px" border="0px">
-                                <td>
-                                    <div class="column_img" id="15" onclick="myBorder('15')">
-                                        <img decoding="async" src="/images/PG15X.jpg" style="display:none;" id="img15" alt="15" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG15.jpg" onclick="myFunction('img15');">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="column_img" id="16" onclick="myBorder('16')">
-                                        <img decoding="async" src="/images/PG16X.jpg" style="display:none;" id="img16" alt="16" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG16.jpg" onclick="myFunction('img16');">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr height="80px" padding="0px" margin="0px" border="0px">
-                                <td>
-                                    <div class="column_img" id="17" onclick="myBorder('17')">
-                                        <img decoding="async" src="/images/PG17X.jpg" style="display:none;" id="img17" alt="17" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG17.jpg" onclick="myFunction('img17');">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="column_img" id="18" onclick="myBorder('18')">
-                                        <img decoding="async" src="/images/PG18X.jpg" style="display:none;" id="img18" alt="18" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG18.jpg" onclick="myFunction('img18');">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr height="80px" padding="0px" margin="0px" border="0px">
-                                <td>
-                                    <div class="column_img" id="19" onclick="myBorder('19')">
-                                        <img decoding="async" src="/images/PG19X.jpg" style="display:none;" id="img19" alt="19" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG19.jpg" onclick="myFunction('img19');">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="column_img" id="20" onclick="myBorder('20')">
-                                        <img decoding="async" src="/images/PG20X.jpg" style="display:none;" id="img20" alt="20" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG20.jpg" onclick="myFunction('img20');">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr height="80px" padding="0px" margin="0px" border="0px">
-                                <td>
-                                    <div class="column_img" id="21" onclick="myBorder('21')">
-                                        <img decoding="async" src="/images/PG21X.jpg" style="display:none;" id="img21" alt="21" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG21.jpg" onclick="myFunction('img21');">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="column_img" id="22" onclick="myBorder('22')">
-                                        <img decoding="async" src="/images/PG22X.jpg" style="display:none;" id="img22" alt="22" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG22.jpg" onclick="myFunction('img22');">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr height="80px" padding="0px" margin="0px" border="0px">
-                                <td>
-                                    <div class="column_img" id="23" onclick="myBorder('23')">
-                                        <img decoding="async" src="/images/PG23X.jpg" style="display:none;" id="img23" alt="23" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG23.jpg" onclick="myFunction('img23');">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="column_img" id="24" onclick="myBorder('24')">
-                                        <img decoding="async" src="/images/PG24X.jpg" style="display:none;" id="img24" alt="24" onclick="myFunction(this);">
-                                        <img decoding="async" style="width: 80px;" src="/images/PG24.jpg" onclick="myFunction('img24');">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr height="80px" padding="0px" margin="0px" border="0px">
-                                <td>
-                                    <div class="column_gri" id="25">
-                                        <img decoding="async" style="width: 80px;" src="/images/Quadrato-Vuoto.jpg">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="column_gri" id="26">
-                                        <img decoding="async" style="width: 80px;" src="/images/Quadrato-Vuoto.jpg">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr height="80px" padding="0px" margin="0px" border="0px">
-                                <td>
-                                   <div class="column_gri" id="27">
-                                        <img decoding="async" style="width: 80px;" src="/images/Quadrato-Vuoto.jpg">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="column_gri" id="28">
-                                        <img decoding="async" style="width: 80px;" src="/images/Quadrato-Vuoto.jpg">
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody></table>
-                    </td>
-               </tr>
-            </tbody></table>
-            <table height="210px" padding="0px" margin="0px" style="width: 1000px; border: 0px;"> <!-- Tabella Testi Didascalie-->
-                <tbody><tr height="60px">
-                    <td><div id="linearossa_didascalia" class="linearossa_didascalia"></div></td>
-                    <td width="465px"></td>
-                    <td width="385px"></td>
-                    <td width="385px"></td>
-                    <td width="225px"></td>
-                </tr>
-                 <tr height="150px">
-                    <td width="465px"></td>
-                    <td width="385px" align="left"><div id="imgtext2" class="testosx"></div></td>
-                    <td width="385px" align="right"><div id="imgtext3" class="testodx"></div></td>
-                    <td width="225px"></td>
-                </tr>
-            </tbody></table>
-            <table height="100px" padding="0px" margin="0px" style="width: 1000px; border: 0px;"> <!-- Tabella Riquadri Immagini-->
-                <tbody><tr>
-                    <td width="270px"></td>
-                    <td width="90px">
-                        <div class="riquadrodiv" onclick="riquadriabc('A')"> <img id="riquadroAimg" height="80px" width="80px"> </div>
-                    </td>
-                    <td width="90px">
-                        <div class="riquadrodiv" onclick="riquadriabc('B')"> <img id="riquadroBimg" height="80px" width="80px"> </div>
-                    </td>
-                    <td width="90px">
-                        <div class="riquadrodiv" onclick="riquadriabc('C')"> <img id="riquadroCimg" height="80px" width="80px"> </div>
-                    </td>
-                    <td width="690px"></td>
-                </tr>
-            </tbody></table>
-            <table>
-                 <tbody><tr>
-                    <td width="385px" align="right"><div id="imgtext4" class="testoquadro"></div></td>
-                    <td width="225px"></td>
-                </tr>
-            </tbody></table>
-            
-            
-            
-        
-    
-
-
-    		</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-fc9007c elementor-section-full_width sezionetitoli elementor-section-height-default elementor-section-height-default" data-id="fc9007c" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-e7d9bb7" data-id="e7d9bb7" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-d03a859 titoli_opere elementor-widget elementor-widget-text-editor" data-id="d03a859" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<a href="/esperienze-giovanili-1964-1977-2/">Esperienze Giovanili<br>
-1964-1977</a>						</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-7eac489 colonnatitoli" data-id="7eac489" data-element_type="column">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3529d78c" data-id="3529d78c" data-element_type="column">
 			<div class="elementor-widget-wrap">
 							</div>
 		</div>
-				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-9f411e6" data-id="9f411e6" data-element_type="column">
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-caf4d98 elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="caf4d98" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-21cf2f8" data-id="21cf2f8" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+				<div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-87bac91" data-id="87bac91" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-de15a47 titoli_opere elementor-widget elementor-widget-text-editor" data-id="de15a47" data-element_type="widget" data-widget_type="text-editor.default">
+						<div class="elementor-element elementor-element-dc8e645 elementor-widget elementor-widget-text-editor" data-id="dc8e645" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<a href="/geometrie-elementari-1986-1997">Geometrie
+			<style>/*! elementor - v3.23.0 - 15-07-2024 */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p><strong>Tutto subito e ogni cosa a suo tempo.</strong></p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-1d950f8" data-id="1d950f8" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+				<div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-1732dea" data-id="1732dea" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-7f00f54 elementor-widget elementor-widget-spacer" data-id="7f00f54" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-3f5af38" data-id="3f5af38" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-42f7fd7 elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="42f7fd7" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-748295c" data-id="748295c" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-f4c4378" data-id="f4c4378" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-19fce49 elementor-widget elementor-widget-text-editor" data-id="19fce49" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p><em>Ai greci bisogna dire grazie per averci insegnato a guardare in alto,</em> <em>guardando in basso e intorno.</em></p><p><em>Bisogna dire grazie per averci detto che la bellezza dell’anima si può</em> <em>esprimere attraverso la bellezza dei corpi, portando il dentro fuori e il</em> <em>fuori dentro l’umanità.</em></p><p><em>Bisogna dire grazie per averci dato un’estetica delle arti figurative</em> <em>per “rifarci gli occhi” di tanto in tanto.<br><br></em></p><p style="text-align: right;">Oronzo Mastro</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-e44d2d4 elementor-widget elementor-widget-spacer" data-id="e44d2d4" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-09e501a" data-id="09e501a" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-20d8644 elementor-section-stretched elementor-section-height-min-height elementor-section-full_width elementor-section-height-default elementor-section-items-middle" data-id="20d8644" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-custom">
+					<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-7cee7f9" data-id="7cee7f9" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-983ff03" data-id="983ff03" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-a7f804c elementor-widget elementor-widget-image" data-id="a7f804c" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.23.0 - 15-07-2024 */
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src\$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>										<img loading="lazy" decoding="async" width="1024" height="1024" src="/images/HP01B-1024x1024.jpg" class="attachment-large size-large wp-image-998" alt="HP01B" srcset="/images/HP01B-1024x1024.jpg 1024w, /images/HP01B-300x300.jpg 300w, /images/HP01B-150x150.jpg 150w, /images/HP01B-768x768.jpg 768w, /images/HP01B.jpg 1300w" sizes="(max-width: 1024px) 100vw, 1024px">													</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-e4823d0" data-id="e4823d0" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-cd4cfe2 elementor-widget elementor-widget-image" data-id="cd4cfe2" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" decoding="async" width="1024" height="1024" src="/images/HP02B-1024x1024.jpg" class="attachment-large size-large wp-image-999" alt="HP02B" srcset="/images/HP02B-1024x1024.jpg 1024w, /images/HP02B-300x300.jpg 300w, /images/HP02B-150x150.jpg 150w, /images/HP02B-768x768.jpg 768w, /images/HP02B.jpg 1300w" sizes="(max-width: 1024px) 100vw, 1024px">													</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-d5c72aa" data-id="d5c72aa" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-3cc31c8 elementor-widget elementor-widget-image" data-id="3cc31c8" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" decoding="async" width="1024" height="1024" src="/images/HP03B-1024x1024.jpg" class="attachment-large size-large wp-image-1000" alt="HP03B" srcset="/images/HP03B-1024x1024.jpg 1024w, /images/HP03B-300x300.jpg 300w, /images/HP03B-150x150.jpg 150w, /images/HP03B-768x768.jpg 768w, /images/HP03B.jpg 1300w" sizes="(max-width: 1024px) 100vw, 1024px">													</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-fb91992" data-id="fb91992" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-4439061 elementor-widget elementor-widget-image" data-id="4439061" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" decoding="async" width="1024" height="1024" src="/images/HP04B-1024x1024.jpg" class="attachment-large size-large wp-image-1001" alt="HP04B" srcset="/images/HP04B-1024x1024.jpg 1024w, /images/HP04B-300x300.jpg 300w, /images/HP04B-150x150.jpg 150w, /images/HP04B-768x768.jpg 768w, /images/HP04B.jpg 1300w" sizes="(max-width: 1024px) 100vw, 1024px">													</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-cf3a6b4" data-id="cf3a6b4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-ebec855 elementor-widget elementor-widget-image" data-id="ebec855" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" decoding="async" width="1024" height="1024" src="/images/disegnai_collage-1024x1024.jpg" class="attachment-large size-large wp-image-5334" alt="disegni_collage" srcset="/images/disegnai_collage-1024x1024.jpg 1024w, /images/disegnai_collage-300x300.jpg 300w, /images/disegnai_collage-150x150.jpg 150w, /images/disegnai_collage-768x768.jpg 768w, /images/disegnai_collage.jpg 1300w" sizes="(max-width: 1024px) 100vw, 1024px">													</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-e02757c" data-id="e02757c" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-bd3abf5 elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="bd3abf5" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-custom">
+					<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-a5e90bb" data-id="a5e90bb" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-be5120c" data-id="be5120c" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2d86e4d elementor-widget elementor-widget-spacer" data-id="2d86e4d" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-9170f7d elementor-widget elementor-widget-text-editor" data-id="9170f7d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<a href="/en/esperienze-giovanili-1964-1977/">Esperienze
+Giovanili<br>1964-1977</a>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-b042e0e elementor-widget elementor-widget-spacer" data-id="b042e0e" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-c54bd22" data-id="c54bd22" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-e485c21 elementor-widget elementor-widget-spacer" data-id="e485c21" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-f42e948 elementor-widget elementor-widget-text-editor" data-id="f42e948" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p><a href="/en/astrazioni-simboliche-1978-1985/">Astrazioni<br>Simboliche<br>1978-1985</a></p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-7c6e42b elementor-widget elementor-widget-spacer" data-id="7c6e42b" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-a10c819" data-id="a10c819" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-0eb7128 elementor-widget elementor-widget-spacer" data-id="0eb7128" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-752efbd elementor-widget elementor-widget-text-editor" data-id="752efbd" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<a href="/en/geometrie-elementari-1986-1997">Geometrie
 Elementari<br>
 1986-1997</a>						</div>
 				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-42fd080 colonnatitoli" data-id="42fd080" data-element_type="column">
-			<div class="elementor-widget-wrap">
-							</div>
-		</div>
-				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-f38514d" data-id="f38514d" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-db7d54d titoli_opere elementor-widget elementor-widget-text-editor" data-id="db7d54d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-ca72bd8 elementor-widget elementor-widget-spacer" data-id="ca72bd8" data-element_type="widget" data-widget_type="spacer.default">
 				<div class="elementor-widget-container">
-							<a href="/figurazioni-racconti-1998-2004-parte-prima/">Figurazioni
-Racconti<br>
-1998-2004 I</a>						</div>
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
 				</div>
 					</div>
 		</div>
-				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-66c6889 colonnatitoli" data-id="66c6889" data-element_type="column">
-			<div class="elementor-widget-wrap">
-							</div>
-		</div>
-				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-da1c3cc" data-id="da1c3cc" data-element_type="column">
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-90ff716" data-id="90ff716" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-23df0d3 titoli_opere elementor-widget elementor-widget-text-editor" data-id="23df0d3" data-element_type="widget" data-widget_type="text-editor.default">
+						<div class="elementor-element elementor-element-5ea2838 elementor-widget elementor-widget-spacer" data-id="5ea2838" data-element_type="widget" data-widget_type="spacer.default">
 				<div class="elementor-widget-container">
-							<a href="/figurazioni-racconti-1998-2004-parte-seconda/">Figurazioni
-Racconti<br>
-1998-2004 II</a>						</div>
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-c8701af elementor-widget elementor-widget-text-editor" data-id="c8701af" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<a href="/en/figurazioni-racconti-1998-2004-parte-prima/">Figurazioni<br> Racconti<br>
+1998-2004</a>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-5d107c5 elementor-widget elementor-widget-spacer" data-id="5d107c5" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
 				</div>
 					</div>
 		</div>
-				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-1e5733c colonnatitoli" data-id="1e5733c" data-element_type="column">
-			<div class="elementor-widget-wrap">
-							</div>
-		</div>
-				<div class="elementor-column elementor-col-11 elementor-top-column elementor-element elementor-element-bc0e130" data-id="bc0e130" data-element_type="column">
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-da7a706" data-id="da7a706" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-75128da titoli_opere elementor-widget elementor-widget-text-editor" data-id="75128da" data-element_type="widget" data-widget_type="text-editor.default">
+						<div class="elementor-element elementor-element-a477281 elementor-widget elementor-widget-spacer" data-id="a477281" data-element_type="widget" data-widget_type="spacer.default">
 				<div class="elementor-widget-container">
-							<a href="/1989-2003-disegni-collage/">Disegni<br>
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-3cf23e0 elementor-widget elementor-widget-text-editor" data-id="3cf23e0" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<a href="/en/1989-2003-disegni-collage/">Disegni<br>
 Collage<br>
 1989-2003</a>						</div>
+				</div>
+				<div class="elementor-element elementor-element-128e060 elementor-widget elementor-widget-spacer" data-id="128e060" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-71b89be" data-id="71b89be" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-197b592 elementor-section-stretched elementor-section-full_width elementor-section-height-min-height elementor-hidden-desktop elementor-hidden-tablet elementor-section-height-default elementor-section-items-middle" data-id="197b592" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-custom">
+					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-5f3225e" data-id="5f3225e" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-525c964 elementor-widget elementor-widget-spacer" data-id="525c964" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-6042505" data-id="6042505" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-9a72bee elementor-widget elementor-widget-image" data-id="9a72bee" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" src="/images/libro_300px-q3tbw6p83n92qj9u979pgapcqw4h3batbmf9xxhb94.jpg" title="" alt="libro_300px" loading="lazy">													</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-46e7484" data-id="46e7484" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-16f74bd elementor-widget elementor-widget-image" data-id="16f74bd" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" decoding="async" width="509" height="300" src="/images/riquadroHP_4.jpg" class="attachment-large size-large wp-image-2457" alt="riquadroHP_4" srcset="/images/riquadroHP_4.jpg 509w, /images/riquadroHP_4-300x177.jpg 300w" sizes="(max-width: 509px) 100vw, 509px">													</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-4dcb207 elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile" data-id="4dcb207" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-c9b7c9c elementor-widget elementor-widget-spacer" data-id="c9b7c9c" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-155490c elementor-widget elementor-widget-text-editor" data-id="155490c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							NOVITA’<br><br>						</div>
+				</div>
+				<div class="elementor-element elementor-element-c4c42a4 elementor-widget elementor-widget-text-editor" data-id="c4c42a4" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<strong>MASTRO SCULTURE</strong>						</div>
+				</div>
+				<div class="elementor-element elementor-element-547c9db elementor-widget elementor-widget-text-editor" data-id="547c9db" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>PENSIERI DISEGNI OPERE PLASTICHE</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-90744fe elementor-widget elementor-widget-text-editor" data-id="90744fe" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Un SAGGIO e una MONOGRAFIA in un unico volume.</p><p>Una riflessione, una guida nella lettura di un’opera d’arte.</p><p>Un racconto di un viaggio nel linguaggio delle immagini<br>e della figurazione.</p>						</div>
 				</div>
 					</div>
 		</div>
 					</div>
 		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-3769b05 elementor-section-stretched elementor-section-full_width elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle" data-id="3769b05" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-0d1df7a" data-id="0d1df7a" data-element_type="column">
-			<div class="elementor-widget-wrap">
-							</div>
-		</div>
-				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-fb00ed8" data-id="fb00ed8" data-element_type="column">
-			<div class="elementor-widget-wrap">
-							</div>
-		</div>
-				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-454d996" data-id="454d996" data-element_type="column">
-			<div class="elementor-widget-wrap">
-							</div>
-		</div>
-				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-2cbf232" data-id="2cbf232" data-element_type="column">
-			<div class="elementor-widget-wrap">
-							</div>
-		</div>
-				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-6089761" data-id="6089761" data-element_type="column">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-e25510d elementor-section-stretched elementor-section-full_width elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle" data-id="e25510d" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-custom">
+					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-4484927" data-id="4484927" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-ecd66fd elementor-widget elementor-widget-image" data-id="ecd66fd" data-element_type="widget" data-widget_type="image.default">
+						<div class="elementor-element elementor-element-54d88be elementor-widget elementor-widget-spacer" data-id="54d88be" data-element_type="widget" data-widget_type="spacer.default">
 				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.23.0 - 15-07-2024 */
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src\$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>											<a href="#cima">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-eee119f" data-id="eee119f" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-4e5071e elementor-widget elementor-widget-image" data-id="4e5071e" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" src="/images/libro_300px-q3tbw6p83n92qj9u979pgapcqw4h3batbmf9xxhb94.jpg" title="" alt="libro_300px" loading="lazy">													</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-0597574 colonna_home" data-id="0597574" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-c410224 elementor-widget elementor-widget-spacer" data-id="c410224" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-6f91b5b elementor-widget elementor-widget-text-editor" data-id="6f91b5b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p><span style="color: #800000;">NOVITA’</span></p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-ecab67e elementor-widget elementor-widget-text-editor" data-id="ecab67e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p><span style="color: #000000;"><strong>MASTRO SCULTURE</strong></span></p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-8de3783 elementor-widget elementor-widget-text-editor" data-id="8de3783" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p><span style="color: #000000;">PENSIERI DISEGNI OPERE PLASTICHE</span></p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-a890b7f elementor-widget elementor-widget-text-editor" data-id="a890b7f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p><span style="color: #000000;">Un SAGGIO e una MONOGRAFIA in un unico volume.</span></p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-1c37488 elementor-widget elementor-widget-text-editor" data-id="1c37488" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p><span style="color: #000000;">Una riflessione, una guida nella lettura di un’opera d’arte.</span></p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-2636bf1 elementor-widget elementor-widget-text-editor" data-id="2636bf1" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p><span style="color: #000000;">Un racconto di un viaggio nel linguaggio delle immagini e della figurazione.</span></p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-52745a4 elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile" data-id="52745a4" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-98443d7 elementor-widget elementor-widget-spacer" data-id="98443d7" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-4bcd850 elementor-widget elementor-widget-text-editor" data-id="4bcd850" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							NOVITA’<br><br>						</div>
+				</div>
+				<div class="elementor-element elementor-element-d112d00 elementor-widget elementor-widget-text-editor" data-id="d112d00" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<strong>MASTRO SCULTURE</strong>						</div>
+				</div>
+				<div class="elementor-element elementor-element-44e193b elementor-widget elementor-widget-text-editor" data-id="44e193b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>PENSIERI DISEGNI OPERE PLASTICHE</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-1bf3651 elementor-widget elementor-widget-text-editor" data-id="1bf3651" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Un SAGGIO e una MONOGRAFIA in un unico volume.</p><p>Una riflessione, una guida nella lettura di un’opera d’arte.</p><p>Un racconto di un viaggio nel linguaggio delle immagini<br>e della figurazione.</p>						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-5358465 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5358465" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-29beae4" data-id="29beae4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-e7abdbf elementor-widget elementor-widget-spacer" data-id="e7abdbf" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-0bd504d elementor-section-stretched elementor-section-full_width elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle" data-id="0bd504d" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-4480fad" data-id="4480fad" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-2c87651" data-id="2c87651" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-8086256" data-id="8086256" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-37c040f" data-id="37c040f" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-a803639" data-id="a803639" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-a802dca" data-id="a802dca" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-0f48f4b elementor-widget elementor-widget-image" data-id="0f48f4b" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+														<a href="#cima">
 							<img loading="lazy" decoding="async" width="98" height="38" src="/images/icona_in_alto.png" class="attachment-full size-full wp-image-5042" alt="alto">								</a>
 													</div>
 				</div>
 					</div>
 		</div>
-				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-1cc1a0a" data-id="1cc1a0a" data-element_type="column">
-			<div class="elementor-widget-wrap">
-							</div>
-		</div>
-				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-bddb061" data-id="bddb061" data-element_type="column">
+				<div class="elementor-column elementor-col-14 elementor-top-column elementor-element elementor-element-6f3bb0a" data-id="6f3bb0a" data-element_type="column">
 			<div class="elementor-widget-wrap">
 							</div>
 		</div>
 					</div>
 		</section>
 				</div>
-		
+		</div>		</div>
+			</div>
+</div>
+
 </main><!--/.neve-main-->
 
 <button tabindex="0" id="scroll-to-top" class="scroll-to-top scroll-to-top-right  scroll-show-mobile icon" aria-label="Torna su"><svg class="scroll-to-top-icon" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><rect width="15" height="15" fill="none"></rect><path fill="currentColor" d="M2,8.48l-.65-.65a.71.71,0,0,1,0-1L7,1.14a.72.72,0,0,1,1,0l5.69,5.7a.71.71,0,0,1,0,1L13,8.48a.71.71,0,0,1-1,0L8.67,4.94v8.42a.7.7,0,0,1-.7.7H7a.7.7,0,0,1-.7-.7V4.94L3,8.47a.7.7,0,0,1-1,0Z"></path></svg></button><footer class="site-footer" id="site-footer">

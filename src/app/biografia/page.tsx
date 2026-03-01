@@ -498,7 +498,7 @@ and
 	</div>
 
 </div></div><div class="hfg-slot right"><div class="builder-item desktop-left"><div class="item--inner builder-item--custom_html" data-section="custom_html" data-item-id="custom_html">
-	<div class="nv-html-content"> 	<p><a href="https://www.archiviomastrosculture.it"><img src="/images/bandiera_italia.jpg" alt="Italia_quadra" width="25" height="21" class="alignnone  wp-image-204"></a>&nbsp; &nbsp; &nbsp;<a href="https://www.archiviomastrosculture.eu"><img src="/images/bandiera_uk.jpg" alt="UK" width="26" height="20" class="alignnone  wp-image-205"></a>&nbsp;&nbsp;</p>
+	<div class="nv-html-content"> 	<p><a href="/"><img src="/images/bandiera_italia.jpg" alt="Italia_quadra" width="25" height="21" class="alignnone  wp-image-204"></a>&nbsp; &nbsp; &nbsp;<a href="/en"><img src="/images/bandiera_uk.jpg" alt="UK" width="26" height="20" class="alignnone  wp-image-205"></a>&nbsp;&nbsp;</p>
 </div>
 	</div>
 
