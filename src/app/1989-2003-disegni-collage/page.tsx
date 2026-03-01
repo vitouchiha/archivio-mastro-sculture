@@ -450,6 +450,7 @@ and
 /*# sourceURL=/wp-includes/blocks/social-links/style.min.css */
 </style>
  ` }} />
+      <Script strategy="afterInteractive" src="/js/1989-2003-disegni-collage-logic.js" />
       <div dangerouslySetInnerHTML={{ __html: `
 <div class="wrapper">
 	
@@ -752,7 +753,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
                 width:10px; /*width of your image*/
                 height:50px; /*height of your image*/
                 align-content: right;
-                background-image:url('images/linea-rossa.jpg');
+                background-image:url('/images/linea-rossa.jpg');
                 
             }
             
@@ -1282,6 +1283,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 
 
 ` }} />
+      <Script strategy="afterInteractive" src="/js/1989-2003-disegni-collage-logic.js" />
     </div>
   );
 }

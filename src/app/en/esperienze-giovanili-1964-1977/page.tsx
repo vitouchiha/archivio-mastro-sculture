@@ -450,6 +450,7 @@ and
 /*# sourceURL=/wp-includes/blocks/social-links/style.min.css */
 </style>
  ` }} />
+      <Script strategy="afterInteractive" src="/js/esperienze-giovanili-1964-1977-logic.js" />
       <div dangerouslySetInnerHTML={{ __html: `
 <div class="wrapper">
 	
@@ -763,7 +764,7 @@ Raccontano un vissuto creativo aperto all’arte della ceramica, della lavorazio
                 width:10px; /*width of your image*/
                 height:50px; /*height of your image*/
                 align-content: right;
-                background-image:url('images/linea-rossa.jpg');
+                background-image:url('/images/linea-rossa.jpg');
                 
             }
             
@@ -1296,6 +1297,7 @@ Collage<br>
 
 
 ` }} />
+      <Script strategy="afterInteractive" src="/js/esperienze-giovanili-1964-1977-logic.js" />
     </div>
   );
 }

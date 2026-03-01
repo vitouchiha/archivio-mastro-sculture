@@ -1,3 +1,4 @@
+import Script from 'next/script';
 import GalleryPage from '@/components/GalleryPage'
 import { pgImages, pgFeatured, navLinks } from '@/data/galleries'
 

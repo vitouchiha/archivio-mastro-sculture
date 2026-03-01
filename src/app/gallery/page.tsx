@@ -773,7 +773,7 @@ ALTRE OPERE ALTRE COSE</strong></p>
                 width:10px; /*width of your image*/
                 height:50px; /*height of your image*/
                 align-content: right;
-                background-image:url('images/linea-rossa.jpg');
+                background-image:url('/images/linea-rossa.jpg');
                 
             }
             
@@ -782,7 +782,7 @@ ALTRE OPERE ALTRE COSE</strong></p>
                 width:10px; /*width of your image*/
                 height:48px; /*height of your image*/
                 align-content: right;
-                background-image:url('images/linea-rossa.jpg');
+                background-image:url('/images/linea-rossa.jpg');
                 
             }
             
