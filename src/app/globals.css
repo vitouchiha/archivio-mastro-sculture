@@ -532,6 +532,87 @@ body {
   line-height: 16px;
 }
 
+.book-text-col .book-desc-line {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+  line-height: 16px;
+  margin: 0 0 2px 0;
+  padding: 0;
+}
+
+/* ----- BOOK MOBILE SECTION (visible on mobile only) ----- */
+.book-mobile-section {
+  display: none;
+  width: 100%;
+  background: #EBEBE9;
+}
+.book-mobile-inner {
+  display: flex;
+  width: 100%;
+  min-height: 299px;
+  align-items: center;
+}
+.book-mobile-spacer {
+  width: 15%;
+  flex-shrink: 0;
+  background: #EBEBE9;
+  min-height: 299px;
+}
+.book-mobile-img {
+  width: 35%;
+  flex-shrink: 0;
+  background: #EBEBE9;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.book-mobile-img img {
+  display: block;
+  width: 100%;
+  height: 298px;
+  object-fit: contain;
+}
+.book-mobile-img2 {
+  width: 27%;
+  flex-shrink: 0;
+  background: #EBEBE9;
+  display: flex;
+  align-items: center;
+}
+.book-mobile-img2 img {
+  display: block;
+  width: 100%;
+  height: 298px;
+  object-fit: contain;
+  margin-left: -20%;
+}
+
+/* ----- SCROLL TO TOP SECTION ----- */
+.scroll-up-section {
+  width: 100%;
+  background: #EBEBE9;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 4px 0;
+}
+.scroll-up-section a {
+  margin-right: 5%;
+}
+.scroll-up-section img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .book-section { display: none; }
+  .book-mobile-section { display: block; }
+}
+
 /* ======================================================
    GALLERY PAGES
    ====================================================== */
