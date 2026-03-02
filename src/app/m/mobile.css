@@ -574,7 +574,7 @@ a {
 
 /* ---- PRESENTAZIONE PAGE ---- */
 .m-pres-page {
-  background: #ebebeb;
+  background: #f2f1ef;
   min-height: calc(100vh - 54px);
 }
 .m-pres-hero {
@@ -612,6 +612,12 @@ a {
   line-height: 1.8;
   margin: 0 0 14px;
   color: var(--primary);
+}
+.m-pres-divider {
+  border: none;
+  height: 6px;
+  background: var(--secondary);
+  margin: 20px 0;
 }
 
 /* ---- BIOGRAFIA PAGE ---- */
