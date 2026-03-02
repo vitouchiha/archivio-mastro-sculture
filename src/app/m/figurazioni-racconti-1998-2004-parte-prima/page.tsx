@@ -1,5 +1,6 @@
 ﻿import MobileOpereGallery from '../MobileOpereGallery'
 import { frImages, frFeatured } from '@/data/galleries'
+import { extendedDescriptions } from '@/data/extended_descriptions'
 
 const sections = [
   { label: 'Esperienze Giovanili 1964–1977', href: '/m/esperienze-giovanili-1964-1977' },
@@ -10,12 +11,26 @@ const sections = [
 ]
 
 export default function Page() {
+  const captions = frImages.map((_, i) => {
+    if (i === 0) {
+       return { 
+         title: frFeatured.title, 
+         year: frFeatured.year, 
+         material: frFeatured.material, 
+         dimensions: frFeatured.dimensions, 
+         code: frFeatured.code,
+         description: extendedDescriptions.fp1?.[1]?.description || undefined
+       };
+    }
+    return { title: `Opera ${i + 1}`, description: extendedDescriptions.fp1?.[i + 1]?.description || undefined };
+  });
+
   return (
     <MobileOpereGallery
       title="Figurazioni Racconti 1998–2004 – Parte Prima"
       subtitle="Sculture e plastiche figurative"
       images={frImages}
-      captions={[{ title: frFeatured.title, year: frFeatured.year, material: frFeatured.material, dimensions: frFeatured.dimensions, code: frFeatured.code }]}
+      captions={captions}
       sectionLinks={sections}
     />
   )

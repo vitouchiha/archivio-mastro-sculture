@@ -1,5 +1,6 @@
 ﻿import MobileOpereGallery from '../MobileOpereGallery'
 import { dcImages, dcFeatured } from '@/data/galleries'
+import { extendedDescriptions } from '@/data/extended_descriptions'
 
 const sections = [
   { label: 'Esperienze Giovanili 1964–1977', href: '/m/esperienze-giovanili-1964-1977' },
@@ -10,12 +11,26 @@ const sections = [
 ]
 
 export default function Page() {
+  const captions = dcImages.map((_, i) => {
+    if (i === 0) {
+       return { 
+         title: dcFeatured.title, 
+         year: dcFeatured.year, 
+         material: dcFeatured.material, 
+         dimensions: dcFeatured.dimensions, 
+         code: dcFeatured.code,
+         description: extendedDescriptions.dc?.[1]?.description || undefined
+       };
+    }
+    return { title: `Opera ${i + 1}`, description: extendedDescriptions.dc?.[i + 1]?.description || undefined };
+  });
+
   return (
     <MobileOpereGallery
       title="Disegni Collage 1989–2003"
       subtitle="Disegni e collage su carta"
       images={dcImages}
-      captions={[{ title: dcFeatured.title, year: dcFeatured.year, material: dcFeatured.material, dimensions: dcFeatured.dimensions, code: dcFeatured.code }]}
+      captions={captions}
       sectionLinks={sections}
     />
   )
