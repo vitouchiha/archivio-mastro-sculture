@@ -18,7 +18,9 @@ function fadeIn(audio: HTMLAudioElement) {
 export default function AudioPlayer() {
   const audioRef = useRef<HTMLAudioElement | null>(null)
   const [playing, setPlaying] = useState(false)
-  const [visible, setVisible] = useState(false)
+  const [btnVisible, setBtnVisible] = useState(false)
+  // banner shown on touch devices when audio hasn't started yet
+  const [showBanner, setShowBanner] = useState(false)
   const startedRef = useRef(false)
 
   useEffect(() => {
@@ -28,6 +30,7 @@ export default function AudioPlayer() {
     audioRef.current = audio
 
     const hasVisited = !!localStorage.getItem(STORAGE_KEY)
+    const isTouch = navigator.maxTouchPoints > 0
 
     function startAudio(muted = true) {
       if (startedRef.current) return
@@ -37,51 +40,63 @@ export default function AudioPlayer() {
       audio.play().then(() => {
         if (muted) fadeIn(audio)
         setPlaying(true)
-        setVisible(true)
+        setBtnVisible(true)
+        setShowBanner(false)
         localStorage.setItem(STORAGE_KEY, '1')
       }).catch(() => {
         startedRef.current = false
       })
     }
 
-    // Returning visitors: try unmuted directly (Chrome allows for engaged sites)
-    // First visitors: try muted autoplay (universal trick)
-    const t = setTimeout(() => {
-      if (hasVisited) {
-        // Try unmuted first, fallback to muted
-        audio.muted = false
-        audio.volume = TARGET_VOL
-        audio.play()
-          .then(() => { setPlaying(true); setVisible(true) })
-          .catch(() => startAudio(true))  // fallback muted
-      } else {
-        startAudio(true)
+    if (isTouch) {
+      // Touch/mobile: show tap-to-start banner after short delay
+      const t = setTimeout(() => {
+        if (!startedRef.current) setShowBanner(true)
+        setBtnVisible(true)
+      }, 800)
+
+      // On any touch/click anywhere on the page, start audio
+      const onInteract = () => {
+        setShowBanner(false)
+        startAudio(false)
       }
-      setVisible(true)  // always show button after 600ms
-    }, 600)
+      document.addEventListener('touchstart', onInteract, { once: true })
+      document.addEventListener('click', onInteract, { once: true })
 
-    // Catch-all: on any page interaction, start if not yet playing
-    const onInteract = () => {
-      if (startedRef.current) return
-      startedRef.current = true
-      audio.muted = false
-      audio.volume = TARGET_VOL
-      audio.play().then(() => {
-        setPlaying(true)
-        localStorage.setItem(STORAGE_KEY, '1')
-      }).catch(() => { startedRef.current = false })
-    }
-    document.addEventListener('click', onInteract, { once: true })
-    document.addEventListener('touchstart', onInteract, { once: true })
-    document.addEventListener('keydown', onInteract, { once: true })
+      return () => {
+        clearTimeout(t)
+        document.removeEventListener('touchstart', onInteract)
+        document.removeEventListener('click', onInteract)
+        audio.pause(); audio.src = ''
+      }
+    } else {
+      // Desktop: aggressive autoplay
+      setBtnVisible(true)
+      const t = setTimeout(() => {
+        if (hasVisited) {
+          audio.muted = false
+          audio.volume = TARGET_VOL
+          audio.play()
+            .then(() => { startedRef.current = true; setPlaying(true) })
+            .catch(() => startAudio(true))
+        } else {
+          startAudio(true)
+        }
+      }, 500)
 
-    return () => {
-      clearTimeout(t)
-      document.removeEventListener('click', onInteract)
-      document.removeEventListener('touchstart', onInteract)
-      document.removeEventListener('keydown', onInteract)
-      audio.pause()
-      audio.src = ''
+      const onInteract = () => {
+        if (startedRef.current) return
+        startAudio(false)
+      }
+      document.addEventListener('click', onInteract, { once: true })
+      document.addEventListener('keydown', onInteract, { once: true })
+
+      return () => {
+        clearTimeout(t)
+        document.removeEventListener('click', onInteract)
+        document.removeEventListener('keydown', onInteract)
+        audio.pause(); audio.src = ''
+      }
     }
   }, [])
 
@@ -97,6 +112,7 @@ export default function AudioPlayer() {
       audio.play().then(() => {
         setPlaying(true)
         startedRef.current = true
+        setShowBanner(false)
         localStorage.setItem(STORAGE_KEY, '1')
       }).catch(() => {})
     }
@@ -105,10 +121,11 @@ export default function AudioPlayer() {
   return (
     <>
       <style>{`
+        /* ---- floating button ---- */
         .ap-btn {
           position: fixed;
           bottom: 22px;
-          right: 22px;
+          right: 18px;
           z-index: 9999;
           width: 46px;
           height: 46px;
@@ -130,17 +147,16 @@ export default function AudioPlayer() {
           opacity: 1;
           pointer-events: auto;
         }
-        .ap-btn:hover {
-          background: rgba(30, 20, 10, 0.88);
+        .ap-btn:hover, .ap-btn:active {
+          background: rgba(30, 20, 10, 0.92);
           transform: scale(1.08);
         }
         .ap-btn svg {
           width: 22px;
           height: 22px;
-          fill: rgba(255,255,255,0.88);
           flex-shrink: 0;
         }
-        /* animated bars shown when playing */
+        /* ---- animated bars (playing state) ---- */
         .ap-bars {
           display: flex;
           align-items: flex-end;
@@ -162,33 +178,67 @@ export default function AudioPlayer() {
           from { transform: scaleY(0.4); }
           to   { transform: scaleY(1); }
         }
-        .ap-tooltip {
-          position: absolute;
-          right: 54px;
-          bottom: 50%;
-          transform: translateY(50%);
-          background: rgba(30,20,10,0.82);
-          color: rgba(255,255,255,0.9);
-          font-size: 0.72rem;
-          letter-spacing: 0.03em;
+        /* ---- tap-to-start banner (mobile only) ---- */
+        .ap-banner {
+          position: fixed;
+          bottom: 80px;
+          right: 12px;
+          z-index: 9998;
+          background: rgba(30, 20, 10, 0.82);
+          backdrop-filter: blur(8px);
+          -webkit-backdrop-filter: blur(8px);
+          color: rgba(255,255,255,0.92);
+          font-size: 0.78rem;
+          letter-spacing: 0.04em;
+          padding: 9px 14px 9px 12px;
+          border-radius: 22px;
+          display: flex;
+          align-items: center;
+          gap: 7px;
+          box-shadow: 0 3px 16px rgba(0,0,0,0.3);
+          cursor: pointer;
+          animation: ap-pulse 2.4s ease-in-out infinite;
           white-space: nowrap;
-          padding: 4px 9px;
-          border-radius: 4px;
-          opacity: 0;
-          pointer-events: none;
-          transition: opacity 0.2s;
+          border: none;
+          font-family: inherit;
         }
-        .ap-btn:hover .ap-tooltip {
-          opacity: 1;
+        .ap-banner-dot {
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+          background: #e8c080;
+          animation: ap-dot 2.4s ease-in-out infinite;
+          flex-shrink: 0;
+        }
+        @keyframes ap-pulse {
+          0%, 100% { opacity: 0.9; transform: scale(1); }
+          50%       { opacity: 1;   transform: scale(1.03); }
+        }
+        @keyframes ap-dot {
+          0%, 100% { opacity: 0.6; }
+          50%       { opacity: 1; }
         }
       `}</style>
+
+      {/* Tap-to-start banner for mobile / Brave */}
+      {showBanner && (
+        <button
+          className="ap-banner"
+          onClick={toggle}
+          aria-label="Tocca per avviare la musica"
+        >
+          <span className="ap-banner-dot" />
+          ♪ Tocca per la musica
+        </button>
+      )}
+
+      {/* Floating play/pause button */}
       <button
-        className={`ap-btn${visible ? ' ap-visible' : ''}`}
+        className={`ap-btn${btnVisible ? ' ap-visible' : ''}`}
         onClick={toggle}
         aria-label={playing ? 'Pausa musica' : 'Avvia musica'}
         title={playing ? 'Pausa musica' : 'Avvia musica'}
       >
-        <span className="ap-tooltip">{playing ? 'Pausa' : 'Musica'}</span>
         {playing ? (
           <span className="ap-bars">
             <span />
@@ -197,9 +247,10 @@ export default function AudioPlayer() {
             <span />
           </span>
         ) : (
-          /* music note SVG */
           <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9 18V5l12-2v13M9 18a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm12-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" stroke="rgba(255,255,255,0.88)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+            <path d="M9 18V5l12-2v13M9 18a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm12-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              stroke="rgba(255,255,255,0.88)" strokeWidth="1.8"
+              strokeLinecap="round" strokeLinejoin="round" fill="none"/>
           </svg>
         )}
       </button>
