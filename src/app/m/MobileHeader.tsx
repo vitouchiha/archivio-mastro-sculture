@@ -27,7 +27,7 @@ const navItemsEN = [
   { section: 'Menu' },
   { label: 'Home', href: '/m/en' },
   { label: 'Presentation', href: '/m/en/presentazione' },
-  { label: 'Biography', href: '/en/biografia' },
+  { label: 'Biography', href: '/m/en/biografia' },
   { label: 'News', href: '/m/news' },
   { section: 'Works' },
   { label: '1964–1977 Early Years', href: '/m/esperienze-giovanili-1964-1977' },

@@ -614,6 +614,27 @@ a {
   color: var(--primary);
 }
 
+/* ---- BIOGRAFIA PAGE ---- */
+.m-bio-page {
+  background: #878787;
+  min-height: calc(100vh - 54px);
+}
+.m-bio-body {
+  padding: 20px 16px 40px;
+}
+.m-bio-body p {
+  font-size: 0.88rem;
+  line-height: 1.8;
+  margin: 0 0 14px;
+  color: rgba(255,255,255,0.92);
+}
+.m-bio-body strong {
+  color: #fff;
+}
+.m-bio-body em {
+  color: rgba(255,255,255,0.8);
+}
+
 /* ---- PHOTO GALLERY ---- */
 .m-photo-grid {
   display: grid;
