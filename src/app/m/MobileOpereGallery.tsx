@@ -8,6 +8,7 @@ export interface OpereCaption {
   material?: string
   dimensions?: string
   code?: string
+  description?: string
 }
 
 interface MobileOpereGalleryProps {
@@ -41,7 +42,7 @@ export default function MobileOpereGallery({ title, subtitle, images, captions, 
       <div className="m-viewer">
         {/* Image + side arrows */}
         <div className="m-viewer-img-wrap">
-          <button className="m-viewer-btn prev" onClick={prev}>&#8249;</button>
+          <button className="m-viewer-btn prev" onClick={prev}>‹</button>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={images[current]}
@@ -49,7 +50,7 @@ export default function MobileOpereGallery({ title, subtitle, images, captions, 
             className="m-viewer-img"
             onClick={() => setLightbox(current)}
           />
-          <button className="m-viewer-btn next" onClick={next}>&#8250;</button>
+          <button className="m-viewer-btn next" onClick={next}>›</button>
         </div>
 
         {/* Caption bar */}
@@ -64,6 +65,9 @@ export default function MobileOpereGallery({ title, subtitle, images, captions, 
                 <p className="m-viewer-caption-meta">
                   {[caption.material, caption.dimensions].filter(Boolean).join(' / ')}
                 </p>
+                {caption.description && (
+                  <div className="m-viewer-caption-desc" dangerouslySetInnerHTML={{ __html: caption.description }} />
+                )}
               </>
             ) : (
               <p className="m-viewer-caption-meta">{current + 1} / {images.length}</p>
@@ -124,8 +128,8 @@ export default function MobileOpereGallery({ title, subtitle, images, captions, 
           <img src={images[lightbox]} alt={lbCaption?.title ?? `Opera ${lightbox + 1}`} onClick={e => e.stopPropagation()} />
           <button className="m-lightbox-close" onClick={() => setLightbox(null)}>✕</button>
           <div className="m-lightbox-nav" onClick={e => e.stopPropagation()}>
-            <button onClick={lbPrev}>&#8249;</button>
-            <button onClick={lbNext}>&#8250;</button>
+            <button onClick={lbPrev}>‹</button>
+            <button onClick={lbNext}>›</button>
           </div>
           <div className="m-lightbox-caption">
             {lbCaption ? (
@@ -133,6 +137,7 @@ export default function MobileOpereGallery({ title, subtitle, images, captions, 
                 <strong style={{ display: 'block', fontSize: '0.85rem', marginBottom: 4 }}>{lbCaption.title}</strong>
                 {[lbCaption.year, lbCaption.material, lbCaption.dimensions].filter(Boolean).join(' — ')}
                 {lbCaption.code && <span style={{ display: 'block', fontSize: '0.7rem', opacity: 0.6, marginTop: 2 }}>{lbCaption.code}</span>}
+                {lbCaption.description && <div style={{ display: 'block', fontSize: '0.8rem', marginTop: 12, lineHeight: 1.5, textAlign: 'left', whiteSpace: 'pre-wrap' }} dangerouslySetInnerHTML={{ __html: lbCaption.description }} />}
               </>
             ) : (
               `${lightbox + 1} / ${images.length}`

@@ -7,11 +7,16 @@ const images = Array.from({ length: 24 }, (_, i) =>
   `/images/PG${String(i + 1).padStart(2, '0')}X.jpg`
 )
 
+import { extendedDescriptions } from '@/data/extended_descriptions'
+
 export default function MobileGallery() {
   const [lightbox, setLightbox] = useState<number | null>(null)
 
   const prev = () => setLightbox(c => c !== null ? (c - 1 + images.length) % images.length : 0)
   const next = () => setLightbox(c => c !== null ? (c + 1) % images.length : 0)
+
+  // Map descriptions based on photo index (0-indexed array vs 1-indexed extracted)
+  const lbDesc = lightbox !== null ? extendedDescriptions.pg[lightbox + 1]?.description : null;
 
   return (
     <>
@@ -44,6 +49,7 @@ export default function MobileGallery() {
             <strong>{pgFeatured.title}</strong><br />
             {pgFeatured.year}{pgFeatured.material ? ` — ${pgFeatured.material}` : ''}
             <span style={{ display: 'block', marginTop: 4, opacity: 0.6 }}>{lightbox + 1} / {images.length}</span>
+            {lbDesc && <div style={{ display: 'block', fontSize: '0.8rem', marginTop: 12, lineHeight: 1.5, textAlign: 'left', whiteSpace: 'pre-wrap' }} dangerouslySetInnerHTML={{ __html: lbDesc }} />}
           </div>
         </div>
       )}
