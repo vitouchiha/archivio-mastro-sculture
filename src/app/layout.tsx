@@ -1,6 +1,7 @@
 ﻿import type { Metadata } from 'next'
 import Script from 'next/script'
 import './globals.css'
+import AudioPlayer from '@/components/AudioPlayer'
 
 export const metadata: Metadata = {
   title: 'Archivio Mastro Sculture',
@@ -36,6 +37,7 @@ export default function RootLayout({
       </head>
       <body>
         <main id="content">{children}</main>
+        <AudioPlayer />
       </body>
     </html>
   )

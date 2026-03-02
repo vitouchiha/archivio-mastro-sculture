@@ -1,5 +1,6 @@
 import './mobile.css'
 import MobileHeader from './MobileHeader'
+import AudioPlayer from '@/components/AudioPlayer'
 import type { Metadata, Viewport } from 'next'
 
 export const metadata: Metadata = {
@@ -17,6 +18,7 @@ export default function MobileLayout({ children }: { children: React.ReactNode }
     <div className="m-page">
       <MobileHeader />
       <main>{children}</main>
+      <AudioPlayer />
       <footer className="m-footer">
         <div className="m-footer-logo">
           {/* eslint-disable-next-line @next/next/no-img-element */}
