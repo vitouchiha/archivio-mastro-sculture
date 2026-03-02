@@ -2,65 +2,87 @@
 
 import { useEffect, useRef, useState } from 'react'
 
+const TARGET_VOL = 0.38
+const STORAGE_KEY = 'ams_audio_visited'
+
+function fadeIn(audio: HTMLAudioElement) {
+  audio.muted = false
+  let v = 0
+  const id = setInterval(() => {
+    v = Math.min(v + 0.03, TARGET_VOL)
+    audio.volume = v
+    if (v >= TARGET_VOL) clearInterval(id)
+  }, 80)
+}
+
 export default function AudioPlayer() {
   const audioRef = useRef<HTMLAudioElement | null>(null)
   const [playing, setPlaying] = useState(false)
   const [visible, setVisible] = useState(false)
+  const startedRef = useRef(false)
 
   useEffect(() => {
     const audio = new Audio('/music/ambient.mp3')
     audio.loop = true
-    audio.volume = 0
+    audio.preload = 'auto'
     audioRef.current = audio
 
-    // Strategy: start muted (allowed by all browsers), then fade in volume
-    audio.muted = true
-    const tryAutoplay = () => {
+    const hasVisited = !!localStorage.getItem(STORAGE_KEY)
+
+    function startAudio(muted = true) {
+      if (startedRef.current) return
+      startedRef.current = true
+      audio.muted = muted
+      audio.volume = muted ? 0 : TARGET_VOL
       audio.play().then(() => {
-        // Autoplay succeeded — fade in volume from 0 to 0.35
-        audio.muted = false
-        let vol = 0
-        const fade = setInterval(() => {
-          vol = Math.min(vol + 0.025, 0.35)
-          audio.volume = vol
-          if (vol >= 0.35) clearInterval(fade)
-        }, 120)
+        if (muted) fadeIn(audio)
         setPlaying(true)
         setVisible(true)
+        localStorage.setItem(STORAGE_KEY, '1')
       }).catch(() => {
-        // Autoplay blocked — show button for manual start
-        audio.muted = false
-        audio.volume = 0.35
-        setVisible(true)
+        startedRef.current = false
       })
     }
 
-    // Small delay to let the page settle before trying autoplay
-    const t = setTimeout(tryAutoplay, 600)
+    // Returning visitors: try unmuted directly (Chrome allows for engaged sites)
+    // First visitors: try muted autoplay (universal trick)
+    const t = setTimeout(() => {
+      if (hasVisited) {
+        // Try unmuted first, fallback to muted
+        audio.muted = false
+        audio.volume = TARGET_VOL
+        audio.play()
+          .then(() => { setPlaying(true); setVisible(true) })
+          .catch(() => startAudio(true))  // fallback muted
+      } else {
+        startAudio(true)
+      }
+      setVisible(true)  // always show button after 600ms
+    }, 600)
 
-    // Fallback: also try on first user interaction with the page
+    // Catch-all: on any page interaction, start if not yet playing
     const onInteract = () => {
-      const a = audioRef.current
-      if (!a || playing) return
-      a.muted = false
-      a.volume = 0.35
-      a.play().then(() => {
+      if (startedRef.current) return
+      startedRef.current = true
+      audio.muted = false
+      audio.volume = TARGET_VOL
+      audio.play().then(() => {
         setPlaying(true)
-        document.removeEventListener('click', onInteract)
-        document.removeEventListener('touchstart', onInteract)
-      }).catch(() => {})
+        localStorage.setItem(STORAGE_KEY, '1')
+      }).catch(() => { startedRef.current = false })
     }
     document.addEventListener('click', onInteract, { once: true })
     document.addEventListener('touchstart', onInteract, { once: true })
+    document.addEventListener('keydown', onInteract, { once: true })
 
     return () => {
       clearTimeout(t)
       document.removeEventListener('click', onInteract)
       document.removeEventListener('touchstart', onInteract)
+      document.removeEventListener('keydown', onInteract)
       audio.pause()
       audio.src = ''
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   function toggle() {
@@ -71,8 +93,12 @@ export default function AudioPlayer() {
       setPlaying(false)
     } else {
       audio.muted = false
-      audio.volume = 0.35
-      audio.play().then(() => setPlaying(true)).catch(() => {})
+      audio.volume = TARGET_VOL
+      audio.play().then(() => {
+        setPlaying(true)
+        startedRef.current = true
+        localStorage.setItem(STORAGE_KEY, '1')
+      }).catch(() => {})
     }
   }
 
