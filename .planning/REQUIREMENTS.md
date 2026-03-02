@@ -5,7 +5,7 @@
 - [x] REQ-02: Risoluzione bug script inline delle gallerie e dei banner.
 - [x] REQ-03: Riorganizzazione Responsive. L'HTML statico PC non deve cambiare, ma se aperto da cellulare deve aggiustarsi (media queries limitanti le scale o layout).
 - [x] REQ-04: I18N. L'icona Italia deve portare alla Home. L'icona Inglese porta l'intero frontend alla traduzione in Inglese.
-- [ ] REQ-05: Modulabilità/Nuove Pagine. Facilità di aggiungere sezioni senza impazzire nel codice pre-generato.
+- [x] REQ-05: Modulabilità/Nuove Pagine. Facilità di aggiungere sezioni senza impazzire nel codice pre-generato.
 
 ## v2 (Nice to Have)
 - [ ] REQ-10: Convertire i container legacy in HTML ordinato gradualmente col tempo (refactor puristico).

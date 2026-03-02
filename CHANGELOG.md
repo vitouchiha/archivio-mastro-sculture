@@ -11,6 +11,43 @@ e il progetto adotta il [Semantic Versioning](https://semver.org/lang/it/).
 
 ---
 
+## [1.4.0] – 2026-03-02
+
+### Aggiunto
+- **`WpPageShell` component** (`src/components/WpPageShell.tsx`) — componente React riutilizzabile che incapsula tutto il boilerplate CSS WordPress/Elementor condiviso (Neve theme, Elementor core, Google Fonts, inline styles, ~51 KB). Accetta `bodyClasses`, `postCss` e `html` come props.
+- **`src/lib/wpBoilerplate.ts`** — costanti generate automaticamente con il CSS boilerplate estratto da `biografia/page.tsx` (circa 28 KB prima del CSS page-specific + 22 KB dopo), più funzione `wpHead(postCssFiles[])` per comporre la testa HTML.
+- **Script `extract-boilerplate.mjs`** — estrae il boilerplate condiviso da qualsiasi `page.tsx` esistente e scrive `wpBoilerplate.ts`.
+- **Script `refactor-page.mjs`** — refactora una `page.tsx` WP-style per usare `WpPageShell` (bodyClasses + postCss + html puro).
+- **Fase GSD 3 — Setup Nuove Sezioni** (`REQ-05`): piano `.planning/phases/03-new-sections/03-01-PLAN.md` + context.
+
+### Modificato
+- **`src/app/biografia/page.tsx`** refactored con `WpPageShell` — da 1046 a 606 righe; il contenuto HTML puro è separato dal boilerplate condiviso.
+- **`REQUIREMENTS.md`** — `REQ-05` marcato completato `[x]`.
+- **`ROADMAP.md`** — Phase 3 marcata Completed con data 2 Marzo.
+- **`STATE.md`** — aggiornato con next action per nuove sezioni.
+- **Palette mobile ridisegnata** (`src/app/m/mobile.css`) — rimosso il colore oro `#a07427` non presente nel design desktop. Nuova palette coerente con il sito originale:
+  - `--accent: #6c0001` (era `#a07427` oro → ora rosso identico al desktop)
+  - `--bg: #f5f5f5` (era `#f5f4f0` beige caldo → ora grigio neutro)
+  - `--gray: #777777` aggiunto come token per testi secondari
+  - Colori inline `#666`, `#555`, `#333`, `#f0eeea`, `#ddd` sostituiti con variabili CSS
+  - Link border-left sezioni da `#a07427` a `#6c0001`
+  - `.m-quote-author` da rosso-oro a bianco opaco con linea separatrice rossa
+- **Viewer gallerie opere mobile** (`MobileOpereGallery.tsx` + `mobile.css`) completamente ridisegnato:
+  - Frecce prev/next spostate sui **lati dell'immagine** (posizione assoluta), sfondo rosso `#6c0001`, forma rettangolare 36×56px (uguale al desktop)
+  - Immagine con sfondo bianco e padding 12px (cornice bianca identica al desktop)
+  - Barra caption separata sotto la foto su sfondo `#f0f0f0`: titolo in *corsivo* + anno a sinistra, materiale/dimensioni riga sotto, codice catalogo in grassetto a destra — layout identico all'allegato
+  - Rimossa la vecchia `m-viewer-nav` (frecce + testo centrato nella stessa riga)
+
+### Corretto
+- **Sovrapposizione immagini home mobile** — `globals.css` conteneva `height: auto !important` nel media query mobile (necessario per le pagine Elementor legacy) che sovrastava le altezze fisse in `mobile.css`. Corretto aggiungendo `!important` sulle regole mobile:
+  - `.m-strip-img` → `height: 100px !important` + `flex-shrink: 0`
+  - `.m-strip-item` → aggiunto `overflow: hidden`
+  - `.m-card img` → `height: 100% !important`
+  - `.m-thumb img` → `height: 100% !important`
+  - `.m-quote-bg` → `height: 100% !important`
+
+---
+
 ## [1.3.2] – 2026-03-01
 
 ### Aggiunto
@@ -128,6 +165,10 @@ e il progetto adotta il [Semantic Versioning](https://semver.org/lang/it/).
 - Configurazione Tailwind CSS + CSS globale fedele al design originale
 - Repository git inizializzato con primo commit
 
-[Unreleased]: https://github.com/vitouchiha/archivio-mastro-sculture/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/vitouchiha/archivio-mastro-sculture/compare/v1.4.0...HEAD
+[1.4.0]: https://github.com/vitouchiha/archivio-mastro-sculture/compare/v1.3.2...v1.4.0
+[1.3.2]: https://github.com/vitouchiha/archivio-mastro-sculture/compare/v1.3.1...v1.3.2
+[1.3.1]: https://github.com/vitouchiha/archivio-mastro-sculture/compare/v1.3.0...v1.3.1
+[1.3.0]: https://github.com/vitouchiha/archivio-mastro-sculture/compare/v1.2.3...v1.3.0
 [1.1.0]: https://github.com/vitouchiha/archivio-mastro-sculture/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/vitouchiha/archivio-mastro-sculture/releases/tag/v1.0.0

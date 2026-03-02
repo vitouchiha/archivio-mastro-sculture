@@ -31,38 +31,33 @@ Ricostruzione in **Next.js** del sito WordPress *Archivio Mastro Sculture*, con 
 
 ## 📋 Versione Corrente
 
-### v1.3.1 — Gallery captions, footer completo, fix encoding
+### v1.4.0 — WpPageShell, Palette Mobile, Gallery Viewer & Bug Fix (2 Marzo 2026)
 
-**Novità:**
+**Nuove funzionalità:**
 
-- ✅ **Didascalie gallerie opere** — prima immagine con titolo, anno, materiale, dimensioni e codice catalogo nel viewer e nel lightbox
-- ✅ **Image in evidenza preposta** — ogni galleria opera inizia con la foto "X" (alta qualità) con metadata completi
-- ✅ **Thumbnails 3 colonne** — immagini più grandi e leggibili (era 4 colonne)
-- ✅ **Footer mobile completo** — logo, indirizzo Bologna, email, C.F., icone Facebook/Instagram, link versione desktop
-- ✅ **Hero home → `Home10.png`** — foto identitaria del gruppo sculture
-- ✅ **Rimossa barra "versione mobile"** — sostituita da link nel footer
-- ✅ **Rimossa bandiera UK dalla nav** — non esiste versione mobile EN sul sito `.eu`
-- ✅ **Fix encoding** — corretti tutti i `â€"` → `–` nei titoli gallerie e nav links
+- ✅ **`WpPageShell` component** — Componente React in `src/components/WpPageShell.tsx` che incapsula l'intero boilerplate CSS WordPress/Elementor condiviso. Ogni `page.tsx` ora ha solo ~10–20 righe invece di ~1000.
+- ✅ **`src/lib/wpBoilerplate.ts`** — Costanti generate automaticamente con la testa CSS condivisa (~51 KB) + funzione `wpHead(postCssFiles[])`. Estratto con `extract-boilerplate.mjs`.
+- ✅ **REQ-05 completato** — Nuove sezioni aggiungibili in pochi minuti senza toccare il codice pre-generato.
 
-**v1.3.0 (precedente):**
+**Mobile — Palette corretta:**
 
-- ✅ **Mobile site `/m/*`** — interfaccia completamente separata e ottimizzata per smartphone
-- ✅ **Middleware redirect** — gli utenti mobile vengono reindirizzati automaticamente a `/m/`
-- ✅ **Visual identity corretta** — header beige `#ebebe9`, font `Poppins`/`Montserrat`, colori del sito originale
-- ✅ **MobileHeader** — hamburger navigation con drawer fullscreen e tutte le sezioni
-- ✅ **MobileOpereGallery** — viewer immagini con prev/next, miniature e lightbox
-- ✅ **14 pagine mobile** — home, 6 gallerie opere, photo gallery, presentazione, biografia, news, contatti, dispense, privacy
-- ✅ **Serverless deployment** — rimosso `output: 'export'`, richiesto per il middleware
-- ✅ **Colori originali** — `#ebebe9` header, `#a07427` gold accent, `#6c0001` dark red, `#14171c` text
-- ✅ **i18n** — pagine Presentazione e Biografia tradotte in inglese (`/en/*`)
-- ✅ **Gallery fix** — script JS della gallery principale iniettati correttamente, immagine iniziale caricata
+- ✅ **Rimosso colore oro `#a07427`** — assente nel sito desktop originale; sostituito con rosso `#6c0001` in tutti i punti
+- ✅ **`--gray: #777777`** aggiunto come token CSS per testi secondari
+- ✅ **Sfondo pagine `#f5f5f5`** (grigio neutro identico al desktop)
 
-**Precedenti (v1.2.x):**
-- Fix CSS reset definitivo (gap grigio superiore azzerato)
-- Fix `/?pagename=contact` → `/contact/`
-- Fix `/figurazioni-racconti-1998-2004/` → parti prima/seconda
-- Redirect Pages per compatibilità URL WordPress
-- 448 immagini, 24 CSS, 19 JS, 55 font sincronizzati
+**Mobile — Gallery Viewer ridisegnato:**
+
+- ✅ **Frecce prev/next sui lati dell'immagine** — posizione assoluta, sfondo rosso `#6c0001`, forma rettangolare (stile identico desktop)
+- ✅ **Cornice bianca immagine** — sfondo bianco + padding attorno alla foto
+- ✅ **Barra caption desktop-style** — titolo *corsivo* + anno a sinistra, materiale/dimensioni sotto, codice catalogo in grassetto a destra
+
+**Correzioni:**
+
+- ✅ **Sovrapposizione immagini home mobile** — `globals.css` aveva `height: auto !important` (Phase 1 Elementor fix) che sovrascriveva le altezze fisse di `mobile.css`. Risolto con `!important` su strip, card, thumb e quote bg.
+
+**v1.3.2 (precedente):**
+- ✅ Strip opere dark red nella home mobile, sezione NOVITÀ, sezione citazione con overlay
+- ✅ Tutte le gallerie con immagini HQ X-series
 
 ---
 
@@ -96,15 +91,20 @@ src/
 │   │   └── privacy-policy/
 │   └── [desktop pages...]               # ─── DESKTOP PAGES ───
 ├── components/
+│   ├── WpPageShell.tsx                   # ⭐ Boilerplate wrapper (Phase 3)
 │   ├── Header.tsx
 │   ├── Footer.tsx
 │   ├── GalleryPage.tsx
 │   ├── Lightbox.tsx
 │   ├── TextPage.tsx
 │   └── ContactForm.tsx
+├── lib/
+│   └── wpBoilerplate.ts                  # CSS boilerplate condiviso (~51KB, auto-generato)
 └── data/
     └── galleries.ts                      # Dati immagini gallerie
 middleware.ts                             # Edge middleware UA detection
+extract-boilerplate.mjs                   # Script estrazione boilerplate
+refactor-page.mjs                         # Script refactoring page.tsx → WpPageShell
 ```
 
 ---
@@ -130,10 +130,11 @@ Asset statici (`/images`, `/_next`, `/css`, ecc.) vengono esclusi dal redirect.
 | Token | Valore | Uso |
 |-------|--------|-----|
 | `--primary` | `#14171c` | Testo, bottoni, nav drawer |
-| `--accent` | `#a07427` | Gold accent, link attivi |
-| `--secondary` | `#6c0001` | Dark red, hover |
-| `--header-bg` | `#ebebe9` | Header beige (uguale alloriginale) |
-| `--bg` | `#f5f4f0` | Background pagine |
+| `--secondary` | `#6c0001` | Rosso principale, frecce gallery, strip |
+| `--accent` | `#6c0001` | Highlight, link attivi, border sezioni |
+| `--gray` | `#777777` | Testi secondari, metadata |
+| `--header-bg` | `#ebebe9` | Header beige (uguale all'originale) |
+| `--bg` | `#f5f5f5` | Background pagine (grigio neutro) |
 | `--font` | Poppins | Body text |
 | `--font-heading` | Montserrat 700 | Titoli, nav, etichette |
 
@@ -251,6 +252,6 @@ Il progetto richiede **Edge Middleware** (Vercel o Next.js standalone server). N
 
 ---
 
-**Ultimo aggiornamento:** Marzo 2026
-**Versione:** v1.3.1
-**Stato:** ✅ Production Ready — Serverless (Vercel) | Mobile Site | Desktop 1:1 Clone
+**Ultimo aggiornamento:** 2 Marzo 2026
+**Versione:** v1.4.0
+**Stato:** ✅ Production Ready — Serverless (Vercel) | Mobile Site | Desktop 1:1 Clone | WpPageShell modulare

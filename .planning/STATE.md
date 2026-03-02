@@ -3,6 +3,8 @@
 ## Current Position
 - Phase 1: Responsive Adaptation (Mobile) - COMPLETE
 - Phase 2: Internationalization (I18N) - COMPLETE
+- Phase 3: Nuove Sezioni / Modulabilità - COMPLETE
 - Migrazione base da WP: V1.
 
-**Next Action:** Creazione ed esplorazione delle feature per facilitare la nascita di nuove sezioni (Fase 3: Req-05). Oppure aggiornamento manuale dei contenuti e refactoring estetici.
+**Next Action:** Per aggiungere una nuova pagina, creare `src/app/<route>/page.tsx` usando `WpPageShell` da `@/components/WpPageShell`.
+Opzionalmente: refactoring delle pagine esistenti con `refactor-page.mjs` adattato, o aggiornamento manuale dei contenuti.

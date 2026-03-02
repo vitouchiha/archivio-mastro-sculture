@@ -25,12 +25,13 @@ Plans:
 ### Phase 3: Setup Nuove Sezioni
 **Goal:** Predisporre schemi liberi per future pagine.
 **Requirements:** REQ-05
-**Status:** Not started
+**Status:** Completed
 
-## Progress
+Plans:
+- [x] 03-01: WpPageShell component + refactor biografia
 
 | Phase | Plans | Status | Completed |
 |-------|-------|--------|-----------|
 | 1. Mobile Responsive| 1/1 | Completed | March 1 |
 | 2. App Router I18N | 1/1 | Completed | March 1 |
-| 3. New pages | 0/1 | Not started | - |
+| 3. New pages | 1/1 | Completed | March 2 |

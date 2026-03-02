@@ -39,27 +39,39 @@ export default function MobileOpereGallery({ title, subtitle, images, captions, 
 
       {/* Viewer */}
       <div className="m-viewer">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={images[current]}
-          alt={caption?.title ?? `Opera ${current + 1}`}
-          className="m-viewer-img"
-          onClick={() => setLightbox(current)}
-        />
-        <div className="m-viewer-nav">
-          <button className="m-viewer-btn" onClick={prev}>&#8249;</button>
-          <div className="m-viewer-info">
+        {/* Image + side arrows */}
+        <div className="m-viewer-img-wrap">
+          <button className="m-viewer-btn prev" onClick={prev}>&#8249;</button>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={images[current]}
+            alt={caption?.title ?? `Opera ${current + 1}`}
+            className="m-viewer-img"
+            onClick={() => setLightbox(current)}
+          />
+          <button className="m-viewer-btn next" onClick={next}>&#8250;</button>
+        </div>
+
+        {/* Caption bar */}
+        <div className="m-viewer-caption">
+          <div className="m-viewer-caption-left">
             {caption ? (
               <>
-                <strong>{caption.title}</strong>
-                <small>{[caption.year, caption.material, caption.dimensions].filter(Boolean).join(' — ')}</small>
-                {caption.code && <small style={{ color: '#999' }}>{caption.code}</small>}
+                <p className="m-viewer-caption-title">
+                  <em>{caption.title}</em>
+                  {caption.year ? `, ${caption.year}` : ''}
+                </p>
+                <p className="m-viewer-caption-meta">
+                  {[caption.material, caption.dimensions].filter(Boolean).join(' / ')}
+                </p>
               </>
             ) : (
-              <small>{current + 1} / {images.length}</small>
+              <p className="m-viewer-caption-meta">{current + 1} / {images.length}</p>
             )}
           </div>
-          <button className="m-viewer-btn" onClick={next}>&#8250;</button>
+          {caption?.code && (
+            <span className="m-viewer-caption-code">{caption.code}</span>
+          )}
         </div>
       </div>
 
@@ -95,7 +107,7 @@ export default function MobileOpereGallery({ title, subtitle, images, captions, 
                   fontWeight: 700,
                   textTransform: 'uppercase',
                   letterSpacing: '0.5px',
-                  borderLeft: '3px solid #a07427',
+                  borderLeft: '3px solid #6c0001',
                 }}
               >
                 {l.label}
