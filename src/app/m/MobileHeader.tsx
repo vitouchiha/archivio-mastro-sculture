@@ -38,7 +38,7 @@ const navItemsEN = [
   { label: '1989–2003 Drawings Collage', href: '/m/1989-2003-disegni-collage' },
   { label: '2024 Gallery Exhibitions', href: '/m/presenze-galleristiche-mostre-2024' },
   { section: 'More' },
-  { label: 'Photo Gallery', href: '/m/gallery' },
+  { label: 'Photo Gallery', href: '/m/en/gallery' },
   { label: 'Readings', href: '/m/dispense' },
   { label: 'Contact', href: '/m/en/contact' },
 ]

@@ -1065,6 +1065,20 @@ a {
   color: var(--white);
 }
 
+/* ---- PHOTO GALLERY hero 3-image banner ---- */
+.m-pg-banner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  width: 100%;
+}
+.m-pg-banner-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
 /* ---- SECTION INTRO DESCRIPTION (below banner) ---- */
 .m-section-desc {
   padding: 16px 16px 20px;

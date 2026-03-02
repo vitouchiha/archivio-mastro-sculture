@@ -9,7 +9,7 @@ const images = Array.from({ length: 24 }, (_, i) =>
 
 const HERO_IMGS = ['/images/PG01X.jpg', '/images/PG09X.jpg', '/images/PG17X.jpg']
 
-export default function MobileGallery() {
+export default function MobileGalleryEN() {
   const [lightbox, setLightbox] = useState<number | null>(null)
 
   const prev = () => setLightbox(c => c !== null ? (c - 1 + images.length) % images.length : 0)
@@ -27,24 +27,24 @@ export default function MobileGallery() {
       </div>
       <div className="m-banner-meta">
         <span className="m-banner-year">1964-2014-2024</span>
-        <h1 className="m-banner-title">ALTRE OPERE ALTRE COSE</h1>
+        <h1 className="m-banner-title">OTHER WORKS, OTHER THINGS</h1>
       </div>
       <p className="m-section-desc">
-        In questa foto-raccolta, oltre a nuove opere in archivio, troveranno spazio altre esperienze
-        professionali e di laboratorio, quali la fotografia, la ceramica, il designer ed altre attività progettuali.
+        In this photo collection, in addition to new works in the archive, there will be space for other
+        professional and workshop experiences, such as photography, ceramics, design and other project activities.
       </p>
       <div className="m-photo-grid">
         {images.map((src, i) => (
           <div key={i} className="m-photo-item" onClick={() => setLightbox(i)}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={src} alt={`Foto ${i + 1}`} loading="lazy" />
+            <img src={src} alt={`Photo ${i + 1}`} loading="lazy" />
           </div>
         ))}
       </div>
       {lightbox !== null && (
         <div className="m-lightbox" onClick={() => setLightbox(null)}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={images[lightbox]} alt={`Foto ${lightbox + 1}`} onClick={e => e.stopPropagation()} />
+          <img src={images[lightbox]} alt={`Photo ${lightbox + 1}`} onClick={e => e.stopPropagation()} />
           <button className="m-lightbox-close" onClick={() => setLightbox(null)}>✕</button>
           <div className="m-lightbox-nav" onClick={e => e.stopPropagation()}>
             <button onClick={prev}>‹</button>
