@@ -35,7 +35,7 @@ export default function MobileEnHome() {
         {[
           { label: 'Presentation', href: '/en/presentazione' },
           { label: 'Biography', href: '/en/biografia' },
-          { label: 'Contact', href: '/m/contact' },
+          { label: 'Contact', href: '/m/en/contact' },
         ].map(l => (
           <Link
             key={l.href}
@@ -106,7 +106,7 @@ export default function MobileEnHome() {
           <Link key={s.href} href={s.href} className="m-card">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={s.img} alt={s.label} loading="lazy" />
-            <div className="m-card-label">{s.label.replace('\n', '\n')}</div>
+            <div className="m-card-label" style={{ whiteSpace: 'pre-line' }}>{s.label}</div>
           </Link>
         ))}
       </div>

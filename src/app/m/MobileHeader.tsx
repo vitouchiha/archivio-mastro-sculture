@@ -40,7 +40,7 @@ const navItemsEN = [
   { section: 'More' },
   { label: 'Photo Gallery', href: '/m/gallery' },
   { label: 'Readings', href: '/m/dispense' },
-  { label: 'Contact', href: '/m/contact' },
+  { label: 'Contact', href: '/m/en/contact' },
 ]
 
 export default function MobileHeader() {
