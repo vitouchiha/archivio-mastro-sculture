@@ -90,8 +90,6 @@ export default function MobileHome() {
 
       {/* Quote section */}
       <div className="m-quote-section">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/images/riquadroHP_4.jpg" alt="" role="presentation" loading="lazy" className="m-quote-bg" />
         <div className="m-quote-overlay">
           <h2 className="m-quote-heading">TUTTO SUBITO E OGNI COSA A SUO TEMPO.</h2>
           <p className="m-quote-p">Ai greci bisogna dire grazie per averci insegnato a guardare in alto, guardando in basso e intorno.</p>

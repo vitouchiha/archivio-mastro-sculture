@@ -771,29 +771,16 @@ a {
 .m-quote-section {
   position: relative;
   overflow: hidden;
-  min-height: 320px;
-}
-
-.m-quote-bg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  filter: brightness(0.45);
-  z-index: 0;
+  background: var(--gray); /* Sfondo grigio invece dell'immagine */
 }
 
 .m-quote-overlay {
   position: relative;
   z-index: 1;
-  padding: 28px 20px 36px;
+  padding: 36px 20px 42px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: rgba(20,23,28,0.7);
 }
 
 .m-quote-heading {
