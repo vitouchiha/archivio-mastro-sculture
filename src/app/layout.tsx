@@ -25,7 +25,7 @@ export default function RootLayout({
               (function() {
                 var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(navigator.userAgent);
                 var pathname = window.location.pathname;
-                if (isMobile && !pathname.startsWith('/m') && !pathname.startsWith('/_next')) {
+                if (isMobile && !pathname.startsWith('/m') && !pathname.startsWith('/_next') && !pathname.startsWith('/en')) {
                   var mobilePath = '/m' + (pathname === '/' ? '' : pathname);
                   window.location.replace(mobilePath);
                 }

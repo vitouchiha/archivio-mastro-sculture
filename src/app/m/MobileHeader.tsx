@@ -1,8 +1,9 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
-const navItems = [
+const navItemsIT = [
   { section: 'Menu' },
   { label: 'Home', href: '/m' },
   { label: 'Presentazione', href: '/m/presentazione' },
@@ -22,13 +23,37 @@ const navItems = [
   { label: 'Contatti', href: '/m/contact' },
 ]
 
+const navItemsEN = [
+  { section: 'Menu' },
+  { label: 'Home', href: '/m/en' },
+  { label: 'Presentation', href: '/en/presentazione' },
+  { label: 'Biography', href: '/en/biografia' },
+  { label: 'News', href: '/m/news' },
+  { section: 'Works' },
+  { label: '1964–1977 Early Years', href: '/m/esperienze-giovanili-1964-1977' },
+  { label: '1978–1985 Symbolic Abstractions', href: '/m/astrazioni-simboliche-1978-1985' },
+  { label: '1986–1997 Elementary Geometries', href: '/m/geometrie-elementari-1986-1997' },
+  { label: '1998–2004 Figurations I', href: '/m/figurazioni-racconti-1998-2004-parte-prima' },
+  { label: '1998–2004 Figurations II', href: '/m/figurazioni-racconti-1998-2004-parte-seconda' },
+  { label: '1989–2003 Drawings Collage', href: '/m/1989-2003-disegni-collage' },
+  { label: '2024 Gallery Exhibitions', href: '/m/presenze-galleristiche-mostre-2024' },
+  { section: 'More' },
+  { label: 'Photo Gallery', href: '/m/gallery' },
+  { label: 'Readings', href: '/m/dispense' },
+  { label: 'Contact', href: '/m/contact' },
+]
+
 export default function MobileHeader() {
   const [open, setOpen] = useState(false)
+  const pathname = usePathname()
+  const isEN = pathname.startsWith('/m/en')
+  const navItems = isEN ? navItemsEN : navItemsIT
+  const homeHref = isEN ? '/m/en' : '/m'
 
   return (
     <>
       <header className="m-header">
-        <Link href="/m" className="m-logo" onClick={() => setOpen(false)}>
+        <Link href={homeHref} className="m-logo" onClick={() => setOpen(false)}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/cropped-logo3.png" alt="Archivio Mastro Sculture" />
         </Link>
@@ -63,9 +88,9 @@ export default function MobileHeader() {
             )}
             <div className="m-lang-bar">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <a href="https://www.archiviomastrosculture.it"><img src="/images/bandiera_italia.jpg" alt="ITA" /></a>
+              <a href={isEN ? '/m' : 'https://www.archiviomastrosculture.it'}><img src="/images/bandiera_italia.jpg" alt="ITA" /></a>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <a href="/en"><img src="/images/bandiera_uk.jpg" alt="ENG" /></a>
+              <a href="/m/en"><img src="/images/bandiera_uk.jpg" alt="ENG" /></a>
             </div>
           </nav>
         </div>
