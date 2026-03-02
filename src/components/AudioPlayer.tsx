@@ -22,12 +22,30 @@ export default function AudioPlayer() {
   // banner shown on touch devices when audio hasn't started yet
   const [showBanner, setShowBanner] = useState(false)
   const startedRef = useRef(false)
+  // track if audio was playing before going to background
+  const wasPlayingRef = useRef(false)
 
   useEffect(() => {
     const audio = new Audio('/music/ambient.mp3')
     audio.loop = true
     audio.preload = 'auto'
     audioRef.current = audio
+
+    // Pause when screen locks / app goes to background; resume on return
+    const onVisibilityChange = () => {
+      if (document.hidden) {
+        wasPlayingRef.current = !audio.paused
+        if (!audio.paused) {
+          audio.pause()
+          setPlaying(false)
+        }
+      } else {
+        if (wasPlayingRef.current) {
+          audio.play().then(() => setPlaying(true)).catch(() => {})
+        }
+      }
+    }
+    document.addEventListener('visibilitychange', onVisibilityChange)
 
     const hasVisited = !!localStorage.getItem(STORAGE_KEY)
     const isTouch = navigator.maxTouchPoints > 0
@@ -67,6 +85,7 @@ export default function AudioPlayer() {
         clearTimeout(t)
         document.removeEventListener('touchstart', onInteract)
         document.removeEventListener('click', onInteract)
+        document.removeEventListener('visibilitychange', onVisibilityChange)
         audio.pause(); audio.src = ''
       }
     } else {
@@ -95,6 +114,7 @@ export default function AudioPlayer() {
         clearTimeout(t)
         document.removeEventListener('click', onInteract)
         document.removeEventListener('keydown', onInteract)
+        document.removeEventListener('visibilitychange', onVisibilityChange)
         audio.pause(); audio.src = ''
       }
     }
