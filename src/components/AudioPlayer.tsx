@@ -5,6 +5,21 @@ import { useEffect, useRef, useState } from 'react'
 const TARGET_VOL = 0.38
 const STORAGE_KEY = 'ams_audio_visited'
 
+// ── Module-level singleton ────────────────────────────────────────────────────
+// Lives outside the component so it survives page navigation / remounts.
+let _audio: HTMLAudioElement | null = null
+let _started = false
+
+function getAudio(): HTMLAudioElement {
+  if (!_audio) {
+    _audio = new Audio('/music/ambient.mp3')
+    _audio.loop = true
+    _audio.preload = 'auto'
+  }
+  return _audio
+}
+// ─────────────────────────────────────────────────────────────────────────────
+
 function fadeIn(audio: HTMLAudioElement) {
   audio.muted = false
   let v = 0
@@ -16,20 +31,21 @@ function fadeIn(audio: HTMLAudioElement) {
 }
 
 export default function AudioPlayer() {
-  const audioRef = useRef<HTMLAudioElement | null>(null)
   const [playing, setPlaying] = useState(false)
   const [btnVisible, setBtnVisible] = useState(false)
   // banner shown on touch devices when audio hasn't started yet
   const [showBanner, setShowBanner] = useState(false)
-  const startedRef = useRef(false)
   // track if audio was playing before going to background
   const wasPlayingRef = useRef(false)
 
   useEffect(() => {
-    const audio = new Audio('/music/ambient.mp3')
-    audio.loop = true
-    audio.preload = 'auto'
-    audioRef.current = audio
+    const audio = getAudio()
+
+    // Sync UI state on remount (navigation returned to this layout)
+    if (_started) {
+      setPlaying(!audio.paused)
+      setBtnVisible(true)
+    }
 
     // Pause when screen locks / app goes to background; resume on return
     const onVisibilityChange = () => {
@@ -51,8 +67,8 @@ export default function AudioPlayer() {
     const isTouch = navigator.maxTouchPoints > 0
 
     function startAudio(muted = true) {
-      if (startedRef.current) return
-      startedRef.current = true
+      if (_started) return
+      _started = true
       audio.muted = muted
       audio.volume = muted ? 0 : TARGET_VOL
       audio.play().then(() => {
@@ -62,14 +78,22 @@ export default function AudioPlayer() {
         setShowBanner(false)
         localStorage.setItem(STORAGE_KEY, '1')
       }).catch(() => {
-        startedRef.current = false
+        _started = false
       })
+    }
+
+    // If already started, just keep the visibilitychange listener
+    if (_started) {
+      return () => {
+        document.removeEventListener('visibilitychange', onVisibilityChange)
+        // ⚠️  Do NOT pause/destroy audio on unmount — navigation must not stop music
+      }
     }
 
     if (isTouch) {
       // Touch/mobile: show tap-to-start banner after short delay
       const t = setTimeout(() => {
-        if (!startedRef.current) setShowBanner(true)
+        if (!_started) setShowBanner(true)
         setBtnVisible(true)
       }, 800)
 
@@ -86,7 +110,7 @@ export default function AudioPlayer() {
         document.removeEventListener('touchstart', onInteract)
         document.removeEventListener('click', onInteract)
         document.removeEventListener('visibilitychange', onVisibilityChange)
-        audio.pause(); audio.src = ''
+        // ⚠️  Do NOT stop audio on unmount
       }
     } else {
       // Desktop: aggressive autoplay
@@ -96,7 +120,7 @@ export default function AudioPlayer() {
           audio.muted = false
           audio.volume = TARGET_VOL
           audio.play()
-            .then(() => { startedRef.current = true; setPlaying(true) })
+            .then(() => { _started = true; setPlaying(true) })
             .catch(() => startAudio(true))
         } else {
           startAudio(true)
@@ -104,7 +128,7 @@ export default function AudioPlayer() {
       }, 500)
 
       const onInteract = () => {
-        if (startedRef.current) return
+        if (_started) return
         startAudio(false)
       }
       document.addEventListener('click', onInteract, { once: true })
@@ -115,14 +139,13 @@ export default function AudioPlayer() {
         document.removeEventListener('click', onInteract)
         document.removeEventListener('keydown', onInteract)
         document.removeEventListener('visibilitychange', onVisibilityChange)
-        audio.pause(); audio.src = ''
+        // ⚠️  Do NOT stop audio on unmount
       }
     }
   }, [])
 
   function toggle() {
-    const audio = audioRef.current
-    if (!audio) return
+    const audio = getAudio()
     if (playing) {
       audio.pause()
       setPlaying(false)
@@ -131,7 +154,7 @@ export default function AudioPlayer() {
       audio.volume = TARGET_VOL
       audio.play().then(() => {
         setPlaying(true)
-        startedRef.current = true
+        _started = true
         setShowBanner(false)
         localStorage.setItem(STORAGE_KEY, '1')
       }).catch(() => {})
