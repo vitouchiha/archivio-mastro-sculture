@@ -1,11 +1,15 @@
 import './mobile.css'
 import MobileHeader from './MobileHeader'
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 
 export const metadata: Metadata = {
   title: 'Archivio Mastro Sculture',
   description: 'Archivio delle opere plastiche, sculture e disegni collage di Oronzo Mastro – Bologna.',
-  viewport: 'width=device-width, initial-scale=1',
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function MobileLayout({ children }: { children: React.ReactNode }) {
