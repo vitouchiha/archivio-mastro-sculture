@@ -1,63 +1,34 @@
 'use client'
-import { useState } from 'react'
-import { pgFeatured } from '@/data/galleries'
+import MobileOpereGallery from '../MobileOpereGallery'
+import { pgImages } from '@/data/galleries'
+import { descriptions, parseCaptionFromRaw } from '@/data/descriptions'
 import { extendedDescriptions } from '@/data/extended_descriptions'
-
-const images = Array.from({ length: 24 }, (_, i) =>
-  `/images/PG${String(i + 1).padStart(2, '0')}X.jpg`
-)
 
 const HERO_IMGS = ['/images/PG01X.jpg', '/images/PG09X.jpg', '/images/PG17X.jpg']
 
+const sections = [
+  { label: 'Esperienze Giovanili 1964–1977', href: '/m/esperienze-giovanili-1964-1977' },
+  { label: 'Astrazioni Simboliche', href: '/m/astrazioni-simboliche-1978-1985' },
+  { label: 'Geometrie Elementari 1986–1997', href: '/m/geometrie-elementari-1986-1997' },
+  { label: 'Figurazioni Racconti I', href: '/m/figurazioni-racconti-1998-2004-parte-prima' },
+  { label: 'Figurazioni Racconti II', href: '/m/figurazioni-racconti-1998-2004-parte-seconda' },
+  { label: 'Disegni Collage 1989–2003', href: '/m/1989-2003-disegni-collage' },
+]
+
 export default function MobileGallery() {
-  const [lightbox, setLightbox] = useState<number | null>(null)
-
-  const prev = () => setLightbox(c => c !== null ? (c - 1 + images.length) % images.length : 0)
-  const next = () => setLightbox(c => c !== null ? (c + 1) % images.length : 0)
-
-  const lbDesc = lightbox !== null ? extendedDescriptions.pg[lightbox + 1]?.description : null
+  const captions = pgImages.map((_, i) =>
+    parseCaptionFromRaw(descriptions.pg[i + 1], extendedDescriptions.pg[i + 1]?.description)
+  )
 
   return (
-    <div className="m-gallery-bg">
-      <div className="m-pg-banner-grid">
-        {HERO_IMGS.map((src, i) => (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img key={i} src={src} alt={`Gallery hero ${i + 1}`} />
-        ))}
-      </div>
-      <div className="m-banner-meta">
-        <span className="m-banner-year">1964-2014-2024</span>
-        <h1 className="m-banner-title">ALTRE OPERE ALTRE COSE</h1>
-      </div>
-      <p className="m-section-desc">
-        In questa foto-raccolta, oltre a nuove opere in archivio, troveranno spazio altre esperienze
-        professionali e di laboratorio, quali la fotografia, la ceramica, il designer ed altre attività progettuali.
-      </p>
-      <div className="m-photo-grid">
-        {images.map((src, i) => (
-          <div key={i} className="m-photo-item" onClick={() => setLightbox(i)}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={src} alt={`Foto ${i + 1}`} loading="lazy" />
-          </div>
-        ))}
-      </div>
-      {lightbox !== null && (
-        <div className="m-lightbox" onClick={() => setLightbox(null)}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={images[lightbox]} alt={`Foto ${lightbox + 1}`} onClick={e => e.stopPropagation()} />
-          <button className="m-lightbox-close" onClick={() => setLightbox(null)}>✕</button>
-          <div className="m-lightbox-nav" onClick={e => e.stopPropagation()}>
-            <button onClick={prev}>‹</button>
-            <button onClick={next}>›</button>
-          </div>
-          <div className="m-lightbox-caption">
-            <strong>{pgFeatured.title}</strong><br />
-            {pgFeatured.year}{pgFeatured.material ? ` — ${pgFeatured.material}` : ''}
-            <span style={{ display: 'block', marginTop: 4, opacity: 0.6 }}>{lightbox + 1} / {images.length}</span>
-            {lbDesc && <div style={{ display: 'block', fontSize: '0.8rem', marginTop: 12, lineHeight: 1.5, textAlign: 'left', whiteSpace: 'pre-wrap' }} dangerouslySetInnerHTML={{ __html: lbDesc }} />}
-          </div>
-        </div>
-      )}
-    </div>
+    <MobileOpereGallery
+      title="1964–2014–2024"
+      subtitle="ALTRE OPERE ALTRE COSE"
+      heroBannerImages={HERO_IMGS}
+      sectionDescription="In questa foto-raccolta, oltre a nuove opere in archivio, troveranno spazio altre esperienze professionali e di laboratorio, quali la fotografia, la ceramica, il designer ed altre attivit&#xE0; progettuali."
+      images={pgImages}
+      captions={captions}
+      sectionLinks={sections}
+    />
   )
 }

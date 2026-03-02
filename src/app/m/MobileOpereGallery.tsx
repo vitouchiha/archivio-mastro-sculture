@@ -15,6 +15,7 @@ interface MobileOpereGalleryProps {
   title: string
   subtitle?: string
   bannerSrc?: string
+  heroBannerImages?: string[]
   sectionDescription?: string
   images: string[]
   captions?: (OpereCaption | null)[]
@@ -22,7 +23,7 @@ interface MobileOpereGalleryProps {
   sectionLinks?: { label: string; href: string }[]
 }
 
-export default function MobileOpereGallery({ title, subtitle, bannerSrc, sectionDescription, images, captions, subImages, sectionLinks }: MobileOpereGalleryProps) {
+export default function MobileOpereGallery({ title, subtitle, bannerSrc, heroBannerImages, sectionDescription, images, captions, subImages, sectionLinks }: MobileOpereGalleryProps) {
   const [current, setCurrent] = useState(0)
   const [lightbox, setLightbox] = useState<number | null>(null)
   const [subLightbox, setSubLightbox] = useState<string | null>(null)
@@ -45,7 +46,14 @@ export default function MobileOpereGallery({ title, subtitle, bannerSrc, section
 
   return (
     <div className="m-gallery-bg">
-      {bannerSrc ? (
+      {heroBannerImages ? (
+        <div className="m-pg-banner-grid">
+          {heroBannerImages.map((src, i) => (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img key={i} src={src} alt="" />
+          ))}
+        </div>
+      ) : bannerSrc ? (
         <div className="m-section-banner">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={bannerSrc} alt={title} />
