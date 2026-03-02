@@ -2,6 +2,7 @@
 import { dcImages } from '@/data/galleries'
 import { descriptions, parseCaptionFromRaw } from '@/data/descriptions'
 import { extendedDescriptions } from '@/data/extended_descriptions'
+import { subImages, sectionDescriptions } from '@/data/subimages'
 
 const sections = [
   { label: 'Esperienze Giovanili 1964–1977', href: '/m/esperienze-giovanili-1964-1977' },
@@ -21,8 +22,10 @@ export default function Page() {
       title="Disegni Collage 1989–2003"
       subtitle="Disegni e collage su carta"
       bannerSrc="/wp-images/06_DISEGNI_TESTATA.jpg"
+      sectionDescription={sectionDescriptions.dc}
       images={dcImages}
       captions={captions}
+      subImages={subImages.dc}
       sectionLinks={sections}
     />
   )

@@ -2,6 +2,7 @@
 import { geImages } from '@/data/galleries'
 import { descriptions, parseCaptionFromRaw } from '@/data/descriptions'
 import { extendedDescriptions } from '@/data/extended_descriptions'
+import { subImages, sectionDescriptions } from '@/data/subimages'
 
 const sections = [
   { label: 'Esperienze Giovanili 1964–1977', href: '/m/esperienze-giovanili-1964-1977' },
@@ -21,8 +22,10 @@ export default function Page() {
       title="Geometrie Elementari 1986–1997"
       subtitle="Sculture geometriche e forme elementari"
       bannerSrc="/wp-images/03_GEOMETRIE-ELEMENTARI_TESTATA.jpg"
+      sectionDescription={sectionDescriptions.ge}
       images={geImages}
       captions={captions}
+      subImages={subImages.ge}
       sectionLinks={sections}
     />
   )

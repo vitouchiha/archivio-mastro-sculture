@@ -15,14 +15,17 @@ interface MobileOpereGalleryProps {
   title: string
   subtitle?: string
   bannerSrc?: string
+  sectionDescription?: string
   images: string[]
   captions?: (OpereCaption | null)[]
+  subImages?: Record<number, string[]>
   sectionLinks?: { label: string; href: string }[]
 }
 
-export default function MobileOpereGallery({ title, subtitle, bannerSrc, images, captions, sectionLinks }: MobileOpereGalleryProps) {
+export default function MobileOpereGallery({ title, subtitle, bannerSrc, sectionDescription, images, captions, subImages, sectionLinks }: MobileOpereGalleryProps) {
   const [current, setCurrent] = useState(0)
   const [lightbox, setLightbox] = useState<number | null>(null)
+  const [subLightbox, setSubLightbox] = useState<string | null>(null)
 
   const prev = () => setCurrent(c => (c - 1 + images.length) % images.length)
   const next = () => setCurrent(c => (c + 1) % images.length)
@@ -37,8 +40,11 @@ export default function MobileOpereGallery({ title, subtitle, bannerSrc, images,
   const yearLabel = yearMatch ? yearMatch[0] : null
   const sectionName = title.replace(/\s*\d{4}[\u2013\-]\d{4}.*$/, '').trim()
 
+  // sub-images for current artwork (1-based index)
+  const currentSubImages = subImages?.[current + 1] ?? []
+
   return (
-    <>
+    <div className="m-gallery-bg">
       {bannerSrc ? (
         <div className="m-section-banner">
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -53,6 +59,10 @@ export default function MobileOpereGallery({ title, subtitle, bannerSrc, images,
           <h1>{title}</h1>
           {subtitle && <p>{subtitle}</p>}
         </div>
+      )}
+
+      {sectionDescription && (
+        <p className="m-section-desc">{sectionDescription}</p>
       )}
 
       {/* Viewer */}
@@ -94,6 +104,24 @@ export default function MobileOpereGallery({ title, subtitle, bannerSrc, images,
             <span className="m-viewer-caption-code">{caption.code}</span>
           )}
         </div>
+
+        {/* Sub-images (detail photos) */}
+        {currentSubImages.length > 0 && (
+          <div className="m-sub-images">
+            <div className="m-sub-images-label">Dettagli</div>
+            {currentSubImages.map((src, i) => (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                key={i}
+                src={src}
+                alt={`Dettaglio ${i + 1}`}
+                className="m-sub-img"
+                loading="lazy"
+                onClick={() => setSubLightbox(src)}
+              />
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Thumbnails */}
@@ -109,6 +137,15 @@ export default function MobileOpereGallery({ title, subtitle, bannerSrc, images,
           </div>
         ))}
       </div>
+
+      {/* Sub-image lightbox */}
+      {subLightbox && (
+        <div className="m-lightbox" onClick={() => setSubLightbox(null)}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={subLightbox} alt="Dettaglio" onClick={e => e.stopPropagation()} />
+          <button className="m-lightbox-close" onClick={() => setSubLightbox(null)}>✕</button>
+        </div>
+      )}
 
       {/* Nav to other sections */}
       {sectionLinks && (
@@ -138,7 +175,7 @@ export default function MobileOpereGallery({ title, subtitle, bannerSrc, images,
         </div>
       )}
 
-      {/* Lightbox */}
+      {/* Main image lightbox */}
       {lightbox !== null && (
         <div className="m-lightbox" onClick={() => setLightbox(null)}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -162,6 +199,6 @@ export default function MobileOpereGallery({ title, subtitle, bannerSrc, images,
           </div>
         </div>
       )}
-    </>
+    </div>
   )
 }

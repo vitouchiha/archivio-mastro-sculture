@@ -2,6 +2,7 @@
 import { asImages } from '@/data/galleries'
 import { descriptions, parseCaptionFromRaw } from '@/data/descriptions'
 import { extendedDescriptions } from '@/data/extended_descriptions'
+import { subImages, sectionDescriptions } from '@/data/subimages'
 
 const sections = [
   { label: 'Esperienze Giovanili 1964–1977', href: '/m/esperienze-giovanili-1964-1977' },
@@ -21,8 +22,10 @@ export default function Page() {
       title="Astrazioni Simboliche 1978–1985"
       subtitle="Sculture astratte e simboliche"
       bannerSrc="/wp-images/02_ASTRAZIONI-SIMBOLICHE_TESTATA.jpg"
+      sectionDescription={sectionDescriptions.as}
       images={asImages}
       captions={captions}
+      subImages={subImages.as}
       sectionLinks={sections}
     />
   )

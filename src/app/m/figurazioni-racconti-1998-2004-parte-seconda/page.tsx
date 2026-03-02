@@ -2,6 +2,7 @@
 import { fImages } from '@/data/galleries'
 import { descriptions, parseCaptionFromRaw } from '@/data/descriptions'
 import { extendedDescriptions } from '@/data/extended_descriptions'
+import { subImages, sectionDescriptions } from '@/data/subimages'
 
 const sections = [
   { label: 'Esperienze Giovanili 1964–1977', href: '/m/esperienze-giovanili-1964-1977' },
@@ -21,8 +22,10 @@ export default function Page() {
       title="Figurazioni Racconti 1998–2004 – Parte Seconda"
       subtitle="Sculture e plastiche figurative"
       bannerSrc="/wp-images/05_FIGURAZIONI2_TESTATA.jpg"
+      sectionDescription={sectionDescriptions.fp2}
       images={fImages}
       captions={captions}
+      subImages={subImages.fp2}
       sectionLinks={sections}
     />
   )

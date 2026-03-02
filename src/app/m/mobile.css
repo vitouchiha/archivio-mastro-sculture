@@ -857,3 +857,67 @@ a {
 }
 .m-viewer-caption-desc { font-size: 0.8rem; line-height: 1.5; color: var(--text); margin-top: 12px; white-space: pre-wrap; margin-bottom: 8px; }
 .m-lightbox-caption { max-height: 40vh; overflow-y: auto; }
+
+/* ---- GALLERY PAGE GRAY BACKGROUND (match desktop) ---- */
+.m-gallery-bg {
+  background: #878787;
+  min-height: calc(100vh - 54px);
+}
+
+.m-gallery-bg .m-section-banner {
+  background: #878787;
+}
+
+.m-gallery-bg .m-gallery-header h1,
+.m-gallery-bg .m-gallery-header p {
+  color: var(--white);
+}
+
+/* ---- SECTION INTRO DESCRIPTION (below banner) ---- */
+.m-section-desc {
+  padding: 16px 16px 20px;
+  color: rgba(255,255,255,0.92);
+  font-size: 0.84rem;
+  line-height: 1.75;
+  font-family: var(--font);
+  border-top: 1px solid rgba(255,255,255,0.15);
+  margin: 0 16px;
+}
+
+/* ---- SUB-IMAGES (additional detail photos per artwork) ---- */
+.m-sub-images {
+  display: flex;
+  gap: 8px;
+  padding: 10px 14px 14px;
+  background: #f0f0f0;
+  border-top: 1px solid #d0d0d0;
+  flex-wrap: wrap;
+}
+
+.m-sub-images-label {
+  width: 100%;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--gray);
+  margin-bottom: 4px;
+}
+
+.m-sub-img {
+  width: 76px;
+  height: 76px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  display: block;
+  flex-shrink: 0;
+  background: #d8d8d8;
+  transition: border-color 0.15s;
+}
+
+.m-sub-img:hover,
+.m-sub-img.active {
+  border-color: var(--secondary);
+}
