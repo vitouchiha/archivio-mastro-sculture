@@ -10,16 +10,57 @@ export default function AudioPlayer() {
   useEffect(() => {
     const audio = new Audio('/music/ambient.mp3')
     audio.loop = true
-    audio.volume = 0.35
+    audio.volume = 0
     audioRef.current = audio
 
-    // show the button after a short delay so it doesn't appear instantly
-    const t = setTimeout(() => setVisible(true), 1200)
+    // Strategy: start muted (allowed by all browsers), then fade in volume
+    audio.muted = true
+    const tryAutoplay = () => {
+      audio.play().then(() => {
+        // Autoplay succeeded — fade in volume from 0 to 0.35
+        audio.muted = false
+        let vol = 0
+        const fade = setInterval(() => {
+          vol = Math.min(vol + 0.025, 0.35)
+          audio.volume = vol
+          if (vol >= 0.35) clearInterval(fade)
+        }, 120)
+        setPlaying(true)
+        setVisible(true)
+      }).catch(() => {
+        // Autoplay blocked — show button for manual start
+        audio.muted = false
+        audio.volume = 0.35
+        setVisible(true)
+      })
+    }
+
+    // Small delay to let the page settle before trying autoplay
+    const t = setTimeout(tryAutoplay, 600)
+
+    // Fallback: also try on first user interaction with the page
+    const onInteract = () => {
+      const a = audioRef.current
+      if (!a || playing) return
+      a.muted = false
+      a.volume = 0.35
+      a.play().then(() => {
+        setPlaying(true)
+        document.removeEventListener('click', onInteract)
+        document.removeEventListener('touchstart', onInteract)
+      }).catch(() => {})
+    }
+    document.addEventListener('click', onInteract, { once: true })
+    document.addEventListener('touchstart', onInteract, { once: true })
+
     return () => {
       clearTimeout(t)
+      document.removeEventListener('click', onInteract)
+      document.removeEventListener('touchstart', onInteract)
       audio.pause()
       audio.src = ''
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   function toggle() {
@@ -29,6 +70,8 @@ export default function AudioPlayer() {
       audio.pause()
       setPlaying(false)
     } else {
+      audio.muted = false
+      audio.volume = 0.35
       audio.play().then(() => setPlaying(true)).catch(() => {})
     }
   }
