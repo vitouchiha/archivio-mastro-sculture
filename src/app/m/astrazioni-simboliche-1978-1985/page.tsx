@@ -1,5 +1,6 @@
 ﻿import MobileOpereGallery from '../MobileOpereGallery'
-import { asImages, asFeatured } from '@/data/galleries'
+import { asImages } from '@/data/galleries'
+import { descriptions, parseCaptionFromRaw } from '@/data/descriptions'
 import { extendedDescriptions } from '@/data/extended_descriptions'
 
 const sections = [
@@ -11,19 +12,9 @@ const sections = [
 ]
 
 export default function Page() {
-  const captions = asImages.map((_, i) => {
-    if (i === 0) {
-       return { 
-         title: asFeatured.title, 
-         year: asFeatured.year, 
-         material: asFeatured.material, 
-         dimensions: asFeatured.dimensions, 
-         code: asFeatured.code,
-         description: extendedDescriptions.as[1]?.description || undefined
-       };
-    }
-    return { title: `Opera ${i + 1}`, description: extendedDescriptions.as[i + 1]?.description || undefined };
-  });
+  const captions = asImages.map((_, i) =>
+    parseCaptionFromRaw(descriptions.as[i + 1], extendedDescriptions.as[i + 1]?.description)
+  );
 
   return (
     <MobileOpereGallery

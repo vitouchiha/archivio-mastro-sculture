@@ -777,3 +777,41 @@ export const descriptions = {
     }
   ]
 } as const;
+
+/** Parse raw testo1/testo2 HTML strings into a structured caption object. */
+export function parseCaptionFromRaw(
+  item: { readonly testo1?: string | null; readonly testo2?: string | null } | null | undefined,
+  extendedDescription?: string | null
+) {
+  if (!item?.testo1) return null
+
+  const t1 = item.testo1
+  // Extract title from the first <i>...</i>
+  const titleMatch = t1.match(/<i>([^<]*)<\/i>/i)
+  const title = (titleMatch ? titleMatch[1] : '').trim()
+
+  // Strip block wrappers <p>, </p>, and the <i>Title</i> we already captured
+  let rest = t1
+    .replace(/<\/?\s*p\d*\s*>/gi, '')
+    .replace(/<i>[^<]*<\/i>/i, '')
+    .trim()
+    .replace(/^[,\s]+/, '')
+
+  const parts = rest.split(/<br\s*\/?>/i)
+  const year       = parts[0]?.replace(/<[^>]+>/g, '').trim() || undefined
+  const material   = parts[1]?.replace(/<[^>]+>/g, '').trim() || undefined
+  const dimensions = parts[2]?.replace(/<[^>]+>/g, '').trim() || undefined
+
+  // Extract catalogue code from <p7>codice: VALUE</p7>
+  const codeMatch = item.testo2?.match(/<p7>codice:\s*([^<]+)<\/p7>/i)
+  const code = codeMatch ? codeMatch[1].trim() : undefined
+
+  return {
+    title: title || 'Opera',
+    year,
+    material,
+    dimensions,
+    code,
+    description: extendedDescription ?? undefined,
+  }
+}

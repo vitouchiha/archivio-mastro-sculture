@@ -1,5 +1,6 @@
 ﻿import MobileOpereGallery from '../MobileOpereGallery'
-import { egImages, egFeatured } from '@/data/galleries'
+import { egImages } from '@/data/galleries'
+import { descriptions, parseCaptionFromRaw } from '@/data/descriptions'
 import { extendedDescriptions } from '@/data/extended_descriptions'
 
 const sections = [
@@ -11,20 +12,9 @@ const sections = [
 ]
 
 export default function Page() {
-  // Solo la prima immagine ha info complete mockate. Combino i dati estratti per tutte le immagini.
-  const captions = egImages.map((_, i) => {
-    if (i === 0) {
-       return { 
-         title: egFeatured.title, 
-         year: egFeatured.year, 
-         material: egFeatured.material, 
-         dimensions: egFeatured.dimensions, 
-         code: egFeatured.code,
-         description: extendedDescriptions.eg[1]?.description || undefined
-       };
-    }
-    return { title: `Opera ${i + 1}`, description: extendedDescriptions.eg[i + 1]?.description || undefined };
-  });
+  const captions = egImages.map((_, i) =>
+    parseCaptionFromRaw(descriptions.eg[i + 1], extendedDescriptions.eg[i + 1]?.description)
+  );
 
   return (
     <MobileOpereGallery
