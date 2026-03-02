@@ -118,7 +118,7 @@ export const extendedDescriptions = {
     null,
     {
       "index": 1,
-      "description": "Primo premio di scultura mostraPopoli e Civiltà, Grottaglie 1965"
+      "description": "Primo premio di scultura mostra\nPopoli e Civiltà, Grottaglie 1965"
     },
     {
       "index": 2,
@@ -182,7 +182,7 @@ export const extendedDescriptions = {
     },
     {
       "index": 17,
-      "description": "Opera vincitrice del concorso nazionaleper la Sala del Consiglio dell’I.T.I. di Abbiategrasso (MI)"
+      "description": "Opera vincitrice del concorso nazionale\nper la Sala del Consiglio dell’I.T.I. di Abbiategrasso (MI)"
     },
     {
       "index": 18,
@@ -776,4 +776,4 @@ export const extendedDescriptions = {
       "description": null
     }
   ]
-} as const;
+};

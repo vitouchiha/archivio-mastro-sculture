@@ -19,12 +19,25 @@ function parseExtendedDescription(testo1, testo2) {
   }
 
   if (testo2 && typeof testo2 === 'string') {
-    // If it's not just a code like <p7>codice...</p7>, but an actual text
-    // E.g. "Nel laboratorio di un amico ebanista..."
-    const t2NoDocs = testo2.replace(/<p7>.*<\/p7>/ig, '').replace(/<[^>]+>/g, '').trim();
-    if (t2NoDocs.length > 20 && !t2NoDocs.startsWith('codice:')) {
+    // Some testo2 include stuff like `<p7>codice: ...</p7><br><p><i>Primo premio...`
+    // We want to skip the codice part but keep the rest
+    let t2Raw = testo2.replace(/<p7>.*?<\/p7>/ig, '').trim();
+    // Sometimes there are other tags, but we also want the text inside <p> or <i>
+    t2Raw = t2Raw.replace(/<br\s*\/?>/ig, '\n');
+    t2Raw = t2Raw.replace(/<\/p>|<\/div>/ig, '\n');
+    t2Raw = t2Raw.replace(/<[^>]+>/g, '').trim();
+    
+    // There are texts in testo2 that are just "codice: SES a10, n.1"
+    if (t2Raw.toLowerCase().startsWith('codice:')) {
+       // Ignore standalone "codice: ..."
+       t2Raw = '';
+    }
+    
+    // There are texts like "Nel laboratorio di un amico..."
+    // or "Opera vincitrice del concorso..."
+    if (t2Raw.length > 10) {
       if (description) description += '\n\n';
-      description += t2NoDocs;
+      description += t2Raw;
     }
   }
   
