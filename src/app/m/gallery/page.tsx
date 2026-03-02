@@ -4,8 +4,6 @@ import { pgImages } from '@/data/galleries'
 import { descriptions, parseCaptionFromRaw } from '@/data/descriptions'
 import { extendedDescriptions } from '@/data/extended_descriptions'
 
-const HERO_IMGS = ['/images/PG01X.jpg', '/images/PG09X.jpg', '/images/PG17X.jpg']
-
 const sections = [
   { label: 'Esperienze Giovanili 1964–1977', href: '/m/esperienze-giovanili-1964-1977' },
   { label: 'Astrazioni Simboliche', href: '/m/astrazioni-simboliche-1978-1985' },
@@ -24,7 +22,7 @@ export default function MobileGallery() {
     <MobileOpereGallery
       title="1964–2014–2024"
       subtitle="ALTRE OPERE ALTRE COSE"
-      heroBannerImages={HERO_IMGS}
+      bannerSrc="/images/PGT2.jpg"
       sectionDescription="In questa foto-raccolta, oltre a nuove opere in archivio, troveranno spazio altre esperienze professionali e di laboratorio, quali la fotografia, la ceramica, il designer ed altre attivit&#xE0; progettuali."
       images={pgImages}
       captions={captions}

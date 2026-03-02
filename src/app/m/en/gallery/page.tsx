@@ -4,8 +4,6 @@ import { pgImages } from '@/data/galleries'
 import { descriptions, parseCaptionFromRaw } from '@/data/descriptions'
 import { extendedDescriptions } from '@/data/extended_descriptions'
 
-const HERO_IMGS = ['/images/PG01X.jpg', '/images/PG09X.jpg', '/images/PG17X.jpg']
-
 const sections = [
   { label: 'Early Experiences 1964–1977', href: '/m/en/esperienze-giovanili-1964-1977' },
   { label: 'Symbolic Abstractions', href: '/m/en/astrazioni-simboliche-1978-1985' },
@@ -24,7 +22,7 @@ export default function MobileGalleryEN() {
     <MobileOpereGallery
       title="1964–2014–2024"
       subtitle="OTHER WORKS, OTHER THINGS"
-      heroBannerImages={HERO_IMGS}
+      bannerSrc="/images/PGT2.jpg"
       sectionDescription="In this photo collection, in addition to new works in the archive, there will be space for other professional and workshop experiences, such as photography, ceramics, design and other project activities."
       images={pgImages}
       captions={captions}
