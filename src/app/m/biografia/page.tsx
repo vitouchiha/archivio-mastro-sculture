@@ -1,9 +1,7 @@
-import Link from 'next/link'
-
 export default function MobileBiografia() {
   return (
     <div className="m-bio-page">
-      {/* ---- Banner: dark red bg + portrait strip ---- */}
+      {/* ---- Banner ---- */}
       <div className="m-pres-hero">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -18,28 +16,65 @@ export default function MobileBiografia() {
         <h1 className="m-pres-title">BIOGRAFIA</h1>
       </div>
 
-      {/* ---- Body text ---- */}
+      {/* ---- Timeline ---- */}
       <div className="m-bio-body">
-        <p><strong>Di professione insegnante, scultore per vocazione</strong>, Oronzo Mastro nasce il 30 dicembre 1949 a Grottaglie (TA), centro pugliese rinomato per la produzione di ceramiche artistiche e artigianali. Il padre Cosimo, maestro ceramista, lo porta con sé in bottega fin dagli anni delle elementari.</p>
+        <div className="m-bio-timeline">
 
-        <p>Dal 1961 al 1967 frequenta l&apos;Istituto Statale d&apos;Arte per la Ceramica &ldquo;V. Calò&rdquo; di Grottaglie, vincendo nel 1964 il primo premio di scultura. Nel 1967 si iscrive all&apos;Accademia di Belle Arti di Firenze, conseguendo il diploma di scultura nel 1971.</p>
+          <div className="m-bio-row">
+            <span className="m-bio-year">1949</span>
+            <span className="m-bio-desc">il 30 dicembre nasce a Grottaglie ORONZO MASTRO.</span>
+          </div>
 
-        <p>Tra il &apos;72 e il &apos;74 realizza varie opere tra cui un modello con cui nel 1977 vince il Concorso Nazionale della Sovraintendenza per i Beni Ambientali ed Artistici della Basilicata. L&apos;opera in bronzo <em>Primo monolite</em> è esposta nei giardini del palazzo degli Uffici Regionali del Tesoro di Matera.</p>
+          <div className="m-bio-row">
+            <span className="m-bio-year">1967</span>
+            <span className="m-bio-desc">si diploma Maestro d&apos;Arte per la Ceramica, presso l&apos;Istituto Statale d&apos;Arte di Grottaglie.</span>
+          </div>
 
-        <p>Nel 1974 partecipa alla Quadriennale d&apos;Arte di Roma, edizione 1975, con un trittico dal titolo <em>Ritratti del Potere</em>, segnalato tra le opere più significative della rassegna.</p>
+          <div className="m-bio-row">
+            <span className="m-bio-year">1971</span>
+            <span className="m-bio-desc">si diploma in Scultura, presso l&apos;Accademia di Belle Arti di Firenze.</span>
+          </div>
 
-        <p>Trasferitosi a Genova nel 1977, insegna Figura e Ornato Modellato al Liceo Artistico &ldquo;P. Klee&rdquo;. In questo decennio realizza sculture simbolico-figurative in bronzo e poliestere, progettate per grandi spazi all&apos;aperto.</p>
+          <div className="m-bio-row">
+            <span className="m-bio-year">1974</span>
+            <span className="m-bio-desc">insegna Discipline Plastiche ed Educazione Visiva presso l&apos;Istituto Statale d&apos;Arte di Giarre, nel &apos;75 al Liceo Artistico di Catania, nel &apos;77 al Liceo Artistico di Genova, nel &apos;86 all&apos;Istituto d&apos;Arte di Modena e nel &apos;96 al Liceo Artistico di Bologna.</span>
+          </div>
 
-        <p>Nel 1986 si stabilisce a <strong>Bologna</strong> e inizia a insegnare all&apos;Istituto Statale d&apos;Arte &ldquo;A. Venturi&rdquo; di Modena. Riprende la scultura realizzando modelli geometrici ed essenziali da ingrandire in travertino, e inizia a progettare opere in ottone di piccole dimensioni.</p>
+          <div className="m-bio-row">
+            <span className="m-bio-year">1974</span>
+            <span className="m-bio-desc">vince il Concorso Nazionale per la realizzazione di un&apos;Opera Pubblica, indetto dalla Provincia di Milano.</span>
+          </div>
 
-        <p>Negli anni Novanta e Duemila porta a termine il grande ciclo di sculture in ottone lavorato a freddo — <em>figurazioni, racconti</em> — opere leggere, lineari, quasi disegni sospesi nell&apos;aria. Parallelamente prosegue i disegni e i collage su carta.</p>
+          <div className="m-bio-row">
+            <span className="m-bio-year">1975</span>
+            <span className="m-bio-desc">partecipa alla Quadriennale di Roma, aperta ai giovani artisti e alle nuove tendenze delle arti figurative.</span>
+          </div>
 
-        <p>L&apos;intero archivio delle sue opere plastiche, sculture e disegni è oggi conservato e documentato in questo archivio digitale.</p>
+          <div className="m-bio-row">
+            <span className="m-bio-year">1977</span>
+            <span className="m-bio-desc">vince il Concorso per la realizzazione di un&apos;Opera Pubblica, indetto dalla Soprintendenza per i beni Ambientali e Artistici della Basilicata.</span>
+          </div>
 
-        <div style={{ marginTop: '24px', paddingTop: '16px', borderTop: '1px solid rgba(255,255,255,0.2)' }}>
-          <Link href="/m/presentazione" style={{ color: '#e8c97a', fontWeight: 700, fontSize: '0.85rem' }}>
-            → Leggi la Presentazione dell&apos;artista
-          </Link>
+          <div className="m-bio-row">
+            <span className="m-bio-year">1979</span>
+            <span className="m-bio-desc">inizia una ricerca plastica sui grandi temi della &ldquo;figurazione simbolica&rdquo; in scultura, realizzando modelli in bronzo o in pietra, da ingrandire e collocare in spazi all&apos;aperto.</span>
+          </div>
+
+          <div className="m-bio-row">
+            <span className="m-bio-year">1986</span>
+            <span className="m-bio-desc">in continuità con la ricerca degli anni precedenti, realizza un ciclo di opere &ldquo;astratto-geometriche&rdquo; da ingrandire in travertino e collocare in spazi all&apos;aperto.</span>
+          </div>
+
+          <div className="m-bio-row">
+            <span className="m-bio-year">1998</span>
+            <span className="m-bio-desc">avvia un ciclo di opere &ldquo;simbolico-figurative&rdquo; e &ldquo;astratto-geometriche&rdquo;, in ottone lavorato a freddo, che sono la summa di una ricerca estetica, nel solco della tradizione e innovazione del linguaggio plastico.</span>
+          </div>
+
+          <div className="m-bio-row">
+            <span className="m-bio-year">2004</span>
+            <span className="m-bio-desc">scrive un &ldquo;Saggio monografico&rdquo; sui saperi dell&apos;arte e sull&apos;arte della scultura. Finito di scrivere nel 2014, è pubblicato da Claudio Grenzi Editore nel 2023.</span>
+          </div>
+
         </div>
       </div>
     </div>

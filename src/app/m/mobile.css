@@ -626,7 +626,7 @@ a {
   min-height: calc(100vh - 54px);
 }
 .m-bio-body {
-  padding: 20px 16px 40px;
+  padding: 16px 16px 40px;
 }
 .m-bio-body p {
   font-size: 0.88rem;
@@ -639,6 +639,34 @@ a {
 }
 .m-bio-body em {
   color: rgba(255,255,255,0.8);
+}
+.m-bio-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.m-bio-row {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  align-items: start;
+}
+.m-bio-year {
+  font-size: 0.84rem;
+  font-weight: 700;
+  font-family: var(--font-heading);
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  line-height: 1.6;
+  flex-shrink: 0;
+}
+.m-bio-desc {
+  font-size: 0.84rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,0.92);
 }
 
 /* ---- PHOTO GALLERY ---- */
