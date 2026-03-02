@@ -20,6 +20,7 @@ export default function Page() {
     <MobileOpereGallery
       title="Astrazioni Simboliche 1978–1985"
       subtitle="Sculture astratte e simboliche"
+      bannerSrc="/wp-images/02_ASTRAZIONI-SIMBOLICHE_TESTATA.jpg"
       images={asImages}
       captions={captions}
       sectionLinks={sections}

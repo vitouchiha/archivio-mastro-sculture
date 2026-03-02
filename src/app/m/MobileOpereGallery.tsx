@@ -14,12 +14,13 @@ export interface OpereCaption {
 interface MobileOpereGalleryProps {
   title: string
   subtitle?: string
+  bannerSrc?: string
   images: string[]
   captions?: (OpereCaption | null)[]
   sectionLinks?: { label: string; href: string }[]
 }
 
-export default function MobileOpereGallery({ title, subtitle, images, captions, sectionLinks }: MobileOpereGalleryProps) {
+export default function MobileOpereGallery({ title, subtitle, bannerSrc, images, captions, sectionLinks }: MobileOpereGalleryProps) {
   const [current, setCurrent] = useState(0)
   const [lightbox, setLightbox] = useState<number | null>(null)
 
@@ -31,12 +32,28 @@ export default function MobileOpereGallery({ title, subtitle, images, captions, 
   const caption = captions?.[current]
   const lbCaption = lightbox !== null ? captions?.[lightbox] : null
 
+  // Split "Section Name 1978–1985" into ["Section Name", "1978–1985"]
+  const yearMatch = title.match(/\d{4}[\u2013\-]\d{4}/)
+  const yearLabel = yearMatch ? yearMatch[0] : null
+  const sectionName = title.replace(/\s*\d{4}[\u2013\-]\d{4}.*$/, '').trim()
+
   return (
     <>
-      <div className="m-gallery-header">
-        <h1>{title}</h1>
-        {subtitle && <p>{subtitle}</p>}
-      </div>
+      {bannerSrc ? (
+        <div className="m-section-banner">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={bannerSrc} alt={title} />
+          <div className="m-banner-meta">
+            {yearLabel && <span className="m-banner-year">{yearLabel}</span>}
+            <h1 className="m-banner-title">{sectionName}</h1>
+          </div>
+        </div>
+      ) : (
+        <div className="m-gallery-header">
+          <h1>{title}</h1>
+          {subtitle && <p>{subtitle}</p>}
+        </div>
+      )}
 
       {/* Viewer */}
       <div className="m-viewer">

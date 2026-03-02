@@ -20,6 +20,7 @@ export default function Page() {
     <MobileOpereGallery
       title="Disegni Collage 1989–2003"
       subtitle="Disegni e collage su carta"
+      bannerSrc="/wp-images/06_DISEGNI_TESTATA.jpg"
       images={dcImages}
       captions={captions}
       sectionLinks={sections}

@@ -20,6 +20,7 @@ export default function Page() {
     <MobileOpereGallery
       title="Figurazioni Racconti 1998–2004 – Parte Prima"
       subtitle="Sculture e plastiche figurative"
+      bannerSrc="/wp-images/04_FIGURAZIONI_1_TESTATA.jpg"
       images={frImages}
       captions={captions}
       sectionLinks={sections}

@@ -20,6 +20,7 @@ export default function Page() {
     <MobileOpereGallery
       title="Geometrie Elementari 1986–1997"
       subtitle="Sculture geometriche e forme elementari"
+      bannerSrc="/wp-images/03_GEOMETRIE-ELEMENTARI_TESTATA.jpg"
       images={geImages}
       captions={captions}
       sectionLinks={sections}

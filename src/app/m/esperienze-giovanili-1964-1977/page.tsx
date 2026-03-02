@@ -20,6 +20,7 @@ export default function Page() {
     <MobileOpereGallery
       title="Esperienze Giovanili 1964–1977"
       subtitle="Sculture e plastiche del periodo giovanile"
+      bannerSrc="/wp-images/01_ESPERIENZE-GIOVANILI_TESTATA.jpg"
       images={egImages}
       captions={captions}
       sectionLinks={sections}
