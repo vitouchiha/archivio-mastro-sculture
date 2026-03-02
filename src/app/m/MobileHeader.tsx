@@ -26,7 +26,7 @@ const navItemsIT = [
 const navItemsEN = [
   { section: 'Menu' },
   { label: 'Home', href: '/m/en' },
-  { label: 'Presentation', href: '/en/presentazione' },
+  { label: 'Presentation', href: '/m/en/presentazione' },
   { label: 'Biography', href: '/en/biografia' },
   { label: 'News', href: '/m/news' },
   { section: 'Works' },

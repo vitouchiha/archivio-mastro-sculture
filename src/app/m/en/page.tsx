@@ -33,7 +33,7 @@ export default function MobileEnHome() {
       {/* Info links */}
       <div style={{ display: 'flex', gap: 2, padding: '12px 16px 0' }}>
         {[
-          { label: 'Presentation', href: '/en/presentazione' },
+          { label: 'Presentation', href: '/m/en/presentazione' },
           { label: 'Biography', href: '/en/biografia' },
           { label: 'Contact', href: '/m/en/contact' },
         ].map(l => (
