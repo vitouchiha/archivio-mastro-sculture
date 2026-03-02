@@ -131,7 +131,7 @@ export const dcFeatured = {
 
 // ---- Gallery – Altre Opere Altre Cose (2024) ----
 export const pgImages = Array.from({ length: 24 }, (_, i) =>
-  `/images/2024/07/PG${String(i + 1).padStart(2, '0')}.jpg`
+  `/images/PG${String(i + 1).padStart(2, '0')}X.jpg`
 )
 
 export const pgFeatured = {

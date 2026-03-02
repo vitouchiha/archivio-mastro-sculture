@@ -138,7 +138,7 @@ export default function MobileOpereGallery({ title, subtitle, bannerSrc, heroBan
           <div
             key={i}
             className={`m-thumb${i === current ? ' active' : ''}`}
-            onClick={() => setCurrent(i)}
+            onClick={() => { setCurrent(i); setLightbox(i) }}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={src} alt={captions?.[i]?.title ?? `Opera ${i + 1}`} loading="lazy" />
